@@ -1,4 +1,5 @@
-let testVar = getElementsByClassName('test').innerText;
-alert('testVar');
-a = document.getElementsByClassName('test');
-console.log(a.style.backgroundColor);
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded and parsed');
+    document.body.style.backgroundColor = 'blue';
+});
