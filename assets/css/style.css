@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +14,81 @@ body {
 
 
 .testCon {
-color:red;
+    color: red;
+    text-align: center;
 }
 
 #headArea {
-    color:green;
-    height: 25rem;
-    width: 90%;
+    color: green;
+    height: 100px;
+    width: 80%;
     background-color: yellow;
+    margin: auto;
+}
+
+#mainArea {
+    color: black;
+    height: 800px;
+    width: 80%;
+    background-color: blue;
+    margin: auto;
+    background-image: url(../images/woodback.jpg);
+}
+
+#controlArea {
+    color: black;
+    height: 100px;
+    width: 80%;
+    background-color: green;
+    margin: auto;
+}
+
+.pinHolder-1 {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+    color:white;
+    height: 50px;
+    width: 60%;
+    background-color: rgb(red, green, blue, 01);
+    margin: auto;
+}
+
+#outer-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #704F32;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    box-shadow: 1px 3px black;
+    
+    
+}
+
+#inner-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    background: #704F32;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    border: solid 1px black;
+    box-shadow: -1px -1px black;
+}
+
+#inner-inner-circle {
+    position: relative;
+    background: black;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: auto;
 }
