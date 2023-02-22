@@ -32,7 +32,7 @@ body {
     width: 80%;
     background-color: blue;
     margin: auto;
-    background-image: url(../images/woodback.jpg);
+    /* background-image: url(../images/woodback.jpg); */
 }
 
 #controlArea {
@@ -59,12 +59,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background: #704F32;
+    background-image: url(../images/red-peg.png);
+    /* background: red;
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    box-shadow: 1px 3px black;
+    box-shadow: 1px 1px black; */
     
     
 }
@@ -75,7 +75,7 @@ body {
     align-items: center;
 
     position: relative;
-    background: #704F32;
+    background-image:url(../images/red-peg.png);
     border-radius: 50%;
     height: 25px;
     width: 25px;
@@ -91,4 +91,8 @@ body {
     height: 15px;
     width: 15px;
     margin: auto;
+}
+
+.whatColor {
+    background-image:url(../images/red-peg.png);
 }
