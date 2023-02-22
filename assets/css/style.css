@@ -1,4 +1,26 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+
+/* set for larger desktops */
+body {
+    max-width: 1200px;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+
 .testCon {
 color:red;
 }
 
+#headArea {
+    color:green;
+    height: 25rem;
+    width: 90%;
+    background-color: yellow;
+}

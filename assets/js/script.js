@@ -1,5 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded and parsed');
-    document.body.style.backgroundColor = 'blue';
+    // document.body.style.backgroundColor = 'blue';
 });

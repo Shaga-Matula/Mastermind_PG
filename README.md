@@ -1,6 +1,6 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# MASTERMIND Game
+# MASTERMIND Game Paul Gleeson 5P PP2
 
 ## Discptrion 
 
