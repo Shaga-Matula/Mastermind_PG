@@ -27,9 +27,14 @@ body {
 }
 
 #mainArea {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  
     color: black;
     height: 800px;
-    width: 80%;
+    width:80%;
     background-color: blue;
     margin: auto;
     background-image: url(../images/woodback.jpg);
@@ -37,16 +42,17 @@ body {
 
 
 
-.pinHolder-1 {
+.pinHolder {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     color: white;
     height: 50px;
-    width: 60%;
+    width: 600px;
     background-color: rgb(red, green, blue, 01);
     margin: auto;
+    border: 2px solid black;
 }
 
 .outer-circle {
@@ -126,13 +132,19 @@ body {
 
 #colorChoice-area {
     
+    
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around ; 
+    flex-direction: column;
 
     height:700px;
     width: 100px;
     /* background-color: green; */
     /* background-color: #432616; */
     background-image: url(../images/woodback.jpg);
+    border-radius: 10px;
 }
 .color-pallet {
     display: flex;
@@ -149,13 +161,26 @@ body {
 
     background-color: #432616;
 }
-#what-color {
+.what-color {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    background: radial-gradient(circle at 100px 100px, #5cabff, red);
+  
+   
   
     border-radius: 50%;
     height: 25px;
     width: 25px;
+
+    font-size: smaller;
+}
+
+#c-red {
+    background: radial-gradient(circle at 50px 50px, white, red);
+}
+#c-green {
+    background: radial-gradient(circle at 50px 50px, white,green);
+}
+#c-blue {
+    background: radial-gradient(circle at 50px 50px, white, blue);
 }
