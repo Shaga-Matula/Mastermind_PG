@@ -86,8 +86,8 @@ body {
 
 .score-square{
     display: grid;
-    grid-template-columns: 20px 20px;
-    grid-auto-rows: 20px;
+    grid-template-columns: 1fr 1fr;
+
     background-color: #432616;
  
     height: 40px;
@@ -103,7 +103,7 @@ body {
     background-color: black;
     height: 5px;
     width: 5px;
-    padding: 1px;
+  
     margin: auto;
     border-radius: 50%;
     
@@ -117,8 +117,45 @@ body {
     margin: auto;
 }
 
+#mainArea {
+    display:flex;
+    align-content: space-around ; 
+ 
 
-/* 
-.whatColor {
-    background-image:url(../images/red-peg.png);
-} */
+}
+
+#colorChoice-area {
+    
+    display: flex;
+
+    height:700px;
+    width: 100px;
+    /* background-color: green; */
+    /* background-color: #432616; */
+    background-image: url(../images/woodback.jpg);
+}
+.color-pallet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+  
+    box-shadow: 1px 1px black;
+
+    background-color: #432616;
+}
+#what-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 100px 100px, #5cabff, red);
+  
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
