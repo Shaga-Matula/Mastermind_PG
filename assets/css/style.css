@@ -85,26 +85,25 @@ body {
 }
 
 .score-square{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #432616; */
-    background-color: white;
-    height: 145px;
-    width: 145px;
+    display: grid;
+    grid-template-columns: 20px 20px;
+    grid-auto-rows: 20px;
+    background-color: #432616;
+ 
+    height: 40px;
+    width: 40px;
+    
     box-shadow: 1px 1px black;
-
+    align-content: space-around ; 
+    justify-content: space-between ;
 }
 
 .inner-score-square {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #432616; */
-    /* position: relative; */
+
     background-color: black;
-    height: 15px;
-    width: 15px;
+    height: 5px;
+    width: 5px;
+    padding: 1px;
     margin: auto;
     border-radius: 50%;
     
