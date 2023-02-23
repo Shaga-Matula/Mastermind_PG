@@ -32,7 +32,82 @@ body {
     width: 80%;
     background-color: blue;
     margin: auto;
-    /* background-image: url(../images/woodback.jpg); */
+    background-image: url(../images/woodback.jpg);
+}
+
+
+
+.pinHolder-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+    height: 50px;
+    width: 60%;
+    background-color: rgb(red, green, blue, 01);
+    margin: auto;
+}
+
+.outer-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #432616;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    box-shadow: 1px 1px black;
+}
+
+.inner-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    border: solid 1px black;
+    box-shadow: -1px -1px black;
+}
+
+.inner-inner-circle {
+    position: relative;
+    background: black;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: auto;
+}
+
+.score-square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #432616; */
+    background-color: white;
+    height: 145px;
+    width: 145px;
+    box-shadow: 1px 1px black;
+
+}
+
+.inner-score-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #432616; */
+    /* position: relative; */
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    margin: auto;
+    border-radius: 50%;
+    
 }
 
 #controlArea {
@@ -43,56 +118,8 @@ body {
     margin: auto;
 }
 
-.pinHolder-1 {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
 
-    color:white;
-    height: 50px;
-    width: 60%;
-    background-color: rgb(red, green, blue, 01);
-    margin: auto;
-}
-
-#outer-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/red-peg.png);
-    /* background: red;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    box-shadow: 1px 1px black; */
-    
-    
-}
-
-#inner-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-    background-image:url(../images/red-peg.png);
-    border-radius: 50%;
-    height: 25px;
-    width: 25px;
-    margin: auto;
-    border: solid 1px black;
-    box-shadow: -1px -1px black;
-}
-
-#inner-inner-circle {
-    position: relative;
-    background: black;
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    margin: auto;
-}
-
+/* 
 .whatColor {
     background-image:url(../images/red-peg.png);
-}
+} */
