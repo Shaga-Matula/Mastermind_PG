@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +12,35 @@
 body {
     max-width: 1200px;
     margin: auto;
-    background-color: aquamarine;
+    background-position: left top;
+    background-image: url(../images/woodback.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 
-.testCon {
-    color: red;
-    text-align: center;
-}
+
 
 #headArea {
-    color: green;
-    height: 100px;
+
+    height: auto;
     width: 80%;
-    background-color: yellow;
+
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+#main-title{
+    font-family: "Tilt Neon", sans-serif;
+    padding-top: 50px;
+    font-weight: 400;
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+    color:darkkhaki;
+
 }
 
 #mainArea {
@@ -38,8 +55,9 @@ body {
     width: 80%;
     background-color: blue;
     margin: auto;
-    background-image: url(../images/woodback.jpg);
+    background-color: rgba(0, 0, 0, 0.01);
     padding-top: 10px;
+
 }
 
 
@@ -123,11 +141,20 @@ body {
 }
 
 #controlArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+
     color: black;
     height: 100px;
     width: 80%;
-    background-color: green;
+
     margin: auto;
+
+    background-color: rgba(0, 0, 0, 0.01);
+
 }
 
 
@@ -136,13 +163,8 @@ body {
     display: flex;
     flex-wrap: wrap;
 
-
-
-
     height: 100px;
     max-width: 180px;
-    /* background-color: green; */
-    /* background-color: #432616; */
     background-image: url(../images/woodback.jpg);
     border-radius: 10px;
 
@@ -159,6 +181,8 @@ body {
     height: 40px;
     width: 40px;
     margin: auto;
+
+
 
     box-shadow: 1px 1px black;
     background-color: #432616;
@@ -208,6 +232,19 @@ body {
 #c-purple {
     background: radial-gradient(circle at 50px 50px, grey, #800080);
 }
+
+.button {
+    display: inline-block;
+    background-color: #efe0bb;
+    padding: 15px;
+    width: 120px;
+
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+
 
 @media screen and (max-width: 310px) {
     #colorChoice-area {
