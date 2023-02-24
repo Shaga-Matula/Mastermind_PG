@@ -29,16 +29,17 @@ body {
 #mainArea {
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+   
     align-items: center;
-  
+
   
     color: black;
-    height: 800px;
+    height:auto;
     width: 80%;
     background-color: blue;
     margin: auto;
     background-image: url(../images/woodback.jpg);
+    padding-top: 10px;
 }
 
 
@@ -50,13 +51,11 @@ body {
 
     color: black;
     font-size: larger;
-    /* height: 50px;
-    width: 80%; */
-    /* background-color: rgb(red, green, blue, 01); */
+
     background-color: grey;
-    /* margin: auto; */
+  
     border: 2px solid black;
-    /* padding: 50px 50px 50px 50px; */
+  
 }
 
 .outer-circle {
@@ -133,20 +132,23 @@ body {
 
 
 #colorChoice-area {
+   margin: 10px 0 10px 0;
     display: flex;
-  flex-wrap: wrap;
-  
+    flex-wrap: wrap;
+ 
  
 
 
     height:100px;
-    width: 80%;
+    max-width: 180px;
     /* background-color: green; */
     /* background-color: #432616; */
     background-image: url(../images/woodback.jpg);
     border-radius: 10px;
+    
 }
 .color-pallet {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,21 +158,17 @@ body {
     height: 40px;
     width: 40px;
     margin: auto;
-  
+    
     box-shadow: 1px 1px black;
-
     background-color: #432616;
 }
 .what-color {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-  
-   
-  
+
     border-radius: 50%;
     height: 25px;
-    width: 25px;
+    width:auto;
 
     font-size: smaller;
 }
@@ -184,3 +182,9 @@ body {
 #c-blue {
     background: radial-gradient(circle at 50px 50px, white, blue);
 }
+
+@media screen and (max-width: 310px) {
+    #colorChoice-area {
+       max-width: 50%;
+    }
+    }
