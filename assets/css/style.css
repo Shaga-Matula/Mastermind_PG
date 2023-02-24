@@ -27,14 +27,14 @@ body {
 }
 
 #mainArea {
-    display:flex;
+    display: flex;
     flex-direction: column;
-   
+
     align-items: center;
 
-  
+
     color: black;
-    height:auto;
+    height: auto;
     width: 80%;
     background-color: blue;
     margin: auto;
@@ -53,9 +53,9 @@ body {
     font-size: larger;
 
     background-color: grey;
-  
+
     border: 2px solid black;
-  
+
 }
 
 .outer-circle {
@@ -94,21 +94,21 @@ body {
     margin: auto;
 }
 
-.score-square{
+.score-square {
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
+
 
     background-color: #432616;
- 
+
     height: 40px;
     width: 40px;
-    
+
     box-shadow: 1px 1px black;
-    align-content: space-around ; 
-    justify-content: space-between ;
+    align-content: space-around;
+    justify-content: space-between;
     margin-right: 5px;
-   
+
 }
 
 .inner-score-square {
@@ -116,10 +116,10 @@ body {
     background-color: black;
     height: 5px;
     width: 5px;
-  
+
     margin: auto;
     border-radius: 50%;
-    
+
 }
 
 #controlArea {
@@ -132,21 +132,22 @@ body {
 
 
 #colorChoice-area {
-   margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
     display: flex;
     flex-wrap: wrap;
- 
- 
 
 
-    height:100px;
+
+
+    height: 100px;
     max-width: 180px;
     /* background-color: green; */
     /* background-color: #432616; */
     background-image: url(../images/woodback.jpg);
     border-radius: 10px;
-    
+
 }
+
 .color-pallet {
 
     display: flex;
@@ -158,33 +159,58 @@ body {
     height: 40px;
     width: 40px;
     margin: auto;
-    
+
     box-shadow: 1px 1px black;
     background-color: #432616;
 }
+
 .what-color {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     border-radius: 50%;
-    height: 25px;
-    width:auto;
+    height: 30px;
+    width: 30px;
 
+    text-align: center;
     font-size: smaller;
 }
 
 #c-red {
     background: radial-gradient(circle at 50px 50px, white, red);
 }
+
 #c-green {
-    background: radial-gradient(circle at 50px 50px, white,green);
+    background: radial-gradient(circle at 50px 50px, white, green);
 }
+
 #c-blue {
     background: radial-gradient(circle at 50px 50px, white, blue);
 }
 
+#c-yellow {
+    background: radial-gradient(circle at 50px 50px, white, yellow);
+}
+
+#c-black {
+    background: radial-gradient(circle at 50px 50px, white, black);
+}
+
+#c-white {
+    background: radial-gradient(circle at 50px 50px, black, white);
+}
+
+#c-orange {
+    background: radial-gradient(circle at 50px 50px, white, #FF4500);
+}
+
+#c-purple {
+    background: radial-gradient(circle at 50px 50px, grey, #800080);
+}
+
 @media screen and (max-width: 310px) {
     #colorChoice-area {
-       max-width: 50%;
+        max-width: 50%;
     }
-    }
+}
