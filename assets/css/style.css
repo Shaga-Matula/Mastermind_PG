@@ -28,13 +28,14 @@ body {
 
 #mainArea {
     display:flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    position: relative;
+  
   
     color: black;
     height: 800px;
-    width:80%;
+    width: 80%;
     background-color: blue;
     margin: auto;
     background-image: url(../images/woodback.jpg);
@@ -44,15 +45,18 @@ body {
 
 .pinHolder {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
-    color: white;
-    height: 50px;
-    width: 600px;
-    background-color: rgb(red, green, blue, 01);
-    margin: auto;
+    color: black;
+    font-size: larger;
+    /* height: 50px;
+    width: 80%; */
+    /* background-color: rgb(red, green, blue, 01); */
+    background-color: grey;
+    /* margin: auto; */
     border: 2px solid black;
+    /* padding: 50px 50px 50px 50px; */
 }
 
 .outer-circle {
@@ -65,6 +69,7 @@ body {
     height: 40px;
     width: 40px;
     box-shadow: 1px 1px black;
+    margin: 5px;
 }
 
 .inner-circle {
@@ -93,6 +98,7 @@ body {
 .score-square{
     display: grid;
     grid-template-columns: 1fr 1fr;
+   
 
     background-color: #432616;
  
@@ -102,6 +108,8 @@ body {
     box-shadow: 1px 1px black;
     align-content: space-around ; 
     justify-content: space-between ;
+    margin-right: 5px;
+   
 }
 
 .inner-score-square {
@@ -123,24 +131,16 @@ body {
     margin: auto;
 }
 
-#mainArea {
-    display:flex;
-    align-content: space-around ; 
- 
-
-}
 
 #colorChoice-area {
-    
-    
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around ; 
-    flex-direction: column;
+  flex-wrap: wrap;
+  
+ 
 
-    height:700px;
-    width: 100px;
+
+    height:100px;
+    width: 80%;
     /* background-color: green; */
     /* background-color: #432616; */
     background-image: url(../images/woodback.jpg);
