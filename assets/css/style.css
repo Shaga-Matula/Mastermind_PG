@@ -32,6 +32,11 @@ body {
     margin: auto;
     background-color: rgba(0, 0, 0, 0.01);
 }
+#count_up_timer{
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+}
 #main-title{
     font-family: "Tilt Neon", sans-serif;
     padding-top: 50px;
@@ -140,23 +145,6 @@ body {
 
 }
 
-#controlArea {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 10px;
-
-
-    color: black;
-    height: 100px;
-    width: 80%;
-
-    margin: auto;
-
-    background-color: rgba(0, 0, 0, 0.01);
-
-}
-
 
 #colorChoice-area {
     margin: 10px 0 10px 0;
@@ -232,6 +220,25 @@ body {
 #c-purple {
     background: radial-gradient(circle at 50px 50px, grey, #800080);
 }
+
+
+#controlArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+
+    color: black;
+    height: 100px;
+    width: 80%;
+
+    margin: auto;
+
+    background-color: rgba(0, 0, 0, 0.01);
+
+}
+
 
 .button {
     display: inline-block;
