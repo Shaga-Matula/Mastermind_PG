@@ -181,7 +181,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 
-    height: 450px;
+    height: 400px;
     max-width: 60px;
     /* background-image: url(../images/woodback.jpg); */
     border-radius: 10px;
