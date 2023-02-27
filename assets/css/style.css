@@ -13,7 +13,8 @@ body {
     max-width: 1200px;
     margin: auto;
     background-position: left top;
-    background-image: url(../images/woodback.jpg);
+    background-color: aquamarine;
+    /* background-image: url(../images/woodback.jpg); */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -33,7 +34,7 @@ body {
     margin: auto;
     width: auto;
     border: 2px solid black;
-   
+
 }
 
 
@@ -53,10 +54,15 @@ body {
 }
 
 #count_up_timer {
-    font-size: 25px;
+  background-color: blue;
+    display: flex;
+    align-self: center;
+
+
+    font-size: 15px;
     font-weight: bold;
     color: white;
-    padding: 10px;
+    padding: 2px;
 }
 
 #main-title {
@@ -67,7 +73,7 @@ body {
     align-self: center;
 
     font-family: "Tilt Neon", sans-serif;
-    /* padding-top: 10px; */
+    padding: 2px 0 2px 0;
     font-weight: 400;
     font-size: 3em;
     margin: auto;
@@ -179,12 +185,16 @@ body {
 #colorChoice-area {
     margin: 10px 0 10px 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 
     height: 400px;
-    max-width: 60px;
+    width:80px;
     /* background-image: url(../images/woodback.jpg); */
     border-radius: 10px;
+    color: white;
+    text-align: center;
+   
 
 }
 
@@ -214,7 +224,7 @@ body {
     border-radius: 50%;
     height: 30px;
     width: 30px;
-
+    color: black;
     text-align: center;
     font-size: smaller;
 }
@@ -285,17 +295,21 @@ body {
 
 
 @media screen and (min-width: 310px) and (max-width: 767px) {
- 
-    #colorChoice-area {
-        /* max-width: 50%; */
 
-    }
-    #holder{
+    #holder {
         max-height: 100dvh;
     }
+
     @media (orientation: landscape) {
         #holder {
-            max-height:100%
+            max-height: 100%
         }
-      }
-  }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body{
+        background-image: url(../images/woodback.jpg);
+    }
+    
+}
