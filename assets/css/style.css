@@ -13,8 +13,8 @@ body {
     max-width: 1200px;
     margin: auto;
     background-position: left top;
-    background-color: aquamarine;
-    /* background-image: url(../images/woodback.jpg); */
+ 
+    background-image: url(../images/pexels-pixabay-326311.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -309,7 +309,8 @@ body {
 
 @media screen and (min-width: 767px) {
     body{
-        background-image: url(../images/woodback.jpg);
+        background-image: url(../images/pexels-pixabay-326311.jpg);
+       
     }
     
 }
