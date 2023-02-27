@@ -33,6 +33,7 @@ body {
     margin: auto;
     width: auto;
     border: 2px solid black;
+    max-height: 100vh;
 }
 
 
