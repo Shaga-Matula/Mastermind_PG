@@ -37,7 +37,7 @@ body {
 
 
 
-#headArea {
+#headarea {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@ body {
     width: 80%;
 
     padding-right: 20px;
-    margin: auto;
+
     align-items: center;
     background-color: rgba(0, 0, 0, 0.01);
 }
@@ -81,7 +81,8 @@ body {
 
 }
 
-#mainArea {
+#mainarea {
+    position:relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -92,6 +93,7 @@ body {
     color: black;
     height: auto;
     border: 5px solid white;
+   margin-top: 20px;
 
 }
 
@@ -249,7 +251,7 @@ body {
 
 
 
-#controlArea {
+#controlarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -293,16 +295,27 @@ body {
 }
 
 /* Media Query for Tablets Ipads portrait mode and (max-width: 1024px) */
-@media (min-width: 768px)  {
+@media (min-width: 768px) {
     body {
         background-color: blue;
     }
 
     #holder {
         border: 1px solid white;
-        height: 800px;
+        height:650px;
     }
+
+    #controlarea {
+        margin: 20px 0 20px 0;
+    }
+
+
+    #main-title {
+      
+    }
+
 }
+
 /* 
 Media Query for Laptops and Desktops
 @media (min-width: 1025px) and (max-width: 1280px) {
