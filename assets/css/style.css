@@ -329,11 +329,14 @@ body {
     }
 }
 
-/*
-Media Query for Large screens 
+/* Media Query for Largest screens  */
 @media (min-width: 1281px) {
     body {
-        background-color: white;
+        background-color: grey;
+    }
+       #holder {
+        
+        height: 800px;
     }
 
-}/*
+}
