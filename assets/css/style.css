@@ -73,7 +73,7 @@ body {
     font-family: "Tilt Neon", sans-serif;
     padding: 2px 0 2px 0;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2em;
     margin: auto;
     text-align: center;
     color: darkkhaki;
@@ -93,7 +93,7 @@ body {
     color: black;
     height: auto;
     border: 5px solid white;
-   margin-top: 20px;
+    margin-top: 10px;
 
 }
 
@@ -254,7 +254,7 @@ body {
 #controlarea {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 10px;
 
 
