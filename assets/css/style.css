@@ -13,8 +13,8 @@ body {
     max-width: 1200px;
     margin: auto;
     background-position: left top;
- 
-    background-image: url(../images/pexels-pixabay-326311.jpg);
+
+    /* background-image: url(../images/pexels-pixabay-326311.jpg); */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -23,8 +23,6 @@ body {
 }
 
 #holder {
-
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +52,7 @@ body {
 }
 
 #count_up_timer {
-  background-color: blue;
+    background-color: blue;
     display: flex;
     align-self: center;
 
@@ -94,16 +92,12 @@ body {
     color: black;
     height: auto;
     border: 5px solid white;
-    background-color: ;
-    /* margin: auto; */
-    /* background-color: rgba(0, 0, 0, 0.01); */
-
 
 }
 
 
 
-.pinHolder {
+.pinholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,7 +129,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    position: relative;
+
     border-radius: 50%;
     height: 25px;
     width: 25px;
@@ -145,7 +139,6 @@ body {
 }
 
 .inner-inner-circle {
-    position: relative;
     background: black;
     border-radius: 50%;
     height: 15px;
@@ -160,8 +153,8 @@ body {
 
     background-color: #432616;
 
-    height: 40px;
-    width: 40px;
+    height: 2em;
+    width: 2em;
 
     box-shadow: 1px 1px black;
     align-content: space-around;
@@ -183,18 +176,19 @@ body {
 
 
 #colorChoice-area {
-    margin: 10px 0 10px 0;
+
     display: flex;
     flex-direction: column;
     align-content: center;
 
+    margin: 10px 0 10px 0;
     height: 400px;
-    width:80px;
+    width: 80px;
     /* background-image: url(../images/woodback.jpg); */
     border-radius: 10px;
     color: white;
     text-align: center;
-   
+
 
 }
 
@@ -204,7 +198,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    position: relative;
+
     border-radius: 50%;
     height: 40px;
     width: 40px;
@@ -253,13 +247,6 @@ body {
     background: radial-gradient(circle at 50px 50px, black, white);
 }
 
-/* #c-orange {
-    background: radial-gradient(circle at 50px 50px, white, #FF4500);
-}
-
-#c-purple {
-    background: radial-gradient(circle at 50px 50px, grey, #800080);
-} */
 
 
 #controlArea {
@@ -294,23 +281,41 @@ body {
 }
 
 
-@media screen and (min-width: 310px) and (max-width: 767px) {
+/* Media Query for Iphone Tablets, Ipads */
+@media (min-width: 310px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+    }
 
     #holder {
         max-height: 100dvh;
     }
+}
 
-    @media (orientation: landscape) {
-        #holder {
-            max-height: 100%
-        }
+/* Media Query for Tablets Ipads portrait mode and (max-width: 1024px) */
+@media (min-width: 768px)  {
+    body {
+        background-color: blue;
+    }
+
+    #holder {
+        border: 1px solid white;
+        height: 800px;
+    }
+}
+/* 
+Media Query for Laptops and Desktops
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        background-color: green;
+
     }
 }
 
-@media screen and (min-width: 767px) {
-    body{
-        background-image: url(../images/pexels-pixabay-326311.jpg);
-       
+Media Query for Large screens 
+@media (min-width: 1281px) {
+    body {
+        background-color: white;
     }
-    
-}
+
+}/*
