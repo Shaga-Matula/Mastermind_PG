@@ -286,11 +286,13 @@ body {
 /* stop rotate on small screen */
 @media only screen and (min-device-width: 0px) and (max-device-width: 767px) and (orientation: landscape) {
     body {
-        background: blue !important;
+        background: orange !important;
         display:block;
+        max-width: 300px;
     }
 
     html {
+        
         display:flex;
         flex-wrap:wrap;
         align-items: center;
