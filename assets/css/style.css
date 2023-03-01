@@ -298,7 +298,7 @@ body {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: darkmagenta;
+        background-color: red;
     }
     #holder {
         max-height:100%;
