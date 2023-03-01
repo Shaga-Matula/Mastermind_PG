@@ -284,7 +284,7 @@ body {
 
 
 /* stop rotate on small screen */
-@media only screen and (min-device-width: 0px) and (max-device-width: 767px) and (orientation: landscape) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 719px) and (orientation: landscape) {
     body {
         background: yellow !important;
         display:block;
@@ -293,11 +293,7 @@ body {
    
     html {
         background-color: chartreuse;
-        /* display:flex;
-        flex-wrap:wrap;
-        align-items: center;
-        justify-content: center;
-        margin:auto; */
+  
         transform: rotate(-90deg);
         transform-origin: left top;
         width:max-content;
@@ -306,12 +302,11 @@ body {
         position: absolute;
         top: 100%;
         left: 0;
-        
-        /* background-color: red; */
+    
     }
     #holder {
         display:block;
-        max-width: 90vw;
+        max-width: 90vw; 
         width: fit-content;
     
         background-color: aqua;
@@ -327,7 +322,7 @@ body {
 }
 
 /* Media Query for Iphone Tablets, Ipads */
-@media (min-width: 310px) and (max-width: 767px) and (orientation: portrait){
+@media (min-width: 310px) and (max-width: 719px) and (orientation: portrait){
     body {
         background-color: yellow;
     }
@@ -345,7 +340,7 @@ body {
 }
 
 /* Media Query for Tablets Ipads and (max-width: 1024px) */
-@media (min-width: 768px) {
+@media (min-width: 719px) {
     body {
         background-color: blue;
     }
@@ -393,16 +388,3 @@ body {
 
 }
 
-
-/* @media screen and (min-width: 0px) and (max-width: 1204px) and (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: darkmagenta;
-    }
-  } */
