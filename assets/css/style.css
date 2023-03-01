@@ -290,7 +290,7 @@ body {
         display:block;
         max-width: 300px;
     }
-
+   
     html {
         background-color: chartreuse;
         /* display:flex;
@@ -310,12 +310,18 @@ body {
         /* background-color: red; */
     }
     #holder {
-        display:flex;
-        /* max-height: height 90%; */
+        display:block;
         max-width: 90vw;
         width: fit-content;
-        align-self: center;
+    
         background-color: aqua;
+    }
+    #mainarea {
+        max-width:54vw;
+
+    }
+    #controlarea {
+        max-width:54vw;
     }
 
 }
@@ -329,6 +335,13 @@ body {
     #holder {
         max-height: 100vh;
     }
+    #mainarea {
+        max-width:95vw;
+    }
+    #controlarea {
+        max-width:90vw;
+    }
+
 }
 
 /* Media Query for Tablets Ipads and (max-width: 1024px) */
