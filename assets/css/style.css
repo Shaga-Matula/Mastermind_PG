@@ -286,12 +286,16 @@ body {
 /* stop rotate on small screen */
 @media only screen and (min-device-width: 0px) and (max-device-width: 767px) and (orientation: landscape) {
     body {
-        background: red !important
+        background: red !important;
+        display:block;
     }
 
     html {
         display:flex;
-        align-content: center;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+        margin:auto;
         transform: rotate(-90deg);
         transform-origin: left top;
         width: fit-content;
@@ -303,9 +307,11 @@ body {
         /* background-color: red; */
     }
     #holder {
+        display:flex;
         max-height: height 90vw;
         max-width: 90vh;
         width: fit-content;
+        align-self: center;
     }
 
 }
