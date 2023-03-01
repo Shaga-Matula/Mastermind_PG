@@ -300,6 +300,9 @@ body {
         left: 0;
         background-color: darkmagenta;
     }
+    #holder {
+        max-height: 100%;
+    }
 
 }
 
