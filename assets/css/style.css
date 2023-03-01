@@ -292,8 +292,8 @@ body {
     html {
         transform: rotate(-90deg);
         transform-origin: left top;
-        width: 80vh;
-        height: fit-content;
+        width: 90%;
+        height: 90%;
         overflow-x: hidden;
         position: absolute;
         top: 100%;
@@ -301,19 +301,20 @@ body {
         background-color: darkmagenta;
     }
     #holder {
-        max-height: 100%;
+        max-height:100%;
+        max-width: 100%;
     }
 
 }
 
 /* Media Query for Iphone Tablets, Ipads */
-@media (min-width: 310px) and (max-width: 767px) {
+@media (min-width: 310px) and (max-width: 767px) and (orientation: portrait){
     body {
         background-color: yellow;
     }
 
     #holder {
-        max-height: 100dvh;
+        max-height: 100vh;
     }
 }
 
@@ -365,11 +366,6 @@ body {
     }
 
 }
-
-
-
-
-
 
 
 /* @media screen and (min-width: 0px) and (max-width: 1204px) and (orientation: landscape) {
