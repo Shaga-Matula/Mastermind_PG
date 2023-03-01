@@ -282,19 +282,26 @@ body {
 
 }
 
+
 /* stop rotate on small screen */
-@media screen and (min-width: 0px) and (max-width: 1204px) and (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: darkmagenta;
+@media only screen and (min-device-width: 0px) and (max-device-width: 479px) and (orientation: landscape) {
+    body {
+        background: pink !important
     }
-  }
+
+    html {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 80vh;
+        height: fit-content;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: darkmagenta;
+    }
+
+}
 
 /* Media Query for Iphone Tablets, Ipads */
 @media (min-width: 310px) and (max-width: 767px) {
@@ -355,22 +362,9 @@ body {
     }
 
 }
-/* stop rotate on small screen */
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 479px) and (orientation: landscape) {
-    body { background: pink !important }
-    html {
-        transform: rotate(-90deg);
-        transform-origin: left top;
-        width: 100vh;
-        overflow-x: hidden;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: darkmagenta;
-      }
-    
-}
+
+
 
 
 
