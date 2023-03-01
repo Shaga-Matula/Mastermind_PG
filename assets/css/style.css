@@ -286,18 +286,18 @@ body {
 /* stop rotate on small screen */
 @media only screen and (min-device-width: 0px) and (max-device-width: 767px) and (orientation: landscape) {
     body {
-        background: orange !important;
+        background: yellow !important;
         display:block;
         max-width: 300px;
     }
 
     html {
-        
-        display:flex;
+        background-color: chartreuse;
+        /* display:flex;
         flex-wrap:wrap;
         align-items: center;
         justify-content: center;
-        margin:auto;
+        margin:auto; */
         transform: rotate(-90deg);
         transform-origin: left top;
         width:max-content;
@@ -311,10 +311,11 @@ body {
     }
     #holder {
         display:flex;
-        max-height: height 90vw;
-        max-width: 90vh;
+        /* max-height: height 90%; */
+        max-width: 90vw;
         width: fit-content;
         align-self: center;
+        background-color: aqua;
     }
 
 }
