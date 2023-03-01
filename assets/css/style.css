@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+   
 
     margin: auto;
     width: auto;
@@ -290,10 +290,12 @@ body {
     }
 
     html {
+        display:flex;
+        align-content: center;
         transform: rotate(-90deg);
         transform-origin: left top;
-        width: 90%;
-        height: 90%;
+        width: fit-content;
+        height:fit-content;
         overflow-x: hidden;
         position: absolute;
         top: 100%;
@@ -301,8 +303,9 @@ body {
         /* background-color: red; */
     }
     #holder {
-        max-height:100%;
-        max-width: 100%;
+        max-height: height 90vw;
+        max-width: 90vh;
+        width: fit-content;
     }
 
 }
