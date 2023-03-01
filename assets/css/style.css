@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
+
 
     margin: auto;
     width: auto;
@@ -88,7 +88,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    width:fit-content;
+    width: fit-content;
 
     color: black;
     height: auto;
@@ -287,42 +287,49 @@ body {
 @media only screen and (min-device-width: 0px) and (max-device-width: 719px) and (orientation: landscape) {
     body {
         background: yellow !important;
-        display:block;
+        display: block;
         max-width: 300px;
     }
-   
+
     html {
         background-color: chartreuse;
-  
+
         transform: rotate(-90deg);
         transform-origin: left top;
-        width:max-content;
-        height:fit-content;
+        width: max-content;
+        height: fit-content;
         overflow-x: hidden;
         position: absolute;
         top: 100%;
         left: 0;
-    
-    }
-    #holder {
-        display:block;
-        max-width: 90vw; 
-        width: fit-content;
-    
-        background-color: aqua;
-    }
-    #mainarea {
-        max-width:54vw;
 
     }
+
+    #pinholders-all {
+        max-width: 41vw;
+    }
+
+    #holder {
+        display: block;
+        max-width: 90vw;
+        width: fit-content;
+
+        background-color: aqua;
+    }
+
+    #mainarea {
+        max-width: 54vw;
+
+    }
+
     #controlarea {
-        max-width:54vw;
+        max-width: 54vw;
     }
 
 }
 
 /* Media Query for Iphone Tablets, Ipads */
-@media (min-width: 310px) and (max-width: 719px) and (orientation: portrait){
+@media (min-width: 310px) and (max-width: 719px) and (orientation: portrait) {
     body {
         background-color: yellow;
     }
@@ -330,11 +337,13 @@ body {
     #holder {
         max-height: 100vh;
     }
+
     #mainarea {
-        max-width:95vw;
+        max-width: 95vw;
     }
+
     #controlarea {
-        max-width:90vw;
+        max-width: 90vw;
     }
 
 }
@@ -387,4 +396,3 @@ body {
     }
 
 }
-
