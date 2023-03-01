@@ -286,7 +286,7 @@ body {
 /* stop rotate on small screen */
 @media only screen and (min-device-width: 0px) and (max-device-width: 767px) and (orientation: landscape) {
     body {
-        background: blueviolet !important;
+        background: blue !important;
         display:block;
     }
 
@@ -298,12 +298,13 @@ body {
         margin:auto;
         transform: rotate(-90deg);
         transform-origin: left top;
-        width: fit-content;
+        width:max-content;
         height:fit-content;
         overflow-x: hidden;
         position: absolute;
         top: 100%;
         left: 0;
+        
         /* background-color: red; */
     }
     #holder {
