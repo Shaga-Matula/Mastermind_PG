@@ -88,7 +88,7 @@ body {
     justify-content: center;
     align-items: center;
 
-
+    width:fit-content;
 
     color: black;
     height: auto;
@@ -286,7 +286,7 @@ body {
 /* stop rotate on small screen */
 @media only screen and (min-device-width: 0px) and (max-device-width: 767px) and (orientation: landscape) {
     body {
-        background: red !important;
+        background: blueviolet !important;
         display:block;
     }
 
