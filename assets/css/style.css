@@ -292,6 +292,7 @@ body {
       position: absolute;
       top: 100%;
       left: 0;
+      background-color: darkmagenta;
     }
   }
 
@@ -354,3 +355,35 @@ body {
     }
 
 }
+/* stop rotate on small screen */
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 479px) and (orientation: landscape) {
+    body { background: pink !important }
+    html {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: darkmagenta;
+      }
+    
+}
+
+
+
+
+/* @media screen and (min-width: 0px) and (max-width: 1204px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: darkmagenta;
+    }
+  } */
