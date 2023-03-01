@@ -282,6 +282,18 @@ body {
 
 }
 
+/* stop rotate on small screen */
+@media screen and (min-width: 0px) and (max-width: 1204px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
 
 /* Media Query for Iphone Tablets, Ipads */
 @media (min-width: 310px) and (max-width: 767px) {
@@ -317,14 +329,15 @@ body {
 }
 
 
-/* Media Query for Laptops and Desktops */ 
+/* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
     body {
         background-color: green;
 
     }
+
     #holder {
-        
+
         height: 700px;
     }
 }
@@ -334,8 +347,9 @@ body {
     body {
         background-color: grey;
     }
-       #holder {
-        
+
+    #holder {
+
         height: 800px;
     }
 
