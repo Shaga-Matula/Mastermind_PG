@@ -291,7 +291,7 @@ body {
 /* stop rotate on small screen */
 @media only screen and (min-device-width: 300px) and (max-device-width: 719px) and (orientation: landscape) {
 
-   #holder {
+   #holder, #main-title, #controlarea, #colorChoice-area, #headarea{
         display:none;
     }
 
