@@ -281,52 +281,91 @@ body {
     white-space: nowrap;
 
 }
+/* hide rotation message and screen */
+.no-rotate-image{
+    display:none;
+}
 
-
+.no-rotate-message{
+display:none;
+}
 /* stop rotate on small screen */
-@media only screen and (min-device-width: 0px) and (max-device-width: 719px) and (orientation: landscape) {
-    body {
-        background: yellow !important;
-        display: block;
-        max-width: 300px;
+@media only screen and (min-device-width: 300px) and (max-device-width: 719px) and (orientation: landscape) {
+
+   #holder {
+        display:none;
     }
 
-    html {
-        background-color: chartreuse;
+    html, body {
+        background: black;
+        height: 100%;
+        width: 100%;
+      }
+      
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .no-rotate-image {
+        height: 50px;
+        width: 100px;
+        border: 3px solid white;
+        border-radius: 10px;
+        animation: rotate 1.5s ease-in-out infinite alternate;
+      
+      }
+      
+      .no-rotate-message {
+        color: white;
+        font-size: 1em;
+        margin-top: 40px;
+        
+      }
+      
+      @keyframes rotate {
+        0% {
+              transform: rotate(0deg)
+          }
+          50% {
+              transform: rotate(-90deg)
+          }
+          100% {
+              transform: rotate(-90deg)
+          }
+      }
+      
+      @media only screen and (max-device-width: 812px) and (orientation: landscape) {
+        .no-rotate-image, .no-rotate-message {
+          display: block;
+        }
+      }
 
-        transform: rotate(-90deg);
-        transform-origin: left top;
-        width: max-content;
-        height: fit-content;
-        overflow-x: hidden;
-        position: absolute;
-        top: 100%;
-        left: 0;
 
-    }
 
-    #pinholders-all {
-        max-width: 41vw;
-    }
 
-    #holder {
-        display: block;
-        max-width: 90vw;
-        width: fit-content;
 
-        background-color: aqua;
-    }
 
-    #mainarea {
-        max-width: 54vw;
 
-    }
 
-    #controlarea {
-        max-width: 54vw;
-    }
+
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Query for Iphone Tablets, Ipads */
 @media (min-width: 310px) and (max-width: 719px) and (orientation: portrait) {
