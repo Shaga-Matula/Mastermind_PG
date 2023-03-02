@@ -13,8 +13,8 @@ body {
     margin: auto;
     background-position: left top;
 
-/* background cover for different browsers */
-    background-image: url(../images/pexels-pixabay-326311.jpg);
+    /* background cover for different browsers */
+    /* background-image: url(../images/pexels-pixabay-326311.jpg); */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -29,6 +29,7 @@ body {
     flex-direction: column;
     margin: auto;
     width: auto;
+    background-color: cadetblue;
     /* border: 2px solid black; */
 }
 
@@ -69,22 +70,22 @@ body {
 
 #mainarea {
     position: relative;
-    display: flex;
+    display: flex;ain
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
-    width: fit-content;
+    width: 600px;
     color: black;
-    height: 100%;
+    height: auto;
     /* border: 1px solid white; */
     margin-top: 10px;
 }
 
 #pinholders-all {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
-    height:auto;
+    width: 400px;
+    height: auto;
 }
 
 
@@ -95,7 +96,7 @@ body {
     color: white;
     font-size: larger;
     padding-left: 3px;
-    background-image: url(../images/woodback.jpg);
+    /* background-image: url(../images/woodback.jpg); */
     /* background-color: grey; */
     /* border: 2px solid black; */
 }
@@ -190,7 +191,7 @@ body {
     color: black;
     text-align: center;
     font-size: smaller;
-} 
+}
 
 #c-red {
     background: radial-gradient(circle at 50px 50px, white, red);
@@ -217,19 +218,26 @@ body {
 }
 
 /* first line of game for testing */
-#line-1 > div > .circle-1, #line-1 > div > .circle-1 .inner-inner-circle {
+#line-1>div>.circle-1,
+#line-1>div>.circle-1 .inner-inner-circle {
     background: radial-gradient(circle at 50px 50px, black, red);
 
 }
-#line-1 > div > .circle-2, #line-1 > div > .circle-2 .inner-inner-circle {
+
+#line-1>div>.circle-2,
+#line-1>div>.circle-2 .inner-inner-circle {
     background: radial-gradient(circle at 50px 50px, black, blue);
 
 }
-#line-1 > div > .circle-3, #line-1 > div > .circle-3 .inner-inner-circle {
+
+#line-1>div>.circle-3,
+#line-1>div>.circle-3 .inner-inner-circle {
     background: radial-gradient(circle at 50px 50px, black, green);
 
 }
-#line-1 > div > .circle-4, #line-1 > div > .circle-4 .inner-inner-circle {
+
+#line-1>div>.circle-4,
+#line-1>div>.circle-4 .inner-inner-circle {
     background: radial-gradient(circle at 50px 50px, black, black);
 
 }
@@ -258,79 +266,92 @@ body {
     max-width: fit-content;
     white-space: nowrap;
 }
+
 /* Change cursor on hover buttons and color choice */
-.what-color, .button{
+.what-color,
+.button {
     cursor: pointer;
 }
+
 /* Hide rotation message and screen */
-.no-rotate-image, .no-rotate-message {
-    display:none;
+.no-rotate-image,
+.no-rotate-message {
+    display: none;
 }
 
 /* stop rotate on small screen */
 @media only screen and (min-device-width: 300px) and (max-device-width: 719px) and (orientation: landscape) {
 
-   #holder, #main-title, #controlarea, #colorChoice-area, #headarea{
-        display:none;
+    #holder,
+    #main-title,
+    #controlarea,
+    #colorChoice-area,
+    #headarea {
+        display: none;
     }
 
-    html, body {
+    html,
+    body {
         background: black;
         height: 100%;
         width: 100%;
-      }
-      
-      body {
+    }
+
+    body {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-      }
-      
-      .no-rotate-image {
+    }
+
+    .no-rotate-image {
         height: 50px;
         width: 100px;
         border: 3px solid white;
         border-radius: 10px;
         animation: rotate 1.5s ease-in-out infinite alternate;
-      
-      }
-      .no-rotate-message {
+
+    }
+
+    .no-rotate-message {
         color: white;
         font-size: 1em;
         margin-top: 40px;
-      }
-      
-      @keyframes rotate {
+    }
+
+    @keyframes rotate {
         0% {
-              transform: rotate(0deg)
-          }
-          50% {
-              transform: rotate(-90deg)
-          }
-          100% {
-              transform: rotate(-90deg)
-          }
-      }
-      
-      @media only screen and (max-device-width: 812px) and (orientation: landscape) {
-        .no-rotate-image, .no-rotate-message {
-          display: block;
+            transform: rotate(0deg)
         }
-      }
+
+        50% {
+            transform: rotate(-90deg)
+        }
+
+        100% {
+            transform: rotate(-90deg)
+        }
+    }
+
+    @media only screen and (max-device-width: 812px) and (orientation: landscape) {
+
+        .no-rotate-image,
+        .no-rotate-message {
+            display: block;
+        }
+    }
 }
 
 /* Media Query for Iphone Tablets, Ipads */
 @media (min-width: 310px) and (max-width: 719px) and (orientation: portrait) {
-    body {
-        background-color: yellow;
-    }
     #holder {
         max-height: 100vh;
     }
+
     #mainarea {
         max-width: 95vw;
     }
+
     #controlarea {
         max-width: 90vw;
     }
@@ -364,6 +385,7 @@ body {
     body {
         background-color: green;
     }
+
     #holder {
         height: 700px;
     }
@@ -374,6 +396,7 @@ body {
     body {
         background-color: grey;
     }
+
     #holder {
         height: 800px;
     }
