@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     margin: auto;
     width: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #headarea {
@@ -76,7 +76,7 @@ body {
     width: fit-content;
     color: black;
     height: auto;
-    border: 5px solid white;
+    border: 1px solid white;
     margin-top: 10px;
 }
 
@@ -84,11 +84,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black;
+    color: white;
     font-size: larger;
     padding-left: 3px;
-    background-color: grey;
-    border: 2px solid black;
+    background-image: url(../images/woodback.jpg);
+    /* background-color: grey; */
+    /* border: 2px solid black; */
 }
 
 .outer-circle {
@@ -149,10 +150,9 @@ body {
     flex-direction: column;
     align-content: center;
     margin: 10px 0 10px 0;
-    height: 400px;
+    height: 100%;
     width: 80px;
-    /* background-image: url(../images/woodback.jpg); */
-    border-radius: 10px;
+    background-image: url(../images/woodback.jpg);
     color: white;
     text-align: center;
 
@@ -216,7 +216,7 @@ body {
     margin-bottom: 10px;
     color: black;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.01);
+    /* background-color: rgba(0, 0, 0, 0.01); */
 }
 
 
@@ -314,7 +314,7 @@ body {
     }
 
     #holder {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         height: 650px;
     }
 
