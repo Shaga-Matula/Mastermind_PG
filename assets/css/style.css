@@ -32,6 +32,7 @@ body {
     margin: auto;
     width: auto;
     border: 2px solid black;
+    
 
 }
 
@@ -106,6 +107,7 @@ body {
 
     color: black;
     font-size: larger;
+    padding-left: 3px;
 
     background-color: grey;
 
@@ -282,13 +284,10 @@ body {
 
 }
 /* hide rotation message and screen */
-.no-rotate-image{
+.no-rotate-image, .no-rotate-message {
     display:none;
 }
 
-.no-rotate-message{
-display:none;
-}
 /* stop rotate on small screen */
 @media only screen and (min-device-width: 300px) and (max-device-width: 719px) and (orientation: landscape) {
 
