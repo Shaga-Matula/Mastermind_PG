@@ -22,4 +22,17 @@ document.addEventListener('DOMContentLoaded', function () {
     let submit_answer= document.getElementById("submit-answer");
     submit_answer.addEventListener("click", function () {alert("You Clicked Submit Answer");
     });
+
+    let c_red= document.getElementById("c-red");
+    c_red.addEventListener("click", function () {alert("You Clicked Red");
+    });
+
+    let c_blue= document.getElementById("c-blue");
+    c_blue.addEventListener("click", function () {alert("You Clicked blue");
+    });
+
+    let c_green= document.getElementById("c-green");
+    c_green.addEventListener("click", function () {alert("You Clicked green");
+    });
+
 });

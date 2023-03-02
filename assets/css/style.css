@@ -231,8 +231,11 @@ body {
     max-width: fit-content;
     white-space: nowrap;
 }
-
-/* hide rotation message and screen */
+/* Change cursor on hover buttons and color choice */
+.what-color, .button{
+    cursor: pointer;
+}
+/* Hide rotation message and screen */
 .no-rotate-image, .no-rotate-message {
     display:none;
 }
