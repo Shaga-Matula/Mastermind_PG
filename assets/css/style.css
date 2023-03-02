@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     border: none;
-
 }
 
 /* set for larger desktops */
@@ -14,6 +13,7 @@ body {
     margin: auto;
     background-position: left top;
 
+/* background cover for different browsers */
     background-image: url(../images/pexels-pixabay-326311.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -27,16 +27,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
     margin: auto;
     width: auto;
     border: 2px solid black;
-    
-
 }
-
-
 
 #headarea {
     display: flex;
@@ -45,9 +39,7 @@ body {
     align-self: center;
     height: 50px;
     width: 80%;
-
     padding-right: 20px;
-
     align-items: center;
     background-color: rgba(0, 0, 0, 0.01);
 }
@@ -56,8 +48,6 @@ body {
     background-color: blue;
     display: flex;
     align-self: center;
-
-
     font-size: 15px;
     font-weight: bold;
     color: white;
@@ -66,20 +56,15 @@ body {
 
 #main-title {
     display: flex;
-
     justify-content: center;
     align-items: center;
     align-self: center;
-
     font-family: "Tilt Neon", sans-serif;
     padding: 2px 0 2px 0;
     font-weight: 400;
     font-size: 2em;
-    /* margin: auto; */
     text-align: center;
     color: darkkhaki;
-
-
 }
 
 #mainarea {
@@ -88,38 +73,28 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     width: fit-content;
-
     color: black;
     height: auto;
     border: 5px solid white;
     margin-top: 10px;
-
 }
-
-
 
 .pinholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     color: black;
     font-size: larger;
     padding-left: 3px;
-
     background-color: grey;
-
     border: 2px solid black;
-
 }
 
 .outer-circle {
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: #432616;
     border-radius: 50%;
     height: 40px;
@@ -132,8 +107,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
     border-radius: 50%;
     height: 25px;
     width: 25px;
@@ -153,38 +126,28 @@ body {
 .score-square {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-
     background-color: #432616;
-
     height: 2em;
     width: 2em;
-
     box-shadow: 1px 1px black;
     align-content: space-around;
     justify-content: space-between;
     margin-right: 5px;
-
 }
 
 .inner-score-square {
-
     background-color: black;
     height: 5px;
     width: 5px;
-
     margin: auto;
     border-radius: 50%;
-
 }
 
 
 #colorChoice-area {
-
     display: flex;
     flex-direction: column;
     align-content: center;
-
     margin: 10px 0 10px 0;
     height: 400px;
     width: 80px;
@@ -197,27 +160,21 @@ body {
 }
 
 .color-pallet {
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-
     border-radius: 50%;
     height: 40px;
     width: 40px;
     margin: auto;
-
-
-
     box-shadow: 1px 1px black;
     background-color: #432616;
 }
+
 .what-color {
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
     height: 30px;
     width: 30px;
@@ -257,16 +214,9 @@ body {
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 10px;
-
-
     color: black;
-
-
     padding: 5px;
-
-
     background-color: rgba(0, 0, 0, 0.01);
-
 }
 
 
@@ -280,8 +230,8 @@ body {
     border-radius: 15px;
     max-width: fit-content;
     white-space: nowrap;
-
 }
+
 /* hide rotation message and screen */
 .no-rotate-image, .no-rotate-message {
     display:none;
@@ -315,12 +265,10 @@ body {
         animation: rotate 1.5s ease-in-out infinite alternate;
       
       }
-      
       .no-rotate-message {
         color: white;
         font-size: 1em;
         margin-top: 40px;
-        
       }
       
       @keyframes rotate {
@@ -340,45 +288,19 @@ body {
           display: block;
         }
       }
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Media Query for Iphone Tablets, Ipads */
 @media (min-width: 310px) and (max-width: 719px) and (orientation: portrait) {
     body {
         background-color: yellow;
     }
-
     #holder {
         max-height: 100vh;
     }
-
     #mainarea {
         max-width: 95vw;
     }
-
     #controlarea {
         max-width: 90vw;
     }
@@ -401,7 +323,6 @@ body {
     }
 
     #main-title {
-
         font-size: 3em;
     }
 
@@ -412,11 +333,8 @@ body {
 @media (min-width: 1025px) and (max-width: 1280px) {
     body {
         background-color: green;
-
     }
-
     #holder {
-
         height: 700px;
     }
 }
@@ -426,10 +344,7 @@ body {
     body {
         background-color: grey;
     }
-
     #holder {
-
         height: 800px;
     }
-
 }
