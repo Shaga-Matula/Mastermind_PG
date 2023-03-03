@@ -50,15 +50,46 @@ document.addEventListener('DOMContentLoaded', function () {
         alert("You Clicked Yellow");
     });
 
+    // let c_black = document.getElementById("c-black");
+    // c_black.addEventListener("click", function () {
+    //     const val = document.getElementById('c-black').getAttribute('value');
+    //     alert("You Clicked " + val);
+    //     myArray.push(val);
+    //     console_print();
+    // });
+
+
+    const myArray = new Array(1);
     let c_black = document.getElementById("c-black");
     c_black.addEventListener("click", function () {
         const val = document.getElementById('c-black').getAttribute('value');
         alert("You Clicked " + val);
-        myArray.push(val);
-        console_print();
+        
+        const x = 4;
+        console.log(myArray.length);
+        console.log(x);
+        const y = myArray.length;
+        console.log(y);
+      
+        if (y < x ) {
+            myArray.push(val);
+            console_print(x);
+        } else {
+            alert("Array Full " + val);
+            console_print();
+        }
     });
+
+
+
+    function console_print() {
+        console.log(myArray);
+               
+    };
+
+
     
-    const myArray = new Array(1);
+   
     let c_white = document.getElementById("c-white");
     c_white.addEventListener("click", function () {
         const val = document.getElementById('c-white').getAttribute('value');
@@ -84,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function console_print() {
         console.log(myArray);
                
-    }
+    };
 
 
 
