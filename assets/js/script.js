@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let c_green = document.getElementById("c-green");
     c_green.addEventListener("click", function () {
         alert("You Clicked Green");
+        change_color();
+        // alert("You ran Change_color");
     });
 
     let c_yellow = document.getElementById("c-yellow");
@@ -59,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // });
 
 
-    const myArray = new Array(1);
+    const myArray = new Array();
     let c_black = document.getElementById("c-black");
     c_black.addEventListener("click", function () {
         const val = document.getElementById('c-black').getAttribute('value');
@@ -70,10 +72,11 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(x);
         const y = myArray.length;
         console.log(y);
+        
       
         if (y < x ) {
             myArray.push(val);
-            console_print(x);
+            change_color();
         } else {
             alert("Array Full " + val);
             console_print();
@@ -103,7 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
       
         if (y < x ) {
             myArray.push(val);
-            console_print(x);
+            // console_print(x);
+            change_color();
         } else {
             alert("Array Full " + val);
             console_print();
@@ -117,6 +121,30 @@ document.addEventListener('DOMContentLoaded', function () {
                
     };
 
+
+ 
+     function change_color() {
+
+        item = myArray[0];
+        // console.log(item);
+        var oDiv = document.querySelector('#line-1').querySelector('.outer-circle').querySelector('.circle-1').style;
+        var iDiv = document.querySelector('#line-1').querySelector('.outer-circle').querySelector('.circle-1').querySelector('.inner-inner-circle').style;
+        oDiv.backgroundColor = item;
+        iDiv.backgroundColor = item;
+        // console.log(oDiv);
+        // console.log("Done!");
+        }
+
+        // .querySelector('#mydiv')
+        // .querySelector('.myclass')
+        // style).backgroundColor;
+
+    //  document.getElementById("line-1 > .outer-circle").style;
+    
+ 
+    
+    // $("#content > #price").text();
+    // 
 
 
 });

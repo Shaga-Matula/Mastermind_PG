@@ -218,9 +218,10 @@ body {
 }
 
 /* first line of game for testing */
-#line-1>div>.circle-1,
-#line-1>div>.circle-1 .inner-inner-circle {
-    background: radial-gradient(circle at 50px 50px, black, red);
+/* #line-1>div>.circle-1, */
+#dave {
+
+    background-color: red;
 
 }
 
@@ -241,8 +242,6 @@ body {
     background: radial-gradient(circle at 50px 50px, black, black);
 
 }
-
-
 
 #controlarea {
     display: flex;
@@ -401,3 +400,9 @@ body {
         height: 800px;
     }
 }
+
+/* 
+
+#dave {
+    background-color: chartreuse;
+} */
