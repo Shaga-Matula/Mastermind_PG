@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var seconds = totalSeconds - (hour * 3600 + minute * 60);
         document.getElementById("count_up_timer").innerHTML = hour + ":" + minute + ":" + seconds;
     }
-
+    let lNumb = 1;
     /* /////////////// Listen for Click ///////////// */
     // New Game Button
     let new_game = document.getElementById("new-game");
@@ -32,8 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let submit_answer = document.getElementById("submit-answer");
     submit_answer.addEventListener("click", function () {
         alert("You Clicked Submit Answer");
+        lNumb = lNumb + 1;
     });
-
+    
     //  //////////// Color Choices ///////////////////
 
     //  Red Choice
@@ -161,12 +162,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Change color function 
-
+    
     function change_color() {
 
         for (let i = 0; i < myArray.length; i++) {
             let item = myArray[i];
-            let lNumb = 1;
+           
             let circle_num = 1 + (i);
 
             // console.log("Array is " + myArray[i]);

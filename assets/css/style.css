@@ -70,7 +70,7 @@ body {
 
 #mainarea {
     position: relative;
-    display: flex;ain
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -369,6 +369,7 @@ body {
     }
 
     #controlarea {
+        width: 50%;
         margin: 20px 0 20px 0;
     }
 
