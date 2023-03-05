@@ -51,9 +51,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // Green Choice
     let c_green = document.getElementById("c-green");
     c_green.addEventListener("click", function () {
-        alert("You Clicked Green");
-        change_color();
-        // alert("You ran Change_color");
+        const val = document.getElementById('c-green').getAttribute('value');
+
+        alert("You Clicked " + val);
+
+        const x = 4;
+        // console.log(myArray.length);
+        // console.log(x);
+        const y = myArray.length;
+        // console.log(y);
+
+
+        if (y < x) {
+            myArray.push(val);
+            change_color();
+        } else {
+            alert("Array Full " + val);
+            console_print();
+        }
+        console_print()
     });
 
     // yellow Choice
@@ -64,7 +80,11 @@ document.addEventListener('DOMContentLoaded', function () {
         alert("You Clicked " + val);
 
         const x = 4;
+        // console.log(myArray.length);
+        // console.log(x);
         const y = myArray.length;
+        // console.log(y);
+
 
         if (y < x) {
             myArray.push(val);
@@ -79,9 +99,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Black Choice
     const myArray = new Array();
-    let c_black = document.getElementById("c-black");
-    c_black.addEventListener("click", function () {
-        const val = document.getElementById('c-black').getAttribute('value');
+    let c_purple = document.getElementById("c-purple");
+    c_purple.addEventListener("click", function () {
+        const val = document.getElementById('c-purple').getAttribute('value');
         alert("You Clicked " + val);
 
         const x = 4;
@@ -131,25 +151,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function change_color() {
         
-        
-
-  
-         
-
-            // let line_place = "#line-"
-            // let lNumb = 1 ;
-            // let circle_num = 2;
-            // const dCircle = ".circle-"
-            //  change color 
-            // var oDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (circle_num)).style;
-            // var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (circle_num)).querySelector('.inner-inner-circle').style;
-            // oDiv.backgroundColor = item;
-            // iDiv.backgroundColor = item;
-            // console.log(oDiv);
-            // console.log(iDiv);
-            // console_print();
-            // let i = 0;
-           
         for (let i = 0; i < myArray.length; i++) {
             let item = myArray[i];
             let lNumb = 1 ;
