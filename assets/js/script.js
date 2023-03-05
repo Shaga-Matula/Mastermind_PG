@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     //  //////////// Color Choices ///////////////////
-    
+
     //  Red Choice
     let c_red = document.getElementById("c-red");
     c_red.addEventListener("click", function () {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     c_blue.addEventListener("click", function () {
         alert("You Clicked Blue");
     });
-    
+
     // Green Choice
     let c_green = document.getElementById("c-green");
     c_green.addEventListener("click", function () {
@@ -55,59 +55,69 @@ document.addEventListener('DOMContentLoaded', function () {
         change_color();
         // alert("You ran Change_color");
     });
-    
-    // Green Choice
+
+    // yellow Choice
     let c_yellow = document.getElementById("c-yellow");
     c_yellow.addEventListener("click", function () {
-        alert("You Clicked Yellow");
-    });
+        const val = document.getElementById('c-yellow').getAttribute('value');
 
-    
-    // Black Choice
-    const myArray = new Array();
-    let c_black = document.getElementById("c-black");
-    c_black.addEventListener("click", function () {
-        const val = document.getElementById('c-black').getAttribute('value');
         alert("You Clicked " + val);
-        
+
         const x = 4;
-        console.log(myArray.length);
-        console.log(x);
         const y = myArray.length;
-        console.log(y);
-        
-      
-        if (y < x ) {
+
+        if (y < x) {
             myArray.push(val);
             change_color();
         } else {
             alert("Array Full " + val);
             console_print();
         }
+        console_print()
     });
 
 
-    ///  Log The Array To Console For Test ////
-    function console_print() {
-        console.log(myArray);
-               
-    };
+    // Black Choice
+    const myArray = new Array();
+    let c_black = document.getElementById("c-black");
+    c_black.addEventListener("click", function () {
+        const val = document.getElementById('c-black').getAttribute('value');
+        alert("You Clicked " + val);
+
+        const x = 4;
+        // console.log(myArray.length);
+        // console.log(x);
+        const y = myArray.length;
+        // console.log(y);
 
 
-   // Working on loop for array ///
-    
+        if (y < x) {
+            myArray.push(val);
+            change_color();
+        } else {
+            alert("Array Full " + val);
+            console_print();
+        }
+        console_print()
+    });
+
+
+
+
+    // Working on loop for array ///
+
     let c_white = document.getElementById("c-white");
     c_white.addEventListener("click", function () {
         const val = document.getElementById('c-white').getAttribute('value');
         alert("You Clicked " + val);
-        
+
         const x = 4;
         console.log(myArray.length);
         console.log(x);
         const y = myArray.length;
         console.log(y);
-      
-        if (y < x ) {
+
+        if (y < x) {
             myArray.push(val);
             // console_print(x);
             change_color();
@@ -117,37 +127,54 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Change color function 
 
+    function change_color() {
+        
+        
 
+  
+         
+
+            // let line_place = "#line-"
+            // let lNumb = 1 ;
+            // let circle_num = 2;
+            // const dCircle = ".circle-"
+            //  change color 
+            // var oDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (circle_num)).style;
+            // var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (circle_num)).querySelector('.inner-inner-circle').style;
+            // oDiv.backgroundColor = item;
+            // iDiv.backgroundColor = item;
+            // console.log(oDiv);
+            // console.log(iDiv);
+            // console_print();
+            // let i = 0;
+           
+        for (let i = 0; i < myArray.length; i++) {
+            let item = myArray[i];
+            let lNumb = 1 ;
+            let circle_num = 1 + (i);
+          
+            console.log("Array is " + myArray[i]);
+            console.log("circle_num is " + circle_num);
+            console.log("I count is is " + i);
+          
+            var oDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (circle_num)).style;
+            var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (circle_num)).querySelector('.inner-inner-circle').style;
+            oDiv.backgroundColor = item;
+            iDiv.backgroundColor = item;
+            console.log("#line-" + (lNumb));
+            console.log (".circle-" + (circle_num));
+            console.log(item);
+        }
+    }
+ 
+
+    ///  Log The Array To Console For Test ////
     function console_print() {
         console.log(myArray);
-               
+
     };
-
-
- 
-     function change_color() {
-
-        item = myArray[0];
-        // console.log(item);
-        var oDiv = document.querySelector('#line-1').querySelector('.outer-circle').querySelector('.circle-1').style;
-        var iDiv = document.querySelector('#line-1').querySelector('.outer-circle').querySelector('.circle-1').querySelector('.inner-inner-circle').style;
-        oDiv.backgroundColor = item;
-        iDiv.backgroundColor = item;
-        // console.log(oDiv);
-        // console.log("Done!");
-        }
-
-        // .querySelector('#mydiv')
-        // .querySelector('.myclass')
-        // style).backgroundColor;
-
-    //  document.getElementById("line-1 > .outer-circle").style;
-    
- 
-    
-    // $("#content > #price").text();
-    // 
 
 
 });
