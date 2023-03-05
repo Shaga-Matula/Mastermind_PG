@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM fully loaded and parsed');
 
+
+
+
+    // This sets of the timer "CountUpTimer()" 
     var timerVariable = setInterval(countUpTimer, 1000);
     var totalSeconds = 0;
 
@@ -12,55 +16,54 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("count_up_timer").innerHTML = hour + ":" + minute + ":" + seconds;
     }
 
-    /* Listen for Click */
-
-
+    /* /////////////// Listen for Click ///////////// */
+    // New Game Button
     let new_game = document.getElementById("new-game");
     new_game.addEventListener("click", function () {
         alert("You Clicked New Game");
     });
 
+    // Change Answer Button
     let change_answer = document.getElementById("change-answer");
     change_answer.addEventListener("click", function () {
         alert("You Clicked Change Answer");
     });
-
+    // Submit Button
     let submit_answer = document.getElementById("submit-answer");
     submit_answer.addEventListener("click", function () {
         alert("You Clicked Submit Answer");
     });
 
+    //  //////////// Color Choices ///////////////////
+    
+    //  Red Choice
     let c_red = document.getElementById("c-red");
     c_red.addEventListener("click", function () {
         alert("You Clicked Red");
     });
 
+    // Blue choice
     let c_blue = document.getElementById("c-blue");
     c_blue.addEventListener("click", function () {
         alert("You Clicked Blue");
     });
-
+    
+    // Green Choice
     let c_green = document.getElementById("c-green");
     c_green.addEventListener("click", function () {
         alert("You Clicked Green");
         change_color();
         // alert("You ran Change_color");
     });
-
+    
+    // Green Choice
     let c_yellow = document.getElementById("c-yellow");
     c_yellow.addEventListener("click", function () {
         alert("You Clicked Yellow");
     });
 
-    // let c_black = document.getElementById("c-black");
-    // c_black.addEventListener("click", function () {
-    //     const val = document.getElementById('c-black').getAttribute('value');
-    //     alert("You Clicked " + val);
-    //     myArray.push(val);
-    //     console_print();
-    // });
-
-
+    
+    // Black Choice
     const myArray = new Array();
     let c_black = document.getElementById("c-black");
     c_black.addEventListener("click", function () {
@@ -84,15 +87,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-
+    ///  Log The Array To Console For Test ////
     function console_print() {
         console.log(myArray);
                
     };
 
 
+   // Working on loop for array ///
     
-   
     let c_white = document.getElementById("c-white");
     c_white.addEventListener("click", function () {
         const val = document.getElementById('c-white').getAttribute('value');
