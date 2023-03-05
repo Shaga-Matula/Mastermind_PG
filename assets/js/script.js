@@ -39,13 +39,39 @@ document.addEventListener('DOMContentLoaded', function () {
     //  Red Choice
     let c_red = document.getElementById("c-red");
     c_red.addEventListener("click", function () {
-        alert("You Clicked Red");
+        const val = document.getElementById('c-red').getAttribute('value');
+
+        alert("You Clicked " + val);
+        const x = 4;
+        const y = myArray.length;
+
+        if (y < x) {
+            myArray.push(val);
+            change_color();
+        } else {
+            alert("Array Full " + val);
+    
+        }
+
     });
 
     // Blue choice
     let c_blue = document.getElementById("c-blue");
     c_blue.addEventListener("click", function () {
-        alert("You Clicked Blue");
+        const val = document.getElementById('c-blue').getAttribute('value');
+
+        alert("You Clicked " + val);
+
+        const x = 4;
+        const y = myArray.length;
+        if (y < x) {
+            myArray.push(val);
+            change_color();
+        } else {
+            alert("Array Full " + val);
+       
+        }
+
     });
 
     // Green Choice
@@ -54,22 +80,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const val = document.getElementById('c-green').getAttribute('value');
 
         alert("You Clicked " + val);
-
         const x = 4;
-        // console.log(myArray.length);
-        // console.log(x);
         const y = myArray.length;
-        // console.log(y);
-
-
         if (y < x) {
             myArray.push(val);
             change_color();
         } else {
             alert("Array Full " + val);
-            console_print();
+           
         }
-        console_print()
     });
 
     // yellow Choice
@@ -78,22 +97,16 @@ document.addEventListener('DOMContentLoaded', function () {
         const val = document.getElementById('c-yellow').getAttribute('value');
 
         alert("You Clicked " + val);
-
         const x = 4;
-        // console.log(myArray.length);
-        // console.log(x);
         const y = myArray.length;
-        // console.log(y);
-
-
         if (y < x) {
             myArray.push(val);
             change_color();
         } else {
             alert("Array Full " + val);
-            console_print();
+          
         }
-        console_print()
+        
     });
 
 
@@ -150,26 +163,26 @@ document.addEventListener('DOMContentLoaded', function () {
     // Change color function 
 
     function change_color() {
-        
+
         for (let i = 0; i < myArray.length; i++) {
             let item = myArray[i];
-            let lNumb = 1 ;
+            let lNumb = 1;
             let circle_num = 1 + (i);
-          
-            console.log("Array is " + myArray[i]);
-            console.log("circle_num is " + circle_num);
-            console.log("I count is is " + i);
-          
+
+            // console.log("Array is " + myArray[i]);
+            // console.log("circle_num is " + circle_num);
+            // console.log("I count is is " + i);
+
             var oDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (circle_num)).style;
             var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (circle_num)).querySelector('.inner-inner-circle').style;
             oDiv.backgroundColor = item;
             iDiv.backgroundColor = item;
-            console.log("#line-" + (lNumb));
-            console.log (".circle-" + (circle_num));
-            console.log(item);
+            // console.log("#line-" + (lNumb));
+            // console.log (".circle-" + (circle_num));
+            // console.log(item);
         }
     }
- 
+
 
     ///  Log The Array To Console For Test ////
     function console_print() {
