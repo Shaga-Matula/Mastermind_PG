@@ -1,8 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM fully loaded and parsed');
+    computer_player();
 
-
-
+   
+    function computer_player(){
+       
+        const comArray = new Array();
+        const computer_list = ["red", "green", "blue", "purple", "white", "yellow"];
+        console.log("computer list is " + (computer_list));
+        while ((comArray).length < 4){
+            var choice =  computer_list[Math.floor(Math.random() * computer_list.length)];
+            comArray.push(choice);
+        }
+       
+     
+        alert("Computer Array is " + (comArray));
+       
+       
+    }
+    
 
     // This sets of the timer "CountUpTimer()" 
     var timerVariable = setInterval(countUpTimer, 1000);
@@ -190,6 +206,8 @@ function back_one(){
  }
 
 
+
+
 function submit_btn() {
     if (myArray.length < 4){
         alert("Array not empty");
@@ -202,10 +220,6 @@ function submit_btn() {
         alert("Submit lNumbe " + (lNumb));
     }
 
-    // if 
-    // alert("lnumber is " + (lNumb));
-    // lNumb = lNumb + 1;
-    // alert("lnumber is " + (lNumb));
 
 } 
 
