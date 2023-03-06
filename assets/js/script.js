@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM fully loaded and parsed');
     computer_player();
 
-   
+   // computer player pickes randam colors and place in array comArray ;; 
     function computer_player(){
        
         const comArray = new Array();
@@ -14,23 +14,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
        
      
-        alert("Computer Array is " + (comArray));
+        alert("Computer Has Made its Choice, Please click to continue");
        
        
     }
     
 
-    // This sets of the timer "CountUpTimer()" 
-    var timerVariable = setInterval(countUpTimer, 1000);
-    var totalSeconds = 0;
+    // // This sets of the timer "CountUpTimer()" 
+    // var timerVariable = setInterval(countUpTimer, 1000);
+    // var totalSeconds = 0;
 
-    function countUpTimer() {
-        ++totalSeconds;
-        var hour = Math.floor(totalSeconds / 3600);
-        var minute = Math.floor((totalSeconds - hour * 3600) / 60);
-        var seconds = totalSeconds - (hour * 3600 + minute * 60);
-        document.getElementById("count_up_timer").innerHTML = hour + ":" + minute + ":" + seconds;
-    }
+    // function countUpTimer() {
+    //     ++totalSeconds;
+    //     var hour = Math.floor(totalSeconds / 3600);
+    //     var minute = Math.floor((totalSeconds - hour * 3600) / 60);
+    //     var seconds = totalSeconds - (hour * 3600 + minute * 60);
+    //     document.getElementById("count_up_timer").innerHTML = hour + ":" + minute + ":" + seconds;
+    // }
     // This is the var for line numbers LNUMB ///
     let lNumb = 1;
 
@@ -39,18 +39,19 @@ document.addEventListener('DOMContentLoaded', function () {
     let new_game = document.getElementById("new-game");
     new_game.addEventListener("click", function () {
         alert("You Clicked New Game");
+        location.reload();
     });
 
     // Change Answer Button
     let change_answer = document.getElementById("change-answer");
     change_answer.addEventListener("click", function () {
-        alert("You Clicked Change Answer");
+        // alert("You Clicked Change Answer");
         back_one();
     });
     // Submit Button
     let submit_answer = document.getElementById("submit-answer");
     submit_answer.addEventListener("click", function () {
-        alert("You Clicked Submit Answer");
+        // alert("You Clicked Submit Answer");
         submit_btn();
         
     });
@@ -70,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("Array Full " + val);
+            alert("You have entered 4 colors, click submit to continue " + val);
     
         }
 
@@ -81,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     c_blue.addEventListener("click", function () {
         const val = document.getElementById('c-blue').getAttribute('value');
 
-        alert("You Clicked " + val);
+        // alert("You Clicked " + val);
 
         const x = 4;
         const y = myArray.length;
@@ -89,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("Array Full " + val);
+            alert("You have entered 4 colors, click submit to continue ");
        
         }
 
@@ -100,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
     c_green.addEventListener("click", function () {
         const val = document.getElementById('c-green').getAttribute('value');
 
-        alert("You Clicked " + val);
+        // alert("You Clicked " + val);
         const x = 4;
         const y = myArray.length;
         if (y < x) {
@@ -117,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
     c_yellow.addEventListener("click", function () {
         const val = document.getElementById('c-yellow').getAttribute('value');
 
-        alert("You Clicked " + val);
+        // alert("You Clicked " + val);
         const x = 4;
         const y = myArray.length;
         if (y < x) {
@@ -136,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let c_purple = document.getElementById("c-purple");
     c_purple.addEventListener("click", function () {
         const val = document.getElementById('c-purple').getAttribute('value');
-        alert("You Clicked " + val);
+        // alert("You Clicked " + val);
 
         const x = 4;
         // console.log(myArray.length);
@@ -163,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let c_white = document.getElementById("c-white");
     c_white.addEventListener("click", function () {
         const val = document.getElementById('c-white').getAttribute('value');
-        alert("You Clicked " + val);
+        // alert("You Clicked " + val);
 
         const x = 4;
         console.log(myArray.length);
@@ -210,14 +211,14 @@ function back_one(){
 
 function submit_btn() {
     if (myArray.length < 4){
-        alert("Array not empty");
+        alert("You Mush Pick 4 Colors to Play");
     }else {
-        alert("Empting Array");
+        // alert("Empting Array");
         while(myArray.length > 0) {
             myArray.pop();
         }
         lNumb = lNumb + 1;
-        alert("Submit lNumbe " + (lNumb));
+        // alert("Submit lNumbe " + (lNumb));
     }
 
 
