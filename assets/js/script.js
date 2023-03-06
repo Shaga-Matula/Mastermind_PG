@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
         var seconds = totalSeconds - (hour * 3600 + minute * 60);
         document.getElementById("count_up_timer").innerHTML = hour + ":" + minute + ":" + seconds;
     }
+    // This is the var for line numbers LNUMB ///
     let lNumb = 1;
+
     /* /////////////// Listen for Click ///////////// */
     // New Game Button
     let new_game = document.getElementById("new-game");
@@ -27,12 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
     let change_answer = document.getElementById("change-answer");
     change_answer.addEventListener("click", function () {
         alert("You Clicked Change Answer");
+        back_one();
     });
     // Submit Button
     let submit_answer = document.getElementById("submit-answer");
     submit_answer.addEventListener("click", function () {
         alert("You Clicked Submit Answer");
-        lNumb = lNumb + 1;
+        clear_array();
+        
     });
     
     //  //////////// Color Choices ///////////////////
@@ -160,6 +164,36 @@ document.addEventListener('DOMContentLoaded', function () {
             console_print();
         }
     });
+   
+function back_one(){
+    
+    if (myArray.length === 0){
+        alert("Array Empty");
+    }
+    else {
+        var how_long = myArray.length;
+        alert("Array Not Empty " + how_long);
+        var oDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (how_long)).style;
+        var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (how_long)).querySelector('.inner-inner-circle').style;
+        alert(".circle-" + (how_long));
+
+        
+        alert(".circle-" + "Old " + (how_long));
+        iDiv.backgroundColor = "black";
+        oDiv.backgroundColor = "#432616";
+        myArray.pop();
+        alert(".circle-" + "New " + (how_long));
+        
+    }
+ }
+
+
+function submit_btn() {
+    
+    lNumb = lNumb + 1;
+
+} 
+
 
     // Change color function 
     
