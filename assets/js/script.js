@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let submit_answer = document.getElementById("submit-answer");
     submit_answer.addEventListener("click", function () {
         alert("You Clicked Submit Answer");
-        clear_array();
+        submit_btn();
         
     });
     
@@ -165,32 +165,46 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
    
+
+    // back_one wil delete from the array incramently and reset circle
 function back_one(){
     
     if (myArray.length === 0){
-        alert("Array Empty");
+        // alert("Array Empty");
     }
     else {
         var how_long = myArray.length;
-        alert("Array Not Empty " + how_long);
+        // alert("Array Not Empty " + how_long);
         var oDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (how_long)).style;
         var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (how_long)).querySelector('.inner-inner-circle').style;
-        alert(".circle-" + (how_long));
+        // alert(".circle-" + (how_long));
 
         
-        alert(".circle-" + "Old " + (how_long));
+        // alert(".circle-" + "Old " + (how_long));
         iDiv.backgroundColor = "black";
         oDiv.backgroundColor = "#432616";
         myArray.pop();
-        alert(".circle-" + "New " + (how_long));
+        // alert(".circle-" + "New " + (how_long));
         
     }
  }
 
 
 function submit_btn() {
-    
-    lNumb = lNumb + 1;
+    if (myArray.length < 4){
+        alert("Array not empty");
+    }else {
+        alert("Empting Array");
+        while(myArray.length > 0) {
+            myArray.pop();
+        }
+        lNumb = lNumb + 1;
+    }
+
+    // if 
+    // alert("lnumber is " + (lNumb));
+    // lNumb = lNumb + 1;
+    // alert("lnumber is " + (lNumb));
 
 } 
 
