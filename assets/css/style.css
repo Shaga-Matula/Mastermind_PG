@@ -217,31 +217,6 @@ body {
     background: radial-gradient(circle at 50px 50px, black, white);
 }
 
-/* first line of game for testing */
-/* #line-1>div>.circle-1, */
-/* #dave {
-
-    background-color: red;
-
-} */
-
-/* #line-1>div>.circle-2,
-#line-1>div>.circle-2 .inner-inner-circle {
-    background: radial-gradient(circle at 50px 50px, black, blue);
-
-} */
-
-/* #line-1>div>.circle-3,
-#line-1>div>.circle-3 .inner-inner-circle {
-    background: radial-gradient(circle at 50px 50px, black, green);
-
-}
-
-#line-1>div>.circle-4,
-#line-1>div>.circle-4 .inner-inner-circle {
-    background: radial-gradient(circle at 50px 50px, black, black);
-
-} */
 
 #controlarea {
     display: flex;

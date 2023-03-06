@@ -199,6 +199,7 @@ function submit_btn() {
             myArray.pop();
         }
         lNumb = lNumb + 1;
+        alert("Submit lNumbe " + (lNumb));
     }
 
     // if 
