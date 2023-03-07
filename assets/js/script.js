@@ -1,23 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM fully loaded and parsed');
-    computer_player();
+    // computer_player();
 
    // computer player pickes randam colors and place in array comArray ;; 
-    function computer_player(){
+    // function computer_player(){
        
         const comArray = new Array();
         const computer_list = ["red", "green", "blue", "purple", "white", "yellow"];
         console.log("computer list is " + (computer_list));
+       
         while ((comArray).length < 4){
             var choice =  computer_list[Math.floor(Math.random() * computer_list.length)];
             comArray.push(choice);
         }
-       
-     
-        alert("Computer Has Made its Choice, Please click to continue");
-       
-       
-    }
+           alert("Computer Has Made its Choice, Please click to continue");
+    // }
     
 
     // // This sets of the timer "CountUpTimer()" 
@@ -210,6 +207,7 @@ function back_one(){
 
 
 function submit_btn() {
+    console_print(myArray);
     if (myArray.length < 4){
         alert("You Mush Pick 4 Colors to Play");
     }else {
@@ -219,6 +217,7 @@ function submit_btn() {
         }
         lNumb = lNumb + 1;
         // alert("Submit lNumbe " + (lNumb));
+        console_print();
     }
 
 
@@ -251,8 +250,8 @@ function submit_btn() {
 
     ///  Log The Array To Console For Test ////
     function console_print() {
-        console.log(myArray);
-
+        console.log(("User Arrray = ") + myArray);
+        console.log(("Computer Array = ") + comArray);
     };
 
 
