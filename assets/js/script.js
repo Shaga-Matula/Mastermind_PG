@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM fully loaded and parsed');
-    // computer_player();
 
-   // computer player pickes randam colors and place in array comArray ;; 
-    // function computer_player(){
-       
-        const comArray = new Array();
-        const computer_list = ["red", "green", "blue", "purple", "white", "yellow"];
-        console.log("computer list is " + (computer_list));
-       
-        while ((comArray).length < 4){
-            var choice =  computer_list[Math.floor(Math.random() * computer_list.length)];
-            comArray.push(choice);
-        }
-           alert("Computer Has Made its Choice, Please click to continue");
+
+    // The following pickes randam colors and place in array comArray ;; 
+
+
+    const comArray = new Array();
+    const computer_list = ["red", "green", "blue", "purple", "white", "yellow"];
+    console.log("computer list is " + (computer_list));
+
+    while ((comArray).length < 4) {
+        var choice = computer_list[Math.floor(Math.random() * computer_list.length)];
+        comArray.push(choice);
+    }
+    alert("Computer Has Made its Choice, Please click to continue");
     // }
-    
+
 
     // // This sets of the timer "CountUpTimer()" 
     // var timerVariable = setInterval(countUpTimer, 1000);
@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
     submit_answer.addEventListener("click", function () {
         // alert("You Clicked Submit Answer");
         submit_btn();
-        
+
     });
-    
+
     //  //////////// Color Choices ///////////////////
 
     //  Red Choice
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
             change_color();
         } else {
             alert("You have entered 4 colors, click submit to continue " + val);
-    
+
         }
 
     });
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
             change_color();
         } else {
             alert("You have entered 4 colors, click submit to continue ");
-       
+
         }
 
     });
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
             change_color();
         } else {
             alert("Array Full " + val);
-           
+
         }
     });
 
@@ -123,9 +123,9 @@ document.addEventListener('DOMContentLoaded', function () {
             change_color();
         } else {
             alert("Array Full " + val);
-          
+
         }
-        
+
     });
 
 
@@ -178,60 +178,93 @@ document.addEventListener('DOMContentLoaded', function () {
             console_print();
         }
     });
-   
+
 
     // back_one wil delete from the array incramently and reset circle
-function back_one(){
-    
-    if (myArray.length === 0){
-        // alert("Array Empty");
-    }
-    else {
-        var how_long = myArray.length;
-        // alert("Array Not Empty " + how_long);
-        var oDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (how_long)).style;
-        var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (how_long)).querySelector('.inner-inner-circle').style;
-        // alert(".circle-" + (how_long));
+    function back_one() {
 
-        
-        // alert(".circle-" + "Old " + (how_long));
-        iDiv.backgroundColor = "black";
-        oDiv.backgroundColor = "#432616";
-        myArray.pop();
-        // alert(".circle-" + "New " + (how_long));
-        
-    }
- }
+        if (myArray.length === 0) {
+            // alert("Array Empty");
+        } else {
+            var how_long = myArray.length;
+            // alert("Array Not Empty " + how_long);
+            var oDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (how_long)).style;
+            var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (how_long)).querySelector('.inner-inner-circle').style;
+            // alert(".circle-" + (how_long));
 
 
-
-
-function submit_btn() {
-    console.log(("User Arrray = ") + myArray);
-    console.log(("Computer Array = ") + comArray);
-    if (myArray.length < 4){
-        alert("You Mush Pick 4 Colors to Play");
-    }else {
-        // alert("Empting Array");
-        while(myArray.length > 0) {
+            // alert(".circle-" + "Old " + (how_long));
+            iDiv.backgroundColor = "black";
+            oDiv.backgroundColor = "#432616";
             myArray.pop();
+            // alert(".circle-" + "New " + (how_long));
+
         }
-        lNumb = lNumb + 1;
-        // alert("Submit lNumbe " + (lNumb));
-        console_print();
     }
 
 
-} 
+
+
+    function submit_btn() {
+        console.log(("User Arrray = ") + myArray);
+        console.log(("Computer Array = ") + comArray);
+        const resultArray = Array();
+        if (myArray.length < 0) {
+            alert("You Must Pick 4 choices to Play");
+        } else {
+            console.log(("User Arrray = ") + myArray);
+            console.log(("Computer Array = ") + comArray);
+            for (let i = 0; i < myArray.length; i++) {
+
+                if (myArray[i] == comArray[i]) {
+                    resultArray.push("white");
+                    console.log(("Result Array = ") + resultArray);
+                    delete myArray[i];
+                    console.log("in First Loop " + myArray);
+                    // delete comArray[i];
+                    // (arr2.indexOf(arr1[i]) === -1)
+                
+                } else {
+                    console.log(myArray);
+                   for (let i = 0; i < myArray.length; i++) {
+                        for (let f = 1; f < myArray.length; f++){
+                            console.log("These are the two comparisons = " + (myArray[i] +" ,"+ comArray[f]));
+                              if (myArray[i] == comArray[f]){
+                                resultArray.push("black");
+                                delete myArray[i];
+                                console.log(("Yes this is present ") + resultArray);
+                            } else {
+                                console.log(("No this is not here ") + resultArray);
+                            }
+                        }
+                   
+                   }  
+                };
+                console.log(("Final result = ") + resultArray);
+                // console.log("This is in the result " + (resultArray))
+            };
+
+            alert("Empting user line Array");
+            while (myArray.length > 0) {
+                myArray.pop();
+            };
+            lNumb = lNumb + 1;
+            alert("Submit lNumbe " + (lNumb));
+
+
+        }
+
+
+    }
 
 
     // Change color function 
-    
+
     function change_color() {
 
         for (let i = 0; i < myArray.length; i++) {
             let item = myArray[i];
-           
+
             let circle_num = 1 + (i);
 
             // console.log("Array is " + myArray[i]);
