@@ -207,7 +207,8 @@ function back_one(){
 
 
 function submit_btn() {
-    console_print(myArray);
+    console.log(("User Arrray = ") + myArray);
+    console.log(("Computer Array = ") + comArray);
     if (myArray.length < 4){
         alert("You Mush Pick 4 Colors to Play");
     }else {
@@ -250,8 +251,8 @@ function submit_btn() {
 
     ///  Log The Array To Console For Test ////
     function console_print() {
-        console.log(("User Arrray = ") + myArray);
-        console.log(("Computer Array = ") + comArray);
+        // console.log(("User Arrray = ") + myArray);
+        // console.log(("Computer Array = ") + comArray);
     };
 
 
