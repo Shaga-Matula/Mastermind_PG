@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var choice = computer_list[Math.floor(Math.random() * computer_list.length)];
         comArray.push(choice);
     }
-    alert("Computer Has Made its Choice, Please click to continue");
+    console.log("Computer Has Made its Choice, Please click to continue " + (comArray));
     // }
 
 
@@ -209,39 +209,46 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(("User Arrray = ") + myArray);
         console.log(("Computer Array = ") + comArray);
         const resultArray = Array();
-        if (myArray.length < 0) {
+        if (myArray.length <= 0) {
             alert("You Must Pick 4 choices to Play");
         } else {
-            console.log(("User Arrray = ") + myArray);
-            console.log(("Computer Array = ") + comArray);
             for (let i = 0; i < myArray.length; i++) {
-
-                if (myArray[i] == comArray[i]) {
+                if (myArray[i] == "done") {
+                    console.log("Array element done = " + (myArray[i]));
+                } else if (myArray[i] == comArray[i]) {
                     resultArray.push("white");
-                    console.log(("Result Array = ") + resultArray);
-                    delete myArray[i];
-                    console.log("in First Loop " + myArray);
-                    // delete comArray[i];
-                    // (arr2.indexOf(arr1[i]) === -1)
-                
+                    console.log("Right place and color before " + (comArray[i]) + "+ " + (myArray[i]));
+
+                    myArray[i] = ("done");
+                    comArray[i] = ("done");
+                    console.log("Right place and color after " + (comArray[i]) + "+ " + (myArray[i]));
+
+                    console.log("End of loop 1");
                 } else {
-                    console.log(myArray);
-                   for (let i = 0; i < myArray.length; i++) {
-                        for (let f = 1; f < myArray.length; f++){
-                            console.log("These are the two comparisons = " + (myArray[i] +" ,"+ comArray[f]));
-                              if (myArray[i] == comArray[f]){
-                                resultArray.push("black");
-                                delete myArray[i];
-                                console.log(("Yes this is present ") + resultArray);
-                            } else {
-                                console.log(("No this is not here ") + resultArray);
-                            }
+
+                    for (let i = 0; i < myArray.length; i++) {
+
+                        if (myArray[i] == "done") {
+                            console.log("Second Array done =  " + (myArray[i]));
+
+                        } else if ((myArray.some(r => comArray.indexOf(r) >= 0)) === true) {
+                            console.log("Right but wrong place = " + (myArray[i]));
+                            console.log(("Push Black myArray ") + (myArray[i]));
+                            myArray[i] = ("done");
+                            comArray[i] = ("done");
+
+                            resultArray.push("black");
+                            console.log(("Push Black result Array = ") + resultArray);
+                            console.log("End of loop 2");
+                        } else {
+                            console.log("No wrong = " + (myArray[i]));
+                            myArray[i] = ("done");
+                            comArray[i] = ("done");
                         }
-                   
-                   }  
-                };
-                console.log(("Final result = ") + resultArray);
-                // console.log("This is in the result " + (resultArray))
+                    }
+
+                }
+                console.log("Final result = " + resultArray);
             };
 
             alert("Empting user line Array");
