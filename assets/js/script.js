@@ -236,8 +236,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     console.log("End of loop 1");
                 } 
-
-                
+                console.log("This is the myArray = " + (myArray))
+                console.log("This is the tmpArray = " + (tmpArray))
                 console.log("Final result = " + resultArray);
             };
 
