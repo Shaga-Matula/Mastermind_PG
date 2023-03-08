@@ -209,45 +209,35 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(("User Arrray = ") + myArray);
         console.log(("Computer Array = ") + comArray);
         const resultArray = Array();
+        const tmpArray = Array();
+       var i = -1;
+    //    Place comArry to new array so can be manipulated //
+       while(++i < comArray.length) {
+            tmpArray[i] = comArray[i];
+          }
+          console.log(tmpArray);
+
+
+       
+      
         if (myArray.length <= 0) {
             alert("You Must Pick 4 choices to Play");
         } else {
             for (let i = 0; i < myArray.length; i++) {
                 if (myArray[i] == "done") {
                     console.log("Array element done = " + (myArray[i]));
-                } else if (myArray[i] == comArray[i]) {
+                } else if (myArray[i] == tmpArray[i]) {
                     resultArray.push("white");
-                    console.log("Right place and color before " + (comArray[i]) + "+ " + (myArray[i]));
+                    console.log("Right place and color before " + (tmpArray[i]) + "+ " + (myArray[i]));
 
                     myArray[i] = ("done");
-                    comArray[i] = ("done");
-                    console.log("Right place and color after " + (comArray[i]) + "+ " + (myArray[i]));
+                    tmpArray[i] = ("done");
+                    console.log("Right place and color after " + (tmpArray[i]) + "+ " + (myArray[i]));
 
                     console.log("End of loop 1");
-                } else {
+                } 
 
-                    for (let i = 0; i < myArray.length; i++) {
-
-                        if (myArray[i] == "done") {
-                            console.log("Second Array done =  " + (myArray[i]));
-
-                        } else if ((myArray.some(r => comArray.indexOf(r) >= 0)) === true) {
-                            console.log("Right but wrong place = " + (myArray[i]));
-                            console.log(("Push Black myArray ") + (myArray[i]));
-                            myArray[i] = ("done");
-                            comArray[i] = ("done");
-
-                            resultArray.push("black");
-                            console.log(("Push Black result Array = ") + resultArray);
-                            console.log("End of loop 2");
-                        } else {
-                            console.log("No wrong = " + (myArray[i]));
-                            myArray[i] = ("done");
-                            comArray[i] = ("done");
-                        }
-                    }
-
-                }
+                
                 console.log("Final result = " + resultArray);
             };
 
