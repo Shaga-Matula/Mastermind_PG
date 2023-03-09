@@ -271,7 +271,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             if (resultArray.length === 0) {
-                alert("Sorry none correct, try again.");
+                alert("Submit lNumbe before lNumb loose" + (lNumb));
+                if (lNumb >= '8') {
+                    alert("So Sad You Loose!");
+                    alert("Resetting the game so you can try again!");
+                    location.reload();
+                }
+                    lNumb = lNumb + 1;
+                    alert("Submit lNumbe " + (lNumb));
+                    alert("Empting user line Array");
+                    while (myArray.length > 0) {
+                        myArray.pop();
+                    }
+               
 
             } else {
                 for (let i = 0; i < resultArray.length; i++) {
@@ -302,26 +314,38 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log("Is " + (resultArray) + "the same as" + (chkWin));
                 console.log(resultArray);
                 console.log(chkWin);
-                console.log((resultArray) === (chkWin));
-                if ((resultArray) === (chkWin)) {
-                    alert("Congratulations You Won");
-                } else {
-                    alert("Empting user line Array");
-                    while (myArray.length > 0) {
-                        myArray.pop();
-                    }
+                // console.log((resultArray) === (chkWin));
 
+                if (chkWin.toString() === resultArray.toString()) {
+                    alert("Congratulations You Win: Well done");
+                    alert("Resetting the game so you can win again!");
+                    location.reload();
                 }
 
+
+                alert("Submit lNumbe before lNumb loose" + (lNumb));
+                if (lNumb >= '8') {
+                    alert("So Sad You Loose!");
+                    alert("Resetting the game so you can try again!");
+                    location.reload();
+                }
 
 
                 lNumb = lNumb + 1;
                 alert("Submit lNumbe " + (lNumb));
+                alert("Empting user line Array");
+                while (myArray.length > 0) {
+                    myArray.pop();
+                }
+
+
+
+
             }
 
         }
-
     }
+
 
 
     // Change color function 

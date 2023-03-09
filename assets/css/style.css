@@ -147,8 +147,8 @@ body {
 
 .inner-score-square {
     background-color: white;
-    height: 5px;
-    width: 5px;
+    height: 3px;
+    width: 3px;
     margin: auto;
     border-radius: 50%;
 }
