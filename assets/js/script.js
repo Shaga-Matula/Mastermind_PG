@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var choice = computer_list[Math.floor(Math.random() * computer_list.length)];
         comArray.push(choice);
     }
-    alert("Computer Has Made its Choice, Please click to continue " + (comArray));
+    alert("Computer Has Made its Choice, Please click to continue ");
     // }
 
 
@@ -278,8 +278,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     location.reload();
                 }
                     lNumb = lNumb + 1;
-                    alert("Submit lNumbe " + (lNumb));
-                    alert("Empting user line Array");
+                    // alert("Submit lNumbe " + (lNumb));
+                    // alert("Empting user line Array");
                     while (myArray.length > 0) {
                         myArray.pop();
                     }
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
 
 
-                alert("Submit lNumbe before lNumb loose" + (lNumb));
+                // alert("Submit lNumbe before lNumb loose" + (lNumb));
                 if (lNumb >= '8') {
                     alert("So Sad You Loose!");
                     alert("Resetting the game so you can try again!");
@@ -332,8 +332,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
                 lNumb = lNumb + 1;
-                alert("Submit lNumbe " + (lNumb));
-                alert("Empting user line Array");
+                // alert("Submit lNumbe " + (lNumb));
+                // alert("Empting user line Array");
                 while (myArray.length > 0) {
                     myArray.pop();
                 }
