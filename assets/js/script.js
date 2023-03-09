@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var choice = computer_list[Math.floor(Math.random() * computer_list.length)];
         comArray.push(choice);
     }
-    console.log("Computer Has Made its Choice, Please click to continue " + (comArray));
+    alert("Computer Has Made its Choice, Please click to continue " + (comArray));
     // }
 
 
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     c_red.addEventListener("click", function () {
         const val = document.getElementById('c-red').getAttribute('value');
 
-        alert("You Clicked " + val);
+        // alert("You Clicked " + val);
         const x = 4;
         const y = myArray.length;
 
@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             if (resultArray.length === 0) {
-                alert("Submit lNumbe before lNumb loose" + (lNumb));
+                // alert("Submit lNumbe before lNumb loose" + (lNumb));
                 if (lNumb >= '8') {
                     alert("So Sad You Loose!");
                     alert("Resetting the game so you can try again!");
@@ -291,14 +291,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     var wht_color = resultArray[i];
                     var placeNo = i + 1;
                     console.log("placeholder = " + (placeNo));
-                    alert("Array Not Empty " + how_long);
+                    // alert("Array Not Empty " + how_long);
 
                     var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (placeNo)).style;
                     // var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (how_long)).style;
                     // alert(".circle-" + (how_long));
 
 
-                    alert(".score-" + (placeNo) + " + " + (resultArray[i]));
+                    // alert(".score-" + (placeNo) + " + " + (resultArray[i]));
                     iDiv.backgroundColor = wht_color;
                     iDiv.height = "12px";
                     iDiv.width = "12px";
