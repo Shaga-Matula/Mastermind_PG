@@ -217,8 +217,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         console.log(tmpArray);
 
-        if (myArray.length <= 0) {
+        if (myArray.length <= 3) {
             alert("You Must Pick 4 choices to Play");
+           
         } else {
             for (let i = 0; i < myArray.length; i++) {
                 if (myArray[i] == "done") {
@@ -271,29 +272,32 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("This is the tmpArray = " + (tmpArray))
         console.log("Final result = " + resultArray);
 
-        for (let i = 0; i < resultArray.length; i++) {
+            
             if (resultArray.length === 0) {
-                alert("Array Empty");
+                alert("Sorry none correct, try again.");
+                
             } else {
-               
+                for (let i = 0; i < resultArray.length; i++){
                 var how_long = resultArray.length;
                 var wht_color = resultArray[i];
-                var placeNo = (++i);
+                var placeNo = i+1;
                 console.log("placeholder = " + (placeNo));
                 alert("Array Not Empty " + how_long);
+
                 var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (placeNo)).style;
                 // var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (how_long)).style;
                 // alert(".circle-" + (how_long));
 
               
-                alert(".score- "+ " + "+ (wht_color) + " + "+ (placeNo));
+                alert(".score-"+ (placeNo) + " + "+ (resultArray[i]));
                 iDiv.backgroundColor = wht_color;
                 iDiv.height = "12px";
                 iDiv.width = "12px";
+                // placeNo = placeNo ++; 
                 // oDiv.backgroundColor = "#432616";
                 // myArray.pop();
                 // // alert(".circle-" + "New " + (how_long));
-        
+                
             }
 
         }
