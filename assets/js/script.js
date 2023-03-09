@@ -264,50 +264,63 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
 
             }
-            
-        console.log("This is the myArray = " + (myArray))
-        console.log("This is the tmpArray = " + (tmpArray))
-        console.log("Final result = " + resultArray);
+
+            console.log("This is the myArray = " + (myArray))
+            console.log("This is the tmpArray = " + (tmpArray))
+            console.log("Final result = " + resultArray);
 
 
-        if (resultArray.length === 0) {
-            alert("Sorry none correct, try again.");
+            if (resultArray.length === 0) {
+                alert("Sorry none correct, try again.");
 
-        } else {
-            for (let i = 0; i < resultArray.length; i++) {
-                var how_long = resultArray.length;
-                var wht_color = resultArray[i];
-                var placeNo = i + 1;
-                console.log("placeholder = " + (placeNo));
-                alert("Array Not Empty " + how_long);
+            } else {
+                for (let i = 0; i < resultArray.length; i++) {
+                    var how_long = resultArray.length;
+                    var wht_color = resultArray[i];
+                    var placeNo = i + 1;
+                    console.log("placeholder = " + (placeNo));
+                    alert("Array Not Empty " + how_long);
 
-                var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (placeNo)).style;
-                // var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (how_long)).style;
-                // alert(".circle-" + (how_long));
+                    var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (placeNo)).style;
+                    // var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (how_long)).style;
+                    // alert(".circle-" + (how_long));
 
 
-                alert(".score-" + (placeNo) + " + " + (resultArray[i]));
-                iDiv.backgroundColor = wht_color;
-                iDiv.height = "12px";
-                iDiv.width = "12px";
-                // placeNo = placeNo ++; 
-                // oDiv.backgroundColor = "#432616";
-                // myArray.pop();
-                // // alert(".circle-" + "New " + (how_long));
+                    alert(".score-" + (placeNo) + " + " + (resultArray[i]));
+                    iDiv.backgroundColor = wht_color;
+                    iDiv.height = "12px";
+                    iDiv.width = "12px";
+                    // placeNo = placeNo ++; 
+                    // oDiv.backgroundColor = "#432616";
+                    // myArray.pop();
+                    // // alert(".circle-" + "New " + (how_long));
 
+
+                }
+
+                const chkWin = Array('white', 'white', 'white', 'white');
+                console.log("Is " + (resultArray) + "the same as" + (chkWin));
+                console.log(resultArray);
+                console.log(chkWin);
+                console.log((resultArray) === (chkWin));
+                if ((resultArray) === (chkWin)) {
+                    alert("Congratulations You Won");
+                } else {
+                    alert("Empting user line Array");
+                    while (myArray.length > 0) {
+                        myArray.pop();
+                    }
+
+                }
+
+
+
+                lNumb = lNumb + 1;
+                alert("Submit lNumbe " + (lNumb));
             }
 
         }
-        alert("Empting user line Array");
-        while (myArray.length > 0) {
-            myArray.pop();
-        }
-        lNumb = lNumb + 1;
-        alert("Submit lNumbe " + (lNumb));
-        }
 
-
-    
     }
 
 
