@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (myArray.length <= 3) {
             alert("You Must Pick 4 choices to Play");
-           
+
         } else {
             for (let i = 0; i < myArray.length; i++) {
                 if (myArray[i] == "done") {
@@ -264,23 +264,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
 
             }
-
-        }
-     
-
+            
         console.log("This is the myArray = " + (myArray))
         console.log("This is the tmpArray = " + (tmpArray))
         console.log("Final result = " + resultArray);
 
-            
-            if (resultArray.length === 0) {
-                alert("Sorry none correct, try again.");
-                
-            } else {
-                for (let i = 0; i < resultArray.length; i++){
+
+        if (resultArray.length === 0) {
+            alert("Sorry none correct, try again.");
+
+        } else {
+            for (let i = 0; i < resultArray.length; i++) {
                 var how_long = resultArray.length;
                 var wht_color = resultArray[i];
-                var placeNo = i+1;
+                var placeNo = i + 1;
                 console.log("placeholder = " + (placeNo));
                 alert("Array Not Empty " + how_long);
 
@@ -288,8 +285,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 // var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (how_long)).style;
                 // alert(".circle-" + (how_long));
 
-              
-                alert(".score-"+ (placeNo) + " + "+ (resultArray[i]));
+
+                alert(".score-" + (placeNo) + " + " + (resultArray[i]));
                 iDiv.backgroundColor = wht_color;
                 iDiv.height = "12px";
                 iDiv.width = "12px";
@@ -297,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // oDiv.backgroundColor = "#432616";
                 // myArray.pop();
                 // // alert(".circle-" + "New " + (how_long));
-                
+
             }
 
         }
@@ -307,6 +304,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         lNumb = lNumb + 1;
         alert("Submit lNumbe " + (lNumb));
+        }
+
+
+    
     }
 
 
