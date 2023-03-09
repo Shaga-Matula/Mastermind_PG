@@ -320,6 +320,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert("Congratulations You Win: Well done");
                     alert("Resetting the game so you can win again!");
                     location.reload();
+                    windows.location.reload();
                 }
 
 
