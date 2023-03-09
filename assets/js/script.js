@@ -217,9 +217,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         console.log(tmpArray);
 
-
-
-
         if (myArray.length <= 0) {
             alert("You Must Pick 4 choices to Play");
         } else {
@@ -229,41 +226,42 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else if (myArray[i] == tmpArray[i]) {
                     if (myArray[i] == "done") {
                         console.log("Array element done = " + (myArray[i]));
+                    } else {
+                        resultArray.push("white");
+                        console.log("Right place and color before " + (tmpArray[i]) + "+ " + (myArray[i]));
+
+                        myArray[i] = ("done");
+                        tmpArray[i] = ("done");
+                        console.log("Right place and color after " + (tmpArray[i]) + "+ " + (myArray[i]));
+
+                        console.log("End of loop 1");
                     }
-                    resultArray.push("white");
-                    console.log("Right place and color before " + (tmpArray[i]) + "+ " + (myArray[i]));
-
-                    myArray[i] = ("done");
-                    tmpArray[i] = ("done");
-                    console.log("Right place and color after " + (tmpArray[i]) + "+ " + (myArray[i]));
-
-                    console.log("End of loop 1");
                 }
-                for (let i = 0; i < tmpArray.length; i++) {
-                    if ((myArray.some(r => tmpArray.includes(r))) && (myArray[i] !== "done")) {
-                        console.log("Array element NOT done = " + (myArray[i]));
-                        for (let j = 0; j < tmpArray.length; j++) {
+                // for (let i = 0; i < tmpArray.length; i++) {
+                //     if ((myArray.some(r => tmpArray.includes(r))) && (myArray[i] !== "done")) {
+                //         console.log("Array element NOT done = " + (myArray[i]));
+                //         for (let j = 0; j < tmpArray.length; j++) {
 
-                            if ((myArray[i] == tmpArray[j]) && (myArray[i] !== "done")) {
-                                console.log("Not in place but must match " + (tmpArray[j]) + "+ " + (myArray[i]));
-                                console.log("Yes its here = " + (myArray))
-                                resultArray.push("black");
-                                myArray[i] = ("done");
-                                tmpArray[j] = ("done");
+                //             if ((myArray[i] == tmpArray[j]) && (myArray[i] !== "done")) {
+                //                 console.log("Not in place but must match " + (tmpArray[j]) + "+ " + (myArray[i]));
+                //                 console.log("Yes its here = " + (myArray))
+                //                 resultArray.push("black");
+                //                 myArray[i] = ("done");
+                //                 tmpArray[j] = ("done");
 
-                            } else {
-                                console.log("Not a match " + (tmpArray[j]) + "+ " + (myArray[i]));
-                            }
-                        }
+                //             } else {
+                //                 console.log("Not a match " + (tmpArray[j]) + "+ " + (myArray[i]));
+                //             }
+                //         }
 
-                    }
+                //     }
 
 
-                    // for (let i = 0; i < myArray.length; i++){
-                    //     if (myArray[i] == tmpArray[i]){
+                //     // for (let i = 0; i < myArray.length; i++){
+                //     //     if (myArray[i] == tmpArray[i]){
 
-                    //     }
-                }
+                //     //     }
+                // }
 
 
                 console.log("This is the myArray = " + (myArray))
@@ -275,16 +273,46 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             // for (let i = 0; i < myArray.length; i++)
-            alert("Empting user line Array");
-            while (myArray.length > 0) {
-                myArray.pop();
-            };
-            lNumb = lNumb + 1;
-            alert("Submit lNumbe " + (lNumb));
 
 
+            for (let i = 0; i < tmpArray.length; i++) {
+                if ((myArray.some(r => tmpArray.includes(r))) && (myArray[i] !== "done")) {
+                    console.log("Array element NOT done = " + (myArray[i]));
+                    for (let j = 0; j < tmpArray.length; j++) {
+
+                        if ((myArray[i] == tmpArray[j]) && (myArray[i] !== "done")) {
+                            console.log("Not in place but must match " + (tmpArray[j]) + "+ " + (myArray[i]));
+                            console.log("Yes its here = " + (myArray))
+                            resultArray.push("black");
+                            myArray[i] = ("done");
+                            tmpArray[j] = ("done");
+
+                        } else {
+                            console.log("Not a match " + (tmpArray[j]) + "+ " + (myArray[i]));
+                        }
+                    }
+
+                }
+
+            }
+
+
+
+
+            // for (let i = 0; i < myArray.length; i++){
+            //     if (myArray[i] == tmpArray[i]){
+
+            //     }
         }
-
+        alert("Empting user line Array");
+        while (myArray.length > 0) {
+            myArray.pop();
+        }
+        lNumb = lNumb + 1;
+        alert("Submit lNumbe " + (lNumb));
+        console.log("This is the myArray = " + (myArray))
+        console.log("This is the tmpArray = " + (tmpArray))
+        console.log("Final result = " + resultArray);
 
     }
 
