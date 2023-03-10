@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function back_one() {
 
         if (myArray.length === 0) {
-            // alert("Array Empty");
+            alert("None Correct");
         } else {
             var how_long = myArray.length;
             // alert("Array Not Empty " + how_long);
@@ -257,6 +257,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             tmpArray[j] = ("done");
 
                         } else {
+                           
                             console.log("Not a match " + (tmpArray[j]) + "+ " + (myArray[i]));
                         }
                     }
@@ -271,9 +272,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             if (resultArray.length === 0) {
+                alert("Sorry none right");
                 // alert("Submit lNumbe before lNumb loose" + (lNumb));
                 if (lNumb >= '8') {
                     alert("So Sad You Loose!");
+                    alert("The corect answer was = " + (comArray));
                     alert("Resetting the game so you can try again!");
                     location.reload();
                 }
