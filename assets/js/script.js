@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             if (resultArray.length === 0) {
-                alert("Sorry none correct");
+                alert("Sorry no colors matching in this line");
                 // alert("Submit lNumbe before lNumb loose" + (lNumb));
                 if (lNumb >= '8') {
                     alert("So Sad You Loose!");

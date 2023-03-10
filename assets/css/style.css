@@ -39,6 +39,8 @@ body {
     justify-content: center;
     align-items: center;
     align-self: center;
+    flex-direction: column;
+    text-align: center;
     height: 50px;
     width: 80%;
     padding-right: 20px;
@@ -219,27 +221,43 @@ body {
 #c-white {
     background: radial-gradient(circle at 50px 50px, black, white);
 }
+
 /* Set for hightlight border */
 #line-1 {
     border: none;
-   
+
 }
 
-#open-help-file{
-    position:relative;
+#open-help-file {
+    position: relative;
     display: block;
     align-items: center;
 }
 
-#help-file{
-    width: 90%;
+ul {
+    list-style-type: none;
+
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 15px 5px 5px 0;
+
+}
+
+#help-file {
+    text-align: center;
+    line-height: 1.5em;
+    width: auto;
     height: auto;
     background: black;
-    padding: 5px 5px 5px;
-    box-sizing: border-box;
+    size: .8em;
+    padding:5px ;
+    min-width: 80vw;
+    max-width: 90vw;
     border-radius: 5px;
     background-color: grey;
-    color:white;
+    color: black;
+   
+
 }
 
 
@@ -262,7 +280,7 @@ body {
     border: 50px;
     text-align: center;
     border-radius: 15px;
-    max-width:fit-content;
+    max-width: fit-content;
     white-space: nowrap;
 }
 
@@ -405,7 +423,6 @@ body {
 
 
 
-#line-1>div>.circle-2{
+#line-1>div>.circle-2 {
     color: black;
-} 
-
+}
