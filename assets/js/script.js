@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("Array Full " + val);
+            alert("This Line is full click Submit" );
 
         }
     });
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("Array Full " + val);
+            alert("This Line is full click Submit" );
 
         }
 
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("Array Full " + val);
+            alert("This Line is full click Submit" );
             console_print();
         }
         console_print()
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // console_print(x);
             change_color();
         } else {
-            alert("Array Full " + val);
+            alert("This Line is full click Submit" );
             console_print();
         }
     });
