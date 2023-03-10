@@ -14,8 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
         comArray.push(choice);
     }
     alert("Computer Has Made its Choice, Please click to continue ");
-    // }
 
+    // border outline for lines for user clarity
+    //   Set Border for line choice
+    var border_color_type = "outset";
+    document.getElementById("line-1").style.border = border_color_type ;
+    //// 
+    
 
     // // This sets of the timer "CountUpTimer()" 
     // var timerVariable = setInterval(countUpTimer, 1000);
@@ -257,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             tmpArray[j] = ("done");
 
                         } else {
-                           
+
                             console.log("Not a match " + (tmpArray[j]) + "+ " + (myArray[i]));
                         }
                     }
@@ -271,8 +276,9 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log("Final result = " + resultArray);
 
 
+
             if (resultArray.length === 0) {
-                alert("Sorry none right");
+                alert("Sorry none correct");
                 // alert("Submit lNumbe before lNumb loose" + (lNumb));
                 if (lNumb >= '8') {
                     alert("So Sad You Loose!");
@@ -280,17 +286,29 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert("Resetting the game so you can try again!");
                     location.reload();
                 }
+
+
+                function next_line(){
+                    document.getElementById("line-" + (lNumb)).style.border = "";
                     lNumb = lNumb + 1;
+                    document.getElementById("line-" + (lNumb)).style.border = border_color_type;
+                    console.log("Delete border " + (document.getElementById("line-1").style.border));
                     // alert("Submit lNumbe " + (lNumb));
                     // alert("Empting user line Array");
-                    while (myArray.length > 0) {
-                        myArray.pop();
                     }
+    
+
+                next_line();
+
                
+                while (myArray.length > 0) {
+                    myArray.pop();
+                }
+
 
             } else {
                 for (let i = 0; i < resultArray.length; i++) {
-                    var how_long = resultArray.length;
+                    // var how_long = resultArray.length;
                     var wht_color = resultArray[i];
                     var placeNo = i + 1;
                     console.log("placeholder = " + (placeNo));
@@ -330,14 +348,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 // alert("Submit lNumbe before lNumb loose" + (lNumb));
                 if (lNumb >= '8') {
                     alert("So Sad You Loose!");
+                    alert("The corect answer was = " + (comArray));
                     alert("Resetting the game so you can try again!");
                     location.reload();
+                    windows.location.reload();
                 }
+                //// lNumb + 1 and border delete and move
+                next_line_2();
 
-
-                lNumb = lNumb + 1;
-                // alert("Submit lNumbe " + (lNumb));
-                // alert("Empting user line Array");
+                function next_line_2(){
+                    document.getElementById("line-" + (lNumb)).style.border = "";
+                    lNumb = lNumb + 1;
+                    document.getElementById("line-" + (lNumb)).style.border = border_color_type;
+                    console.log("Delete border " + (document.getElementById("line-1").style.border));
+                    // alert("Submit lNumbe " + (lNumb));
+                    // alert("Empting user line Array");
+                    }
+    
+                
                 while (myArray.length > 0) {
                     myArray.pop();
                 }
@@ -369,6 +397,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".circle-" + (circle_num)).querySelector('.inner-inner-circle').style;
             oDiv.backgroundColor = item;
             iDiv.backgroundColor = item;
+
             // console.log("#line-" + (lNumb));
             // console.log (".circle-" + (circle_num));
             // console.log(item);

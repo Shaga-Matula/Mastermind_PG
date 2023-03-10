@@ -12,6 +12,7 @@ body {
     max-width: 1200px;
     margin: auto;
     background-position: left top;
+    background-color: black;
 
     /* background cover for different browsers */
     /* background-image: url(../images/pexels-pixabay-326311.jpg); */
@@ -29,7 +30,7 @@ body {
     flex-direction: column;
     margin: auto;
     width: auto;
-    background-color: cadetblue;
+    background-color: black;
     /* border: 2px solid black; */
 }
 
@@ -164,7 +165,7 @@ body {
     margin: 10px 0 10px 0;
     height: 400px;
     width: 80px;
-    background-image: url(../images/woodback.jpg);
+    /* background-image: url(../images/woodback.jpg); */
     color: white;
     text-align: center;
 
@@ -218,7 +219,11 @@ body {
 #c-white {
     background: radial-gradient(circle at 50px 50px, black, white);
 }
-
+/* Set for hightlight border */
+#line-1 {
+    border: none;
+   
+}
 
 #controlarea {
     display: flex;
@@ -336,9 +341,9 @@ body {
 
 /* Media Query for Tablets Ipads and (max-width: 1024px) */
 @media (min-width: 719px) {
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
 
     #holder {
         /* border: 1px solid white; */
@@ -381,6 +386,8 @@ body {
 
 
 
+
 #line-1>div>.circle-2{
     color: black;
 } 
+
