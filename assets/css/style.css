@@ -224,8 +224,22 @@ body {
     border: none;
    
 }
+
+#open-help-file{
+    position:relative;
+    display: block;
+    align-items: center;
+}
+
 #help-file{
-    display:"";
+    width: 90%;
+    height: auto;
+    background: black;
+    padding: 5px 5px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: grey;
+    color:white;
 }
 
 
@@ -244,11 +258,11 @@ body {
     display: inline-block;
     background-color: #efe0bb;
     padding: 5px;
-    width: 120px;
+    width: auto;
     border: 50px;
     text-align: center;
     border-radius: 15px;
-    max-width: fit-content;
+    max-width:fit-content;
     white-space: nowrap;
 }
 
@@ -369,7 +383,7 @@ body {
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
     body {
-        background-color: green;
+        /* background-color: green; */
     }
 
     #holder {

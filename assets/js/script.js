@@ -26,21 +26,30 @@ document.addEventListener('DOMContentLoaded', function () {
     // }); holder
     //  Help file Insructions
     // 
+
+    
+    const controlarea = document.getElementById('controlarea');
     const docHolder = document.getElementById('mainarea')
     const open_help_file = document.getElementById('open-help-file');
     const close_help_file = document.getElementById('close-help-file');
     const help_file = document.getElementById('help-file');
+    
+    //  Set default help text to none and hide
     console.log(open_help_file);
+    help_file.style.display = "none";
 
     open_help_file.addEventListener("click", function () {
         alert("You Open Help File");
-        docHolder.style.display = "none";
         help_file.style.display = "";
+        controlarea.style.display = "none";
+        docHolder.style.display = "none";
+        
     });
 
     close_help_file.addEventListener("click", function () {
         alert("You Close Help File");
         docHolder.style.display = "";
+        controlarea.style.display = "";
         help_file.style.display = "none";
     });
     // // This sets of the timer "CountUpTimer()" 
