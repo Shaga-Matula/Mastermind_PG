@@ -224,6 +224,10 @@ body {
     border: none;
    
 }
+#help-file{
+    display:"";
+}
+
 
 #controlarea {
     display: flex;

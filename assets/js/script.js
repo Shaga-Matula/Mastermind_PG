@@ -18,10 +18,31 @@ document.addEventListener('DOMContentLoaded', function () {
     // border outline for lines for user clarity
     //   Set Border for line choice
     var border_color_type = "outset";
-    document.getElementById("line-1").style.border = border_color_type ;
+    document.getElementById("line-1").style.border = border_color_type;
     //// 
-    
+    // //     open_help_file.addEventListener("click", function () {
+    //     alert("You Open Help File");
+    //     location.reload();
+    // }); holder
+    //  Help file Insructions
+    // 
+    const docHolder = document.getElementById('mainarea')
+    const open_help_file = document.getElementById('open-help-file');
+    const close_help_file = document.getElementById('close-help-file');
+    const help_file = document.getElementById('help-file');
+    console.log(open_help_file);
 
+    open_help_file.addEventListener("click", function () {
+        alert("You Open Help File");
+        docHolder.style.display = "none";
+        help_file.style.display = "";
+    });
+
+    close_help_file.addEventListener("click", function () {
+        alert("You Close Help File");
+        docHolder.style.display = "";
+        help_file.style.display = "none";
+    });
     // // This sets of the timer "CountUpTimer()" 
     // var timerVariable = setInterval(countUpTimer, 1000);
     // var totalSeconds = 0;
@@ -110,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("This Line is full click Submit" );
+            alert("This Line is full click Submit");
 
         }
     });
@@ -127,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("This Line is full click Submit" );
+            alert("This Line is full click Submit");
 
         }
 
@@ -152,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("This Line is full click Submit" );
+            alert("This Line is full click Submit");
             console_print();
         }
         console_print()
@@ -179,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // console_print(x);
             change_color();
         } else {
-            alert("This Line is full click Submit" );
+            alert("This Line is full click Submit");
             console_print();
         }
     });
@@ -288,19 +309,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
 
 
-                function next_line(){
+                function next_line() {
                     document.getElementById("line-" + (lNumb)).style.border = "";
                     lNumb = lNumb + 1;
                     document.getElementById("line-" + (lNumb)).style.border = border_color_type;
                     console.log("Delete border " + (document.getElementById("line-1").style.border));
                     // alert("Submit lNumbe " + (lNumb));
                     // alert("Empting user line Array");
-                    }
-    
+                }
+
 
                 next_line();
 
-               
+
                 while (myArray.length > 0) {
                     myArray.pop();
                 }
@@ -356,16 +377,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 //// lNumb + 1 and border delete and move
                 next_line_2();
 
-                function next_line_2(){
+                function next_line_2() {
                     document.getElementById("line-" + (lNumb)).style.border = "";
                     lNumb = lNumb + 1;
                     document.getElementById("line-" + (lNumb)).style.border = border_color_type;
                     console.log("Delete border " + (document.getElementById("line-1").style.border));
                     // alert("Submit lNumbe " + (lNumb));
                     // alert("Empting user line Array");
-                    }
-    
-                
+                }
+
+
                 while (myArray.length > 0) {
                     myArray.pop();
                 }
