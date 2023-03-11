@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     close_help_file.addEventListener("click", function () {
-        alert("You Clicked Close Help File");
+        // alert("You Clicked Close Help File");
         docHolder.style.display = "";
         controlarea.style.display = "";
         open_help_file.style.display = "";
