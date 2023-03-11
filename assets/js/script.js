@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     help_file.style.display = "none";
 
     open_help_file.addEventListener("click", function () {
-        // alert("You Open Help File");
+        alert("You Open Help File");
         help_file.style.display = "";
         controlarea.style.display = "none";
         docHolder.style.display = "none";
