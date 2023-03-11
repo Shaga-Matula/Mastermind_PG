@@ -299,9 +299,10 @@ ul {
 /* stop rotate on small screen */
 @media only screen and (min-device-width: 300px) and (max-device-width: 719px) and (orientation: landscape) {
 
-    #holder,
+    #mainarea,
     #main-title,
     #controlarea,
+    #help-file,
     #colorChoice-area,
     #headarea {
         display: none;

@@ -43,13 +43,15 @@ document.addEventListener('DOMContentLoaded', function () {
         help_file.style.display = "";
         controlarea.style.display = "none";
         docHolder.style.display = "none";
+        open_help_file.style.display = "none";
         
     });
 
     close_help_file.addEventListener("click", function () {
-        alert("You Close Help File");
+        alert("You Clicked Close Help File");
         docHolder.style.display = "";
         controlarea.style.display = "";
+        open_help_file.style.display = "";
         help_file.style.display = "none";
     });
     // // This sets of the timer "CountUpTimer()" 
