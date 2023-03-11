@@ -373,7 +373,7 @@ ul {
 /* Media Query for Iphone Tablets, Ipads */
 @media (min-width: 310px) and (max-width: 719px) and (orientation: portrait) {
     #holder {
-        max-height: 100vh;
+        /* max-height: 100vh; */
     }
 
     #mainarea {
@@ -395,7 +395,7 @@ ul {
 
     #holder {
         /* border: 1px solid white; */
-        height: 650px;
+      min-height: fit-content;
     }
 
     #controlarea {
