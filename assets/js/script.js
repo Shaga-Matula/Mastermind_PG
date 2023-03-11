@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var choice = computer_list[Math.floor(Math.random() * computer_list.length)];
         comArray.push(choice);
     }
-    alert("Computer Has Made its Choice, Please click to continue ");
+    alert("Computer Has Made Its Choice, Please Click To Continue ");
 
     // border outline for lines for user clarity
     //   Set Border for line choice
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("You have entered 4 colors, click submit to continue " + val);
+            alert("You have entered 4 colours, click submit to continue " + val);
 
         }
 
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("You have entered 4 colors, click submit to continue ");
+            alert("You have entered 4 colours, click submit to continue ");
 
         }
 
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("This Line is full click Submit");
+            alert("This line is full click Submit");
 
         }
     });
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("This Line is full click Submit");
+            alert("This line is full click Submit");
 
         }
 
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myArray.push(val);
             change_color();
         } else {
-            alert("This Line is full click Submit");
+            alert("This line is full click Submit");
             console_print();
         }
         console_print()
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // console_print(x);
             change_color();
         } else {
-            alert("This Line is full click Submit");
+            alert("This line is full click Submit");
             console_print();
         }
     });
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function back_one() {
 
         if (myArray.length === 0) {
-            alert("None Correct");
+            alert("None correct");
         } else {
             var how_long = myArray.length;
             // alert("Array Not Empty " + how_long);
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(tmpArray);
 
         if (myArray.length <= 3) {
-            alert("You Must Pick 4 choices to Play");
+            alert("You must pick 4 choices to play");
 
         } else {
             for (let i = 0; i < myArray.length; i++) {
@@ -308,11 +308,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             if (resultArray.length === 0) {
-                alert("Sorry no colors matching in this line");
+                alert("Sorry no colours matching in this line");
                 // alert("Submit lNumbe before lNumb loose" + (lNumb));
                 if (lNumb >= '8') {
                     alert("So Sad You Loose!");
-                    alert("The corect answer was = " + (comArray));
+                    alert("The Correct Answer Was = " + (comArray));
                     alert("Resetting the game so you can try again!");
                     location.reload();
                 }
@@ -368,7 +368,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // console.log((resultArray) === (chkWin));
 
                 if (chkWin.toString() === resultArray.toString()) {
-                    alert("Congratulations You Win: Well done");
+                    alert("Congratulations You Win: Well Done");
                     alert("Resetting the game so you can win again!");
                     location.reload();
                     windows.location.reload();
@@ -377,8 +377,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // alert("Submit lNumbe before lNumb loose" + (lNumb));
                 if (lNumb >= '8') {
-                    alert("So Sad You Loose!");
-                    alert("The corect answer was = " + (comArray));
+                    alert("So Sad You Lose!");
+                    alert("The Correct Answer Was = " + (comArray));
                     alert("Resetting the game so you can try again!");
                     location.reload();
                     windows.location.reload();
