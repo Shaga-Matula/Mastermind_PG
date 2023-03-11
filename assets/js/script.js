@@ -20,14 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var border_color_type = "outset";
     document.getElementById("line-1").style.border = border_color_type;
     //// 
-    // //     open_help_file.addEventListener("click", function () {
-    //     alert("You Open Help File");
-    //     location.reload();
-    // }); holder
+    // 
     //  Help file Insructions
     // 
 
-    
+    const headarea = document.getElementById('headarea')
     const controlarea = document.getElementById('controlarea');
     const docHolder = document.getElementById('mainarea')
     const open_help_file = document.getElementById('open-help-file');
@@ -39,11 +36,12 @@ document.addEventListener('DOMContentLoaded', function () {
     help_file.style.display = "none";
 
     open_help_file.addEventListener("click", function () {
-        alert("You Open Help File");
+        // alert("You Open Help File");
         help_file.style.display = "";
         controlarea.style.display = "none";
         docHolder.style.display = "none";
         open_help_file.style.display = "none";
+        headarea.style.display= "none";
         
     });
 
@@ -53,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         controlarea.style.display = "";
         open_help_file.style.display = "";
         help_file.style.display = "none";
+        headarea.style.display= "";
     });
     // // This sets of the timer "CountUpTimer()" 
     // var timerVariable = setInterval(countUpTimer, 1000);
