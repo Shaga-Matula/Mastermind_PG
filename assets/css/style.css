@@ -396,6 +396,7 @@ ul {
     #holder {
         /* border: 1px solid white; */
       min-height: fit-content;
+      max-height: 100%vh;
     }
 
     #controlarea {
