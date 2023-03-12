@@ -88,7 +88,7 @@ body {
     align-items: center;
     width: 600px;
     color: black;
-    height: auto;
+    height: fit-content;
     /* border: 1px solid white; */
     margin-top: 10px;
 }
@@ -298,7 +298,7 @@ ul {
 
 /* stop rotate on small screen */
 @media only screen and (min-device-width: 300px) and (max-device-width: 719px) and (orientation: landscape) {
-
+    
     #mainarea,
     #main-title,
     #controlarea,
