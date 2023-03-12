@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <!--  Site description and keywords for search engine -->
+    <meta name="description" content="Games, Play Games">
+    <meta name="keywords" content="Mastermind, bord games, old school">
     <title>Mastermind</title>
-    
 </head>
-
 <body>
-
     <div id="holder">
-
         <header id="headarea">
-
-
             <h1 id="main-title">Mastermind</h1>
             <button type="button" class="button" id="open-help-file">How to play</button>
-       
         </header>
-
         <section id="mainarea">
-           
             <div id="pinholders-all">
-
                 <div class="pinholder" id="line-8">8
                     <div class="outer-circle">
                         <div class="inner-circle circle-1">
@@ -50,16 +41,12 @@
                     </div>
                     <div class="score-square">
                         <div class="inner-score-square score-1">
-
                         </div>
                         <div class="inner-score-square score-2">
-
                         </div>
                         <div class="inner-score-square score-3">
-
                         </div>
                         <div class="inner-score-square score-4">
-
                         </div>
                     </div>
                 </div>
@@ -86,16 +73,12 @@
                     </div>
                     <div class="score-square">
                         <div class="inner-score-square score-1">
-
                         </div>
                         <div class="inner-score-square score-2">
-
                         </div>
                         <div class="inner-score-square score-3">
-
                         </div>
                         <div class="inner-score-square score-4">
-
                         </div>
                     </div>
                 </div>
@@ -122,16 +105,12 @@
                     </div>
                     <div class="score-square">
                         <div class="inner-score-square score-1">
-
                         </div>
                         <div class="inner-score-square score-2">
-
                         </div>
                         <div class="inner-score-square score-3">
-
                         </div>
                         <div class="inner-score-square score-4">
-
                         </div>
                     </div>
                 </div>
@@ -158,16 +137,12 @@
                     </div>
                     <div class="score-square">
                         <div class="inner-score-square score-1">
-
                         </div>
                         <div class="inner-score-square score-2">
-
                         </div>
                         <div class="inner-score-square score-3">
-
                         </div>
                         <div class="inner-score-square score-4">
-
                         </div>
                     </div>
                 </div>
@@ -194,16 +169,12 @@
                     </div>
                     <div class="score-square">
                         <div class="inner-score-square score-1">
-
                         </div>
                         <div class="inner-score-square score-2">
-
                         </div>
                         <div class="inner-score-square score-3">
-
                         </div>
                         <div class="inner-score-square score-4">
-
                         </div>
                     </div>
                 </div>
@@ -230,16 +201,12 @@
                     </div>
                     <div class="score-square">
                         <div class="inner-score-square score-1">
-
                         </div>
                         <div class="inner-score-square score-2">
-
                         </div>
                         <div class="inner-score-square score-3">
-
                         </div>
                         <div class="inner-score-square score-4">
-
                         </div>
                     </div>
                 </div>
@@ -266,16 +233,12 @@
                     </div>
                     <div class="score-square">
                         <div class="inner-score-square score-1">
-
                         </div>
                         <div class="inner-score-square score-2">
-
                         </div>
                         <div class="inner-score-square score-3">
-
                         </div>
                         <div class="inner-score-square score-4">
-
                         </div>
                     </div>
                 </div>
@@ -302,23 +265,17 @@
                     </div>
                     <div class="score-square">
                         <div class="inner-score-square score-1">
-
                         </div>
                         <div class="inner-score-square score-2">
-
                         </div>
                         <div class="inner-score-square score-3">
-
                         </div>
                         <div class="inner-score-square score-4">
-
                         </div>
                     </div>
                 </div>
             </div>
-
             <aside id="colorChoice-area">
-                
                 <!-- <div id="count_up_timer">0:0:0</div> -->
                 <div class="color-pallet">
                     <div class="what-color" id="c-red" value="red">Red</div>
@@ -338,50 +295,42 @@
                 <div class="color-pallet">
                     <div class="what-color" id="c-white" value="white">Wht</div>
                 </div>
-
             </aside>
-
         </section>
         <section id="controlarea">
-          
             <button type="button" class="button" id="new-game">New Game</button>
             <button type="button" class="button" id="change-answer">Change Answer</button>
             <button type="button" class="button" id="submit-answer">Submit Answer</button>
-
         </section>
-  
-  
-    <div id ="help-file">
-        <h1>Mastermind - Rules of the game.</h1>
-        
-        <ul>
-            <li>The computer picks a sequence of <strong>4 random colours</strong>.</li>
-            <li>The objective of the game is to guess the <strong>colour and exact positions</strong> of the computer's choice.</li>
-            <li>Any colour can be used and there may be duplicates in a line.</li>
-            <li>The player choses <strong>4 colours</strong> in a line by clicking the corresponding colour on the column on the right hand side of the screen.</li>
-            <li>You can change your answer by clicking "Change Answer".</li>
-            <li>Then click "Submit Answer" to submit your guess.</li>
-            <li>Each "correct colour" & "correct position" is represented by a <strong>White</strong> peg in the square score column.</li>
-            <li>Each "correct colour" & <strong>Not</strong> correct position" is represented by a <strong>Black</strong> peg in the square score column.</li>
-            <li>If there are no colours matching in your line a message will display,<strong>"Sorry no colours matching in this line".</strong> </li>
-            <li>You win the game when you manage to guess <strong> all the colours in the code sequence and when they all in the right position.</strong></li>
-            <li>You lose the game if you use all attempts without guessing the computer choice.</li>
-
-          </ul>
-
-          
-</p>
-        <button type="button" class="button" id="close-help-file">Close - Back to game </button>
-    </div>
-
-    <div class="no-rotate-image">
-    </div>
-    <div class="no-rotate-message">
-        Orentation not supported : Please rotate your device!
-    </div>
-    <script src="assets/js/script.js"></script>
-   
-
+        <div id="help-file">
+            <h1>Mastermind - Rules of the game.</h1>
+            <ul>
+                <li>The computer picks a sequence of <strong>4 random colours</strong>.</li>
+                <li>The objective of the game is to guess the <strong>colour and exact positions</strong> of the
+                    computer's choice.</li>
+                <li>Any colour can be used and there may be duplicates in a line.</li>
+                <li>The player choses <strong>4 colours</strong> in a line by clicking the corresponding colour on the
+                    column on the right hand side of the screen.</li>
+                <li>You can change your answer by clicking "Change Answer".</li>
+                <li>Then click "Submit Answer" to submit your guess.</li>
+                <li>Each "correct colour" & "correct position" is represented by a <strong>White</strong> peg in the
+                    square score column.</li>
+                <li>Each "correct colour" & <strong>Not</strong> correct position" is represented by a
+                    <strong>Black</strong> peg in the square score column.</li>
+                <li>If there are no colours matching in your line a message will display,<strong>"Sorry no colours
+                        matching in this line".</strong> </li>
+                <li>You win the game when you manage to guess <strong> all the colours in the code sequence and when
+                        they all in the right position.</strong></li>
+                <li>You lose the game if you use all attempts without guessing the computer choice.</li>
+            </ul>
+            </p>
+            <button type="button" class="button" id="close-help-file">Close - Back to game </button>
+        </div>
+        <div class="no-rotate-image">
+        </div>
+        <div class="no-rotate-message">
+            Orentation not supported : Please rotate your device!
+        </div>
+        <script src="assets/js/script.js"></script>
 </body>
-
 </html>
