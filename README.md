@@ -69,13 +69,14 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
   1. To be eager to beat there highest score.
 
 ## Design
+<hr style="border:1px solid white">
 
 ### Wireframe
 This is a mock-up of the intended build. Please note that some features may change during development as the project continues, but the image should be mostly accurate representation on the site.
 <br>
 
 <figure>
-  <img src="assets/images/mockup.png" width=700>
+  <img src="assets/images/mockup.png" width=500>
 </figure>
 
 ### Website Structure
@@ -116,25 +117,45 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 ### Interactive Links  
 * Four buttons and six color choice icons are interactive for the user. <br>
     
-  * How to play button: Brings the user to the help file and hide all other contents. <br>
-  * New Game Button: Reloads the page and asked the user to chose a color, fill line and play.<br>
-  * Change Answer Button: Incraments backwards deeleting a colour at a time.<br>
-  * Submit Answer Button: Enters the users choice and calculates the result.<br>
+
+* How to play button: Brings the user to the help file and hide all other contents. <br>
+
+
+<figure>  
+<img style="float: right; margin-right: 55%;" src="assets/images/rightpannel.png" width=80px  height=350px >
+      <figcaption style="float: right; margin-right: 51%;">Right Pannel Selector</figcaption>
+     </figure>
   <figure>
-    <img style="float: right;" src="assets/images/howtplaybtn.png" width=400>
+     <img src="assets/images/howtplaybtn.png" width=400px >
+     <figcaption>How To Play Btn:</figcaption>
   </figure>
+ * New Game Button: Reloads the page and asked the user to chose a color, fill line and play.<br>
+ * Change Answer Button: Incraments backwards deeleting a colour at a time.<br>
+ * Submit Answer Button: Enters the users choice and calculates the result.<br>
    <figure>
     <img src="assets/images/btombutt.png" width=400>
+    <figcaption>New Game, Change Answer and Submit Btn:</figcaption>
   </figure>
-  
+  * Colour Selection Area: A choice of six colours to make a guess from.<br>
+
+    
+<br><br><br><br>
 ## Features
+<hr style="border:1px solid white">
 
 ### Home Page 
 
-![Home Page](./assets/images/readme/home-page.png)
+  <figure>
+     <img src="assets/images/fullpage.png" width=500px >
+     <figcaption>Home Page</figcaption>
+  </figure>
 
-* When the users reach the website, they are instantly greeted on the Homepage and they have access to the button to start playing immmediately. Also there is a sidebar opening by pressing the hamburger icon on the top right, here users can start to play but they can also choose a different quiz or just check the High Scores board. On the bottom right side the players can access the game's official social media pages.<br>
-[Live Feature Here](https://pedrocristo.github.io/portfolio_project_2/index.html)
+* When the user opens the Homepage they are presented with the full game website and they are instantly greeted and they have access to the game immediately. They are greeted and told that the computer has made a choice and ready to play<br>
+
+<figure>
+     <img src="assets/images/homegreet.png" width=100px >
+     <figcaption>Greeting</figcaption>
+  </figure>
 
 ### Navigation Menu
 
