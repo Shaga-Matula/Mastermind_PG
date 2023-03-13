@@ -68,9 +68,6 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 
   1. To be eager to beat there highest score.
 
-
-
-
 ## Design
 
 ### Wireframe
@@ -82,36 +79,25 @@ This is a mock-up of the intended build. Please note that some features may chan
 </figure>
 
 ### Website Structure
-The game is written on one page, that split into two sections and only one section will be visible at a time. Game section and instructions (How to Play) section on large screens and small devices.
+The game is written on one page, that split into two sections and only one section will be visible at a time. Game section and instructions (How to Play) section. Both are available large screens and small devices.
 
+On small screens the orientation is disabled as the game is not supported on small landscape devices. When a user rotates the screen they will be presented with a clear visual explaining that this is not available and the user is instructed to rotate there device.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<figure>
+  <img src="assets/images/rotatenotsup.png" width=400>
+</figure>
 
 #### The Game:
 * Homepage
-* Quiz Sports
-* Quiz History
-* Quiz Geography
-* Game End 
-* Trophy Gold 
-* Trophy Silver
-* Trophy Bronze
-* High Scores <br>
+<figure>
+  <img src="assets/images/homepage.png" width=400>
+</figure>
+
+* How to play page<br>
+
+<figure>
+  <img src="assets/images/howtplay.png" width=400>
+</figure>
 
 #### Colour Scheme
  ![Color Scheme](./assets/images/readme/color-scheme-pallete.png)<br>
