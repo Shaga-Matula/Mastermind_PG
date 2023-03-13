@@ -323,9 +323,9 @@ ul {
         flex-direction: column;
 
     }
-    #holder {
+    /* #holder {
         background-color: black;
-    }
+    } */
     .no-rotate-image {
         height: 50px;
         width: 100px;
