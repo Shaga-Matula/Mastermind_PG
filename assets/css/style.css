@@ -297,7 +297,7 @@ ul {
 }
 
 /* stop rotate on small screen */
-@media only screen and (min-device-width: 300px) and (max-device-width: 719px) and (orientation: landscape) {
+@media only screen and (min-width: 300px) and (max-width: 719px) and (orientation: landscape) {
     
     #mainarea,
     #main-title,
