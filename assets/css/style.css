@@ -251,9 +251,9 @@ ul {
 #help-file {
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      height: auto;
+    height: auto;
     background: black;
-    size: .8em;
+    size: 1em;
     padding:5px ;
     min-width: 50vw;
     border-radius: 5px;
@@ -353,7 +353,7 @@ ul {
             transform: rotate(-90deg)
         }
     }
-    @media only screen and (max-device-width: 812px) and (orientation: landscape) {
+    @media only screen and (max-width: 812px) and (orientation: landscape) {
         .no-rotate-image,
         .no-rotate-message {
             display: block;
@@ -409,9 +409,6 @@ ul {
         height: 800px;
     }
 }
-
-
-
 
 #line-1>div>.circle-2 {
     color: black;
