@@ -95,13 +95,13 @@ On small screens the orientation is disabled as the game is not supported on sma
 
 * How to play page<br>
 
-<figure>
-  <img src="assets/images/howtplay.png" width=400>
-</figure>
+
 
 #### Colour Scheme
- ![Color Scheme](./assets/images/readme/color-scheme-pallete.png)<br>
- The main colour scheme I chose for this project is an overall blue tone and purple with a darker colour for maximum user accessibility. I have choosen a green color as an interactive-color to contrast with the background.
+ <figure>
+  <img src="assets/images/colorpallet.png" width=400>
+</figure>
+ The main colour scheme that was chosen for this project to give a wooden feel (like the old game from the 80's) and is an mixture of brown tones and blue with a black background and white text for the instructions.
 
  #### Typography
 * The Roboto, sans-serif is used as the main font for the whole website.

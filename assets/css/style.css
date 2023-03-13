@@ -15,12 +15,12 @@ body {
     background-position: left top;
     background-color: darkslategray;
 
-    /* background cover for different browsers */
+    /* background cover for different browsers
     /* background-image: url(../images/pexels-pixabay-326311.jpg); */
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -o-background-size: cover; 
+    background-size: cover; */
 
 }
 
@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     margin: auto;
     width: auto;
-    background-color: darkslategray;
+    /* background-color: darkslategray; */
     border: 2px solid black;
 }
 
@@ -56,10 +56,10 @@ body {
     width: 80%;
     padding-right: 20px;
     align-items: center;
-    /* background-color: rgba(0, 0, 0, 0.01); */
-}
+   }
 
-#count_up_timer {
+/* disabled for dfuture devolopment */
+/* #count_up_timer {
     background-color: blue;
     display: flex;
     align-self: center;
@@ -67,7 +67,7 @@ body {
     font-weight: bold;
     color: white;
     padding: 2px;
-}
+} */
 
 #main-title {
     display: flex;
@@ -326,9 +326,9 @@ ul {
 
     }
 
-    /* #holder {
+    #holder {
         background-color: black;
-    } */
+    }
     .no-rotate-image {
         height: 50px;
         width: 100px;
@@ -373,6 +373,7 @@ ul {
     #holder {
         /* max-height: 100vh; */
         border: none;
+        background-color: darkslategray;
     }
 
     #mainarea {
@@ -414,11 +415,12 @@ ul {
 /* Media Query for Largest screens  */
 @media (min-width: 1281px) {
     body {
-        background-color: grey;
+        background-color: #dfae79;
     }
 
     #holder {
         height: 800px;
+        background-color: darkslategray;
     }
 }
 
