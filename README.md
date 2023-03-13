@@ -104,14 +104,28 @@ On small screens the orientation is disabled as the game is not supported on sma
  The main colour scheme that was chosen for this project to give a wooden feel (like the old game from the 80's) and is an mixture of brown tones and blue with a black background and white text for the instructions.
 
  #### Typography
-* The Roboto, sans-serif is used as the main font for the whole website.
+* The two fonts were chosen for the site. Tilt Neon for title the main title and Lucida Sans for white text on a black background. 
+
+font-family: "Tilt Neon", sans-serif;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
       
 #### Imagery
-* 3 images were used as a background for the website pages.
-* 1 image was used for the Favicon.
+* No Imagery was used on this site
   
 ### Interactive Links  
-* At the bottom of the Home page, users can access the game's social media links (Facebook and Instagram). Once these icons are clicked they open a new tab. 
+* Four buttons and six color choice icons are interactive for the user. <br>
+    
+  * How to play button: Brings the user to the help file and hide all other contents. <br>
+  * New Game Button: Reloads the page and asked the user to chose a color, fill line and play.<br>
+  * Change Answer Button: Incraments backwards deeleting a colour at a time.<br>
+  * Submit Answer Button: Enters the users choice and calculates the result.<br>
+  <figure>
+    <img style="float: right;" src="assets/images/howtplaybtn.png" width=400>
+  </figure>
+   <figure>
+    <img src="assets/images/btombutt.png" width=400>
+  </figure>
   
 ## Features
 
