@@ -131,9 +131,9 @@ document.addEventListener('DOMContentLoaded', function () {
             change_color();
         } else {
             alert("This line is full click Submit");
-            console_print();
+
         }
-        console_print()
+
     });
     // White Choice 
     let c_white = document.getElementById("c-white");
@@ -146,11 +146,9 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(y);
         if (y < x) {
             myArray.push(val);
-            // console_print(x);
             change_color();
         } else {
             alert("This line is full click Submit");
-            console_print();
         }
     });
     //  back_one will delete from the array incrementally and reset circle to blank
@@ -201,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // console.log("This is the tmpArray = " + (tmpArray))
                 // console.log("Final result = " + resultArray);
             }
-                // Right color wrong place
+            // Right color wrong place
             for (let i = 0; i < tmpArray.length; i++) {
                 if ((myArray.some(r => tmpArray.includes(r))) && (myArray[i] !== "done")) {
                     for (let j = 0; j < tmpArray.length; j++) {
