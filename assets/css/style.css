@@ -7,6 +7,7 @@
     padding: 0;
     border: none;
 }
+
 /* set for larger desktops */
 body {
     max-width: 1200px;
@@ -22,6 +23,7 @@ body {
     background-size: cover;
 
 }
+
 /* =================== 404 Page ================================== */
 
 .text-center {
@@ -29,7 +31,7 @@ body {
     height: auto;
     text-align: center;
     padding: 20vh 0;
-    background-color:#30475e;
+    background-color: #30475e;
 }
 
 #holder {
@@ -50,7 +52,7 @@ body {
     align-self: center;
     flex-direction: column;
     text-align: center;
-    height:auto;
+    height: auto;
     width: 80%;
     padding-right: 20px;
     align-items: center;
@@ -108,7 +110,7 @@ body {
     color: white;
     font-size: larger;
     padding-left: 3px;
-  }
+}
 
 .outer-circle {
     display: flex;
@@ -234,7 +236,7 @@ body {
 }
 
 #open-help-file {
-    border:20px;
+    border: 20px;
     /* position: relative; */
     display: block;
     align-items: center;
@@ -250,16 +252,16 @@ ul {
 
 #help-file {
     text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: auto;
     background: black;
-    size: 1em;
-    padding:5px ;
+    font-size: 1em;
+    padding: 5px;
     min-width: 50vw;
     border-radius: 5px;
-    background-color:black;
+    background-color: black;
     color: white;
-   }
+}
 
 
 #controlarea {
@@ -298,7 +300,7 @@ ul {
 
 /* stop rotate on small screen */
 @media only screen and (min-width: 300px) and (max-width: 719px) and (orientation: landscape) {
-    
+
     #mainarea,
     #main-title,
     #controlarea,
@@ -306,8 +308,8 @@ ul {
     #colorChoice-area,
     #headarea {
         display: none;
-        
-   }
+
+    }
 
     html,
     body {
@@ -323,6 +325,7 @@ ul {
         flex-direction: column;
 
     }
+
     /* #holder {
         background-color: black;
     } */
@@ -334,12 +337,14 @@ ul {
         background: black;
         animation: rotate 1.5s ease-in-out infinite alternate;
     }
+
     .no-rotate-message {
         background: black;
         color: white;
         font-size: 1em;
         margin-top: 40px;
     }
+
     @keyframes rotate {
         0% {
             transform: rotate(0deg)
@@ -353,7 +358,9 @@ ul {
             transform: rotate(-90deg)
         }
     }
+
     @media only screen and (max-width: 812px) and (orientation: landscape) {
+
         .no-rotate-image,
         .no-rotate-message {
             display: block;
@@ -365,11 +372,13 @@ ul {
 @media (min-width: 310px) and (max-width: 719px) and (orientation: portrait) {
     #holder {
         /* max-height: 100vh; */
-        border:none;
+        border: none;
     }
+
     #mainarea {
         max-width: 95vw;
     }
+
     #controlarea {
         max-width: 90vw;
         min-width: 90vw;
@@ -380,13 +389,15 @@ ul {
 @media (min-width: 719px) {
 
     #holder {
-      min-height: fit-content;
-      max-height: 100%;
+        min-height: fit-content;
+        max-height: 100%;
     }
+
     #controlarea {
         width: 50%;
         margin: 20px 0 20px 0;
     }
+
     #main-title {
         font-size: 3em;
     }
@@ -405,6 +416,7 @@ ul {
     body {
         background-color: grey;
     }
+
     #holder {
         height: 800px;
     }
