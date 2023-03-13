@@ -29,14 +29,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 * [Features](#features)  
     * [Home Page](#home-page) 
     * [Navigation Menu](#navigation-menu)
-    * [Quiz Game 1 - Sports](#quiz-game-1---sports)
-    * [Quiz Game 2 - History](#quiz-game-2---history)
-    * [Quiz Game 3 - Geography](#quiz-game-3---geography)
-    * [Game End Page](#game-end-page) 
-    * [Trophy Gold Page](#trophy-gold-page)
-    * [Trophy Silver Page](#trophy-silver-page)
-    * [Trophy Bronze Page](#trophy-bronze-page)
-    * [High Scores Page](#high-scores-page)
+    * [How To Play](#how-to-play)
 * [Future Features](#future-features)
 * [How to Play](#how-to-play)
 * [Technologies Used](#technologies-used)
@@ -158,7 +151,76 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   </figure>
 
 ### Navigation Menu
+  * The only navagation is to the "How to Play" file and back to the game page. 
+  * When the user clicks the "How to Play" button: 
+      * They are brought directally to the page and presented with the "How to Play" instructions.
+      * They are then given the option to return to the game by clicking return to game.  
+      
+<figure>
+     <img src="assets/images/howtplay.png" width=400px >
+     <figcaption>How to Play</figcaption>
+  </figure>
+     
 
+
+### How to Play 
+<hr style="border:1px solid white">
+
+ 
+ <figure>  
+<img style="float: right; margin-right: 50%;" src="assets/images/rightpannel.png" width=80px  height=350px >
+<figcaption style="float: right; margin-right: 46%;">Right Pannel Selector</figcaption>
+</figure>
+
+ 
+ 
+  * How to play Mastermind
+       
+  * First the user will click OK to close the "Computer is Ready to Play" alert.
+  * The user then uses the right hand pannel consisting of 6 colours by clicking any one of the colours. 
+  * This will begin to populate the first row of the game.
+  * The user can continue making choices or they can use the "Change Answer" button.
+  * If the user   
+<figure>
+     <img src="assets/images/frow.png" width=400px >
+     <figcaption>First Row</figcaption>
+  </figure>
+                          
+  * This will begin to populate the first row of the game.
+  * The user can continue making choices or they can use the "Change Answer" button, which Incraments backwards deleting a colour at a time.
+
+<figure>
+    <img src="assets/images/btombutt.png" width=400>
+    <figcaption>Change Answer</figcaption>
+  </figure>
+
+* The user must make four choices or: 
+  * The computer will give an "Alert!" saying not enough colours chosen.
+  * The computer will give an "Alert!" saying too many choices. 
+<figure>
+    <img src="assets/images/toomuch.png" width=100>
+    <img style="float: right; margin-right: 70%;" src="assets/images/noten.png" width=100px>
+    <figcaption style="float: right; margin-right: 69%;">Not enough choice</figcaption>
+    <figcaption>Too many choices</figcaption>
+  </figure>
+ 
+
+
+
+     
+
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+<br>
 #### Side Navigation Menu Desktop
 ![Side Navigation Menu](./assets/images/readme/desktop-side-menu.png)
 * At the top right of the website, users can find a hamburger menu that is fully responsive in all devices. In this navigation menu users can navigate to the different quizzes and also check the High Scores board.<br>
