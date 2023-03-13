@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //  Red Choice
     let c_red = document.getElementById("c-red");
     c_red.addEventListener("click", function () {
-        const val = document.getElementById('c-red').getAttribute('value');
+        const val = document.getElementById('c-red').getAttribute('data-value');
         const x = 4;
         const y = myArray.length;
         if (y < x) {
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Blue choice
     let c_blue = document.getElementById("c-blue");
     c_blue.addEventListener("click", function () {
-        const val = document.getElementById('c-blue').getAttribute('value');
+        const val = document.getElementById('c-blue').getAttribute('data-value');
         const x = 4;
         const y = myArray.length;
         if (y < x) {
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Green Choice
     let c_green = document.getElementById("c-green");
     c_green.addEventListener("click", function () {
-        const val = document.getElementById('c-green').getAttribute('value');
+        const val = document.getElementById('c-green').getAttribute('data-value');
         const x = 4;
         const y = myArray.length;
         if (y < x) {
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // yellow Choice
     let c_yellow = document.getElementById("c-yellow");
     c_yellow.addEventListener("click", function () {
-        const val = document.getElementById('c-yellow').getAttribute('value');
+        const val = document.getElementById('c-yellow').getAttribute('data-value');
         const x = 4;
         const y = myArray.length;
         if (y < x) {
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const myArray = new Array();
     let c_purple = document.getElementById("c-purple");
     c_purple.addEventListener("click", function () {
-        const val = document.getElementById('c-purple').getAttribute('value');
+        const val = document.getElementById('c-purple').getAttribute('data-value');
         const x = 4;
         const y = myArray.length;
         if (y < x) {
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // White Choice 
     let c_white = document.getElementById("c-white");
     c_white.addEventListener("click", function () {
-        const val = document.getElementById('c-white').getAttribute('value');
+        const val = document.getElementById('c-white').getAttribute('data-value');
         const x = 4;
         console.log(myArray.length);
         console.log(x);
