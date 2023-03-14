@@ -238,6 +238,11 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 * [javaScript](https://www.javascript.com/)
 
+<figure>
+    <img src="assets/images/language.png" width=200>
+    <figcaption>Languages</figcaption>
+  </figure>
+
 ### Frameworks - Libraries - Programs Used
 
 * [Google Fonts](https://fonts.google.com/)
@@ -341,22 +346,53 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Manual Testing
 
+## Testing Color Selection
+
+
+<figure>
+  <img src="assets/images/rightpannel.png" width=50>
+</figure>
+
+| Test Item     | Method                           | Desired Result                                 | Result     | Pass |
+| ------------- | -------------------------------- | ---------------------------------------------- | ---------- | ---- |
+| Red Button    | Navigate to the Button and Click | The corresponding color will display in line 1 | As desired | Yes  |
+| Green Button  | Navigate to the Button and Click | The corresponding color will display in line 1 | As desired | Yes  |
+| Blue Button   | Navigate to the Button and Click | The corresponding color will display in line 1 | As desired | Yes  |
+| White Button  | Navigate to the Button and Click | The corresponding color will display in line 1 | As desired | Yes  |
+| Yellow Button | Navigate to the Button and Click | The corresponding color will display in line 1 | As desired | Yes  |
+| Purple Button | Navigate to the Button and Click | The corresponding color will display in line 1 | As desired | Yes  |
+|               |                                  |                                                |            |      |
+|               |                                  |                                                |            |      |
+
+
+
+| Test Item           | Method                       | Desired Result                                                                    | Result     | Pass |
+| ------------------- | ---------------------------- | --------------------------------------------------------------------------------- | ---------- | ---- |
+| New Game Button     | Navigate to Button and Click | Screen Clear and Computer Message Ready to Play                                   | As Desired | Yes  |
+| Change Answer       | Navigate to Button and Click | One Colour Choice Should Be Deleted from The Line                                 | As Desired | Yes  |
+| Submit Button       | Navigate to Button and Click | Calculate Score or Display Message if Necessary, Display Score, Move to Next Line | As Desired | Yes  |
+| Hoe To Play Button  | Navigate to Button and Click | Display Game Rules File\\Hoe to Play                                              | As Desired | Yes  |
+| Back to Game Button | Navigate to Button and Click | Display Game and Not Reload Page                                                  | As Desired | Yes  |
+
+
+| Test Item                                | Method                       | Desired Result                                                | Result     | Pass |
+| ---------------------------------------- | ---------------------------- | ------------------------------------------------------------- | ---------- | ---- |
+| Click Submit with only one Colour Chosen | Navigate to Button and Click | Message Should Display Indication 
+
+Not Enough Colours Chosen | As Desired | Yes  |
+| Click Submit with Two Colour Chosen      | Navigate to Button and Click | Message Should Display Indication 
+
+Not Enough Colours Chosen | As Desired | Yes  |
+| Click Submit with Three Colour Chosen    | Navigate to Button and Click | Message Should Display Indication 
+
+Not Enough Colours Chosen | As Desired | Yes  |
+| Click Submit with Four Colour Chosen     | Navigate to Button and Click | Game Shoul Compair Rows and Display Score                     | As Desired | Yes  |
+| Try to Select a Fifth Colour             | Navigate to Button and Click | Game Should Giver Error and Ask User to Click Submit          | As Desired | Yes  |
+
 
 
 
 # Bugs 
-
-| **** | **** | **** | **** | **** | **** | **** | **** | **** | **** |
-|------|------|------|------|------|------|------|------|------|------|
-| **** |      |      |      |      |      |      |      |      |      |
-| **** |      |      |      |      |      |      |      |      |      |
-| **** |      |      |      |      |      |      |      |      |      |
-| **** |      |      |      |      |      |      |      |      |      |
-| **** |      |      |      |      |      |      |      |      |      |
-| **** |      |      |      |      |      |      |      |      |      |
-| **** |      |      |      |      |      |      |      |      |      |
-| **** |      |      |      |      |      |      |      |      |      |
-| **** |      |      |      |      |      |      |      |      |      |
 
 
 
@@ -397,7 +433,9 @@ The website development was created in the "main" branch. This branch was deploy
   
 
 ## Content
+* Thanks to Fabio at codepen for rotating animation and code to lock landscape  orentation.
 
+[CodePen](https://codepen.io/fabiowallner/pen/YOyJbJ)
 
 
 ## Special Thanks
