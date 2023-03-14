@@ -353,6 +353,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   <img src="assets/images/rightpannel.png" width=50>
 </figure>
 
+* Color Selection Testing
+
 | Test Item     | Method                           | Desired Result                                 | Result     | Pass |
 | ------------- | -------------------------------- | ---------------------------------------------- | ---------- | ---- |
 | Red Button    | Navigate to the Button and Click | The corresponding color will display in line 1 | As desired | Yes  |
@@ -364,7 +366,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 |               |                                  |                                                |            |      |
 |               |                                  |                                                |            |      |
 
-
+* Button Testing
 
 | Test Item           | Method                       | Desired Result                                                                    | Result     | Pass |
 | ------------------- | ---------------------------- | --------------------------------------------------------------------------------- | ---------- | ---- |
@@ -406,6 +408,22 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Green, Red, Blue, Purple | Fill Row and Click Submit    | Two White Peg, One Black Pegs      | As Desired | Yes  |
 | Red, Red, Blue, Purple   | Fill Row and Click Submit    | Two White Peg                      | As Desired | Yes  |
 
+
+* Win Lose Testing Knowing The Answer (yellow, red, blue, green)
+
+| Test Item                      | Method                       | Desired Result                     | Result     | Pass |
+| -----------------------------  | ---------------------------- | -----------------------------------| ---------- | ---- |
+| yellow, red, blue, green       | Fill Row and Click Submit    | Win Message Displayed              | As Desired | Yes  |
+| Row 8 yellow, red, blue, blue  | Fill Row and Click Submit    | Lose Message Displayed and Reset   | As Desired | Yes  |
+
+* Help File Testing
+
+| Test Item                      | Method                         | Desired Result                      | Result     | Pass |
+| ------------------------------ | ----------------------------   | ----------------------------------- | ---------- | ---- |
+| Open How to Play Button        | Navagate and Click How To Play | Help\Instruction File Displayed     | As Desired | Yes  |
+| Return to Game                 | Navagate and Click Back to Game| Returns to game and does not Reload | As Desired | Yes  |
+
+
 # Bugs 
 
 
@@ -422,6 +440,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 <figure>
   <img src="assets/images/rotatenotsup.png" width=300>
 </figure>
+
+### Fixed Bug
+
+## On returning to game after scrolling down on How to Play page, the game play scrolled down too and it lookes ununiform.  
+
+
+
+
+
 
 ## Deployment of This Project
 
