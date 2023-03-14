@@ -371,7 +371,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | New Game Button     | Navigate to Button and Click | Screen Clear and Computer Message Ready to Play                                   | As Desired | Yes  |
 | Change Answer       | Navigate to Button and Click | One Colour Choice Should Be Deleted from The Line                                 | As Desired | Yes  |
 | Submit Button       | Navigate to Button and Click | Calculate Score or Display Message if Necessary, Display Score, Move to Next Line | As Desired | Yes  |
-| Hoe To Play Button  | Navigate to Button and Click | Display Game Rules File\\Hoe to Play                                              | As Desired | Yes  |
+| How To Play Button  | Navigate to Button and Click | Display Game Rules File\\Hoe to Play                                              | As Desired | Yes  |
 | Back to Game Button | Navigate to Button and Click | Display Game and Not Reload Page                                                  | As Desired | Yes  |
 
 
@@ -385,11 +385,26 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Four Colours        | Navigate to Button and Click | Populate Row and Calculate Answer  | As Desired | Yes  |
 | Try Add Colour      | Navigate to Button and Click | Error Message                      | As Desired | Yes  |
 
+* Score Testing Knowing The Answer (yellow, red, blue, green)
 
 
-
-
-
+| Test Item                | Method                       | Desired Result                     | Result     | Pass |
+| ------------------------ | ---------------------------- | -----------------------------------| ---------- | ---- |
+| Row All Yellow           | Fill Row and Click Submit    | One White Peg                      | As Desired | Yes  |
+| Row All Red              | Fill Row and Click Submit    | One White Peg                      | As Desired | Yes  |
+| Row All White            | Fill Row and Click Submit    | Message "None"                     | As Desired | Yes  |
+| Row All Blue             | Fill Row and Click Submit    | One White Peg                      | As Desired | Yes  |
+| Row All Green            | Fill Row and Click Submit    | One White Peg                      | As Desired | Yes  |
+| Row All Purple           | Fill Row and Click Submit    | Message "None"                     | As Desired | Yes  |
+| Yellow, Red, Green, Blue | Fill Row and Click Submit    | Two White Peg, Two Black Pegs      | As Desired | Yes  |
+| Yellow, Green, Red, Blue | Fill Row and Click Submit    | One White Peg, Three Black Pegs    | As Desired | Yes  |
+| Blue, Red, Green, Yellow | Fill Row and Click Submit    | One White Peg, Three Black Pegs    | As Desired | Yes  |
+| Purple, Green, Red, Blue | Fill Row and Click Submit    | One White Peg, Three Black Pegs    | As Desired | Yes  |
+| Yellow, Red, Blue, Green | Fill Row and Click Submit    | WIN                                | As Desired | Yes  |
+| Green, Red, Blue, Purple | Fill Row and Click Submit    | Two White Peg, One Black Pegs      | As Desired | Yes  |
+| White, Red, Blue, Purple | Fill Row and Click Submit    | Two White Peg, One Black Pegs      | As Desired | Yes  |
+| Green, Red, Blue, Purple | Fill Row and Click Submit    | Two White Peg, One Black Pegs      | As Desired | Yes  |
+| Red, Red, Blue, Purple   | Fill Row and Click Submit    | Two White Peg                      | As Desired | Yes  |
 
 # Bugs 
 
