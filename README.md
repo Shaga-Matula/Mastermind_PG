@@ -233,10 +233,10 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 <hr style="border:1px solid white">
 
 # Future Devolopment
-  * Timer: Devolopment a timer and display in game to give a sence of urgenccy in the game. 
-  * Higest Score: Devolop a higest score method to give the game a more competive edge using time and by line number to produce score.   
-  * Sound: Devolop a system wher a beep can indicate choice, chime to win, meme to loose etc.  
-  * Sound for visualy impaired: Devolop a clear voice choice "You have chosen red for first position line 1" etc..
+  * Timer : Devolopment a timer and display in game to give a sence of urgenccy in the game. 
+  * Higest Score : Devolop a higest score method to give the game a more competive edge using time and by line number to produce score.   
+  * Sound : Devolop a system wher a beep can indicate choice, chime to win, meme to loose etc.  
+  * Sound for visualy impaired : Devolop a clear voice choice "You have chosen red for first position line 1" etc..
 
 ### Languages Used 
 
@@ -258,10 +258,8 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
     * VSCode was used to create and edit the website.
 * [Mobile Simulator](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk)
     * Mobile Simulater was used to test the website on a mobile device.
-* [PIXLR](https://pixlr.com/pt/)
-    * PIXLR was used to create, modify and resize all images on this website.
-* [Canva](https://www)
-   * Canva was used to create wireframe, the 3 background images and also the Favicon.
+
+
 
   
 ## Testing
@@ -287,14 +285,17 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 * All JavaScript files were validated through JSHint, presenting no errors.
 
 
-![Jshint Result](assets/images/jstest.png)
+<figure>
+    <img src="assets/images/jstest.png" width=400>
+    <figcaption>JShint Results</figcaption>
+  </figure>
 
+# Hardware Testing
+  * Chrome desktop and Alienware laptop used for windows testing. Apple testing done on Ipad 6th, generation, iPhone 5, iPhone 6, iPhone X and iPhone 11 and iPhone 12.  
+# Virtual Testing
+  * Virtual testing was done using the Google Chrome Browser and Chrome Developer used to check responsiveness on different screen sizes. 
 
-The testing was done using the Google Chrome Browser. Chrome Developer Tools was used extensively, particularly to check responsiveness on different screen sizes. Testing was also done using Firefox on desktop, and again on Google Chrome and Opera on the Huawei P20.
-
-* Responsive on all device sizes between 320px - 2600px wide
-
-* Devices tested using the Google Developer Tools emulator
+  * Responsive on all device sizes between 320px - 2600px wide
 
     * BlackBerry Z30 (360px x 640px)  
     * BlackBerry PlayBook (600px x 1024px)  
