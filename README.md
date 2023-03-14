@@ -484,12 +484,12 @@ The website development was created in the "main" branch. This branch was deploy
   
 
 ## Content
-* Thanks to Fabio at codepen for rotating animation and code to lock landscape  orentation.
+* Thanks to Fabio at codepen for rotating animation and code to lock landscape orentation.
 
 [CodePen](https://codepen.io/fabiowallner/pen/YOyJbJ)
 
 
 ## Special Thanks
-
+* Special thanks to Gareth McGirr for backup and mentoring.  
  
 
