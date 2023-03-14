@@ -278,6 +278,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 * [Main Html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshaga-matula.github.io%2FMastermind_PG%2F)
 
+<figure>
+    <img src="assets/images/testing.png" width=600>
+    <figcaption>CSS and HTML Results</figcaption>
+  </figure>
+
 ### [Jshint](https://jshint.com/)
 * All JavaScript files were validated through JSHint, presenting no errors.
 

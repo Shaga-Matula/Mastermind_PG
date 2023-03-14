@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const comArray = new Array();
     const computer_list = ["red", "green", "blue", "purple", "white", "yellow"];
-    console.log("computer list is " + (computer_list));
+
 
     while ((comArray).length < 4) {
         var choice = computer_list[Math.floor(Math.random() * computer_list.length)];
@@ -140,10 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
     c_white.addEventListener("click", function () {
         const val = document.getElementById('c-white').getAttribute('data-value');
         const x = 4;
-        console.log(myArray.length);
-        console.log(x);
         const y = myArray.length;
-        console.log(y);
         if (y < x) {
             myArray.push(val);
             change_color();
@@ -166,8 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     //  Main engine of the program 
     function submit_btn() {
-        console.log(("User Arrray = ") + myArray);
-        console.log(("Computer Array = ") + comArray);
+
         const resultArray = Array();
         const tmpArray = Array();
         var i = -1;
@@ -181,23 +177,16 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             for (let i = 0; i < myArray.length; i++) {
                 if (myArray[i] == "done") {
-                    console.log("Array element done = " + (myArray[i]));
+                    console.log();
                 } else if (myArray[i] == tmpArray[i]) {
                     if (myArray[i] == "done") {
-                        console.log("Array element done = " + (myArray[i]));
+                        console.log();
                     } else {
                         resultArray.push("white");
-                        console.log("Right place and color before " + (tmpArray[i]) + "+ " + (myArray[i]));
                         myArray[i] = ("done");
                         tmpArray[i] = ("done");
-                        console.log("Right place and color after " + (tmpArray[i]) + "+ " + (myArray[i]));
-                        console.log("End of loop 1");
                     }
                 }
-                // Used for testing results
-                // console.log("This is the myArray = " + (myArray))
-                // console.log("This is the tmpArray = " + (tmpArray))
-                // console.log("Final result = " + resultArray);
             }
             // Right color wrong place
             for (let i = 0; i < tmpArray.length; i++) {
@@ -208,16 +197,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             myArray[i] = ("done");
                             tmpArray[j] = ("done");
                         } else {
-                            // Used for testing results
-                            // console.log("Not a match " + (tmpArray[j]) + "+ " + (myArray[i]));
+                            console.log();
                         }
                     }
                 }
             }
-            // Used for testing results
-            // console.log("This is the myArray = " + (myArray))
-            // console.log("This is the tmpArray = " + (tmpArray))
-            // console.log("Final result = " + resultArray);
 
             // Move the border with the users choice
             function next_line() {
@@ -226,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById("line-" + (lNumb)).style.border = border_color_type;
             }
             // Check if user array is empty and also if user line 8
-            // If so user looses and page reloads
+            // If so user loses and page reloads
             if (resultArray.length === 0) {
                 alert("Sorry no colours matching in this line");
                 if (lNumb >= '8') {
@@ -244,20 +228,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 for (let i = 0; i < resultArray.length; i++) {
                     var wht_color = resultArray[i];
                     var placeNo = i + 1;
-                    console.log("placeholder = " + (placeNo));
                     var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (placeNo)).style;
-                    // Used for testing results
-                    // var iDiv = document.querySelector("#line-" + (lNumb)).querySelector(".score-" + (how_long)).style;
-                    // alert(".circle-" + (how_long));
-                    // alert(".score-" + (placeNo) + " + " + (resultArray[i]));
                     iDiv.backgroundColor = wht_color;
                     iDiv.height = "12px";
                     iDiv.width = "12px";
                 }
-                //  Used for testing results
-                //  console.log("Is " + (resultArray) + "the same as" + (chkWin));
-                //  console.log(resultArray);
-                //  console.log(chkWin);
+           
                 //  Check if the user has guessed the correct colors
                 const chkWin = Array('white', 'white', 'white', 'white');
                 if (chkWin.toString() === resultArray.toString()) {
@@ -280,7 +256,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.getElementById("line-" + (lNumb)).style.border = "";
                     lNumb = lNumb + 1;
                     document.getElementById("line-" + (lNumb)).style.border = border_color_type;
-                    console.log("Delete border " + (document.getElementById("line-1").style.border));
                 }
                 next_line_2();
                 while (myArray.length > 0) {
