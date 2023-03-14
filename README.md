@@ -69,7 +69,7 @@ This is a mock-up of the intended build. Please note that some features may chan
 <br>
 
 <figure>
-  <img src="assets/images/mockup.png" width=500>
+  <img src="assets/images/mockup.png" width=400>
 </figure>
 
 ### Website Structure
@@ -166,6 +166,9 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 ### How to Play 
 <hr style="border:1px solid white">
 
+Guess the color of hidden pegs. A deduction game where a player takes turn making a limited number of guesses, using logic to deduce what pegs the computer has hidden.
+
+The Computer player secretly puts four colored pegs in the spaces behind a screen at a hidden place in the program. The player, the code breaker, makes a series of guesses. After each guess, the computer uses smaller pegs to tell the code breaker if their guessed pegs are the right color and in the right place, are the right color but the wrong place, or are the wrong color entirely. The code breaker makes another guess in the next row, building upon information from previous guesses, trying to match the pegs the computer hid at the beginning of the game.
  
  <figure>  
 <img style="float: right; margin-right: 50%;" src="assets/images/rightpannel.png" width=80px  height=350px >
@@ -205,9 +208,18 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   </figure>
  
 
+  * The user then clicks the "Submit" button and the computer will compair the two lines. 
+  * The results are indicated by:
+    * Computer displays a white peg for every colour chosen that is in the correct place and the correct colour.
+    * Computer displays a black peg for every colour chosen that is in not in the correct place but the colour is present in the line.
+    * Computer display a message that there are no correct colours in the row. 
 
 
-     
+<figure>
+    <img src="assets/images/scrow2.png" width=250>
+    <figcaption>Score results</figcaption>
+  </figure>
+
 
 
 
