@@ -158,7 +158,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
       
 <figure>
      <img src="assets/images/howtplay.png" width=400px >
-     <figcaption>How to Play</figcaption>
+     <figcaption></figcaption>
   </figure>
      
 
@@ -207,128 +207,36 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
     <figcaption>Too many choices</figcaption>
   </figure>
  
-
   * The user then clicks the "Submit" button and the computer will compair the two lines. 
   * The results are indicated by:
     * Computer displays a white peg for every colour chosen that is in the correct place and the correct colour.
     * Computer displays a black peg for every colour chosen that is in not in the correct place but the colour is present in the line.
     * Computer display a message that there are no correct colours in the row. 
-
-
 <figure>
     <img src="assets/images/scrow2.png" width=250>
     <figcaption>Score results</figcaption>
   </figure>
 
+  <figure>
+    <img src="assets/images/alerts.png" width=600>
+    <figcaption>Interactive User Alerts</figcaption>
+  </figure>
 
+### Win
+  * You win the game when you manage to guess <strong> all the colours in the code sequence and when
+    they all in the right position.</strong>
+### Lose 
+  * You lose the game if you use all attempts without guessing the computer choice.
+### Reset
+  * The computer will then reset the game and start again.
 
+<hr style="border:1px solid white">
 
-<br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-<br>
-#### Side Navigation Menu Desktop
-![Side Navigation Menu](./assets/images/readme/desktop-side-menu.png)
-* At the top right of the website, users can find a hamburger menu that is fully responsive in all devices. In this navigation menu users can navigate to the different quizzes and also check the High Scores board.<br>
-  
-  #### Side Navigation Menu Tablet
-![Side Navigation Menu Tablet](./assets/images/readme/tablet-side-menu.png)<br>
-
-  #### Navigation Menu Mobile
-![Side Navigation Menu mobile](./assets/images/readme/mobile-side-menu.png)
-
-  #### Navigation Menu Day/Night Mode
-![Side Navigation Day/Night Mode](./assets/images/readme/menu-day-night-mode.png)
-  * Menu Day/Night Mode. From 8am to 8pm users can access the navigation menu when open in day mode (background-color white), from 8pm to 8am users can access the same menu in night mode (background-color black).
-
-### Quiz Sports
-
-![Quiz Game 1](./assets/images/readme/quiz-page-sports.png)
-* All of the game happens in this feature. Here the users will see the questions and they have 4 choices as their answer. The player will choose one and will see if the answer given is right or wrong. 
-The topic questions in Quiz 1 are Sports. <br>
-[Live Feature Here](https://pedrocristo.github.io/portfolio_project_2/pages/game-1.html)
-
-### Quiz History
-
-![Quiz Game 2](./assets/images/readme/quiz-page-history.png)
-* This feature has the same purpose as Quiz 1 but here the topic questions are History. <br>
-[Live Feature Here](https://pedrocristo.github.io/portfolio_project_2/pages/game-2.html)
-
-### Quiz Geography
-
-![Quiz Game 3](./assets/images/readme/quiz-page-geography.png)
-* This feature has the same purpose as Quiz 1 and Quiz 2 but here the topic questions are Georaphy. <br>
-[Live Feature Here](https://pedrocristo.github.io/portfolio_project_2/pages/game-3.html)
-
-### Game End Page
-
-![Game End Page](./assets/images/readme/game-end-page.png)
-
-* Game End feature is the page that users go after a quiz is finished. Here the players can see the last score and save their usernames.<br>
-[Live Feature Here](https://pedrocristo.github.io/portfolio_project_2/pages/game-end.html)
-
-### Trophy Gold Page
-
-![Trophy Gold Page](./assets/images/readme/trophy-gold-page.png)
-
-* After the user saves the game and if they score 250 they are brought to this feature to receive the gold medal.<br>
-[Live Feature Here](https://pedrocristo.github.io/portfolio_project_2/pages/trophy-gold.html)
-
-### Trophy Silver Page
-
-![Trophy Silver Page](./assets/images/readme/trophy-silver-page.png)
-
-* After the user saves the game and if they score 225 they are brought to this feature to receive the silver medal.<br>
-[Live Feature Here](https://pedrocristo.github.io/portfolio_project_2/pages/trophy-silver.html)
-
-### Trophy Bronze Page
-
-![Trophy Bronze Page](./assets/images/readme/trophy-bronze-page.png)
-
-* After the user saves the game and if they score 200 they are brought to this feature to receive the bronze medal.<br>
-[Live Feature Here](https://pedrocristo.github.io/portfolio_project_2/pages/trophy-bronze.html)
-
-### High Scores Page
-
-![HighScores Page](./assets/images/readme/scores-page.png)
-
-* In the High Scores feature users can check the best scores by the individual players.<br>
-[Live Feature Here](https://pedrocristo.github.io/portfolio_project_2/pages/scores.html)
-
-## Future Features
-  
-### Progress Bar Right/Wrong Answers
-
-* I am planning to add a feature with two progress bars.  One progress bar to show the number of right answers and the other to show the number of wrong answers in the last game played.
-
-## How To Play
-
-#### How to Start 
-![How to Start](./assets/images/readme/start-play-game.png)
-* The player can choose a quiz to play from the menu or start a random quiz by pressing the button Let's Play in the Homepage.
-
-#### The Game
-![How To Play](./assets/images/readme/quiz-page-how-play.png)
-* The player has 3 different quizzes in the game. For each quiz the user will see the question on the top center [2] and 4 choices [3] are available.
-The player then has to choose one of the choices and if the answer is right will win 25 points. The score will be displayed on the bottom right[5]. 
-While the game is going on, users can see the progress bar updating any time they answer a question [1] and the question counter will also update on the bottom left [4] .
-On the top right the users can check at any time what quiz they are on [6].
-
-#### Right Answer
-![Right Answer](./assets/images/readme/quiz-land-right-answer.png)
-* When the user answers the question right the message "Right Answer" will appear on the top center [7] and the background color of their choice answer will turn green [8].
-
-#### Wrong Answer
-![Wrong Answer](./assets/images/readme/quiz-land-wrong-answer.png)
-* When the user answers the question wrong the message "Wrong Answer" will appear on the top center [9] and the background color of their choice answer will turn red [10].
-
-## Technologies Used
+# Future Devolopment
+  * Timer: Devolopment a timer and display in game to give a sence of urgenccy in the game. 
+  * Higest Score: Devolop a higest score method to give the game a more competive edge using time and by line number to produce score.   
+  * Sound: Devolop a system wher a beep can indicate choice, chime to win, meme to loose etc.  
+  * Sound for visualy impaired: Devolop a clear voice choice "You have chosen red for first position line 1" etc..
 
 ### Languages Used 
 
@@ -362,23 +270,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### [W3C Markup Validator](https://validator.w3.org)
 * The HTML files were validated through the W3C Validator, presenting no errors.
-#### Results:
-* [HomePage](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Findex.html)
-* [Quiz Sports](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Fpages%2Fgame-1.html)
-* [Quiz History](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Fpages%2Fgame-2.html)
-* [Quiz Geography](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Fpages%2Fgame-3.html)
-* [Game End](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Fpages%2Fgame-end.html)
-* [Trophy Gold](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Fpages%2Ftrophy-gold.html)
-* [Trophy Silver](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Fpages%2Ftrophy-silver.html)
-* [Trophy Bronze](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Fpages%2Ftrophy-bronze.html)
-* [High Scores](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Fpages%2Fscores.html)
-  
 
 ### [W3C CSS Validator](https://jigsaw.w3.org/css-validator) 
 * The CSS files were validated though the Jigsaw W3C Validator, presenting no errors.
 #### Results:
-* [Main CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Fassets%2Fcss%2Fmain.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-* [Responsive CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpedrocristo.github.io%2Fportfolio_project_2%2Fassets%2Fcss%2Fresponsive.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+* [Main CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshaga-matula.github.io%2FMastermind_PG%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+* [Main Html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshaga-matula.github.io%2FMastermind_PG%2F)
 
 ### [Jshint](https://jshint.com/)
 * All JavaScript files were validated through JSHint, presenting no errors.
