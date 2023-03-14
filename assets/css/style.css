@@ -203,10 +203,12 @@ body {
     color: black;
     text-align: center;
     font-size: smaller;
+    font-weight: 800;
 }
 
 #c-red {
     background: radial-gradient(circle at 50px 50px, white, red);
+   
 }
 
 #c-green {
