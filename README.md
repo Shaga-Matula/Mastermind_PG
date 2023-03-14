@@ -375,19 +375,18 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Back to Game Button | Navigate to Button and Click | Display Game and Not Reload Page                                                  | As Desired | Yes  |
 
 
-| Test Item                                | Method                       | Desired Result                                                | Result     | Pass |
-| ---------------------------------------- | ---------------------------- | ------------------------------------------------------------- | ---------- | ---- |
-| Click Submit with only one Colour Chosen | Navigate to Button and Click | Message Should Display Indication 
+* Submit Button Testing
 
-Not Enough Colours Chosen | As Desired | Yes  |
-| Click Submit with Two Colour Chosen      | Navigate to Button and Click | Message Should Display Indication 
+| Test Item           | Method                       | Desired Result                     | Result     | Pass |
+| ------------------- | ---------------------------- | -----------------------------------| ---------- | ---- |
+| One Colour          | Navigate to Button and Click | Populate Row                       | As Desired | Yes  |
+| Two Colours         | Navigate to Button and Click | Populate Row                       | As Desired | Yes  |
+| Three Colours       | Navigate to Button and Click | Populate Row                       | As Desired | Yes  |
+| Four Colours        | Navigate to Button and Click | Populate Row and Calculate Answer  | As Desired | Yes  |
+| Try Add Colour      | Navigate to Button and Click | Error Message                      | As Desired | Yes  |
 
-Not Enough Colours Chosen | As Desired | Yes  |
-| Click Submit with Three Colour Chosen    | Navigate to Button and Click | Message Should Display Indication 
 
-Not Enough Colours Chosen | As Desired | Yes  |
-| Click Submit with Four Colour Chosen     | Navigate to Button and Click | Game Shoul Compair Rows and Display Score                     | As Desired | Yes  |
-| Try to Select a Fifth Colour             | Navigate to Button and Click | Game Should Giver Error and Ask User to Click Submit          | As Desired | Yes  |
+
 
 
 
