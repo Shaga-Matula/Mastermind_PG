@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         open_help_file.style.display = "";
         help_file.style.display = "none";
         headarea.style.display = "";
-        // window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
     });
     // This is the var for line numbers or rows LNUMB ///
     let lNumb = 1;

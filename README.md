@@ -294,6 +294,16 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 # Virtual Testing
   * Virtual testing was done using the Google Chrome Browser and Chrome Developer used to check responsiveness on different screen sizes. 
 
+## Steps to test:
+
+* Open browser and navigate to Mastermind page. [Live Project Here](https://shaga-matula.github.io/Mastermind_PG/index.html)
+* Open the developer tools (right click and then select inspect)
+* First test set to responsive and decrease width to 320px
+* Set the zoom to 50%
+* Click and drag the responsive window to maximum width
+
+* All screen sizes below were tested for responciveness.
+
   * Responsive on all device sizes between 320px - 2600px wide
 
     * BlackBerry Z30 (360px x 640px)  
@@ -426,9 +436,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 # Bugs 
 
-
-
-## Game not compatable with Landscape Orentation.
+ * Game not compatable with Landscape Orentation.
 <figure>
   <img src="assets/images/iphone8.png" width=300>
 </figure>
@@ -438,16 +446,18 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 * Used CSS to blank off screen and alert the user with friendly message that the orentation is not supported.<br>
 
 <figure>
-  <img src="assets/images/rotatenotsup.png" width=300>
+<img src="assets/images/rotatenotsup.png" width=300>
+</figure>
+
+
+* On small screen and returning to game after reading the instructions, scroll gap at bottom of page.  
+
+<figure>
+  <img src="assets/images/scrollerror.png" width=300>
 </figure>
 
 ### Fixed Bug
-
-## On returning to game after scrolling down on How to Play page, the game play scrolled down too and it lookes ununiform.  
-
-
-
-
+  * Added "window.scrollTo(0, 0);" to the "Return to Game" buttton in JavaScript. This will scroll the game page to top and the look will make the reveal more uniform. 
 
 
 ## Deployment of This Project
