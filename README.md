@@ -38,8 +38,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 * [Testing](#testing)
 * [Deployment](#deployment-this-project)
     * [Deployment This Project](#deployment-this-project)
-    * [Forking This Project](#forking-this-project)
-    * [Cloning This Project](#cloning-this-project)
+
 * [Credits](#credits)
 * [Content](#content)
 
@@ -331,22 +330,26 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   ![Lighthouse Mobile Result](./assets/images/readme/lighthouse_mobile_result.jpg).
 
   ## Functionality
-* All links have been hovered and clicked to ensure accessibility.
-* Pages all load correctly on all device screen sizes.
-* All social media links work correctly and open a new tab.
-* All the buttons are working correctly and bring the users to the function that they were built for.
-* The game is working correctly the question comes at the right time and it gives a reply back to the user when answered. 
-* The score has no issues and it increases by 25 points any time the user gives a right anwser. 
-* The progress bar and question counter have also no issues, the background color increases (from 0% to 100%) and the number of questions also increases any time the user chooses an anwser.
+* Hover over testing choices and buttons checked to ensure funictionality.
+* All pages load and refresh correctly on all device and all screen sizes.
+* The game has been vigeriously tested for logic and correct answers and is working correctly . 
 
-## Bugs 
-### Text Overlaping Mobile Devices
-![Text Overlaping Mobile Devices](./assets/images/readme/quiz-land-mobile-issue.jpeg)
-* I had this issue with my project when I built the layout for the Quiz Page as they are many elements in the same page.<br>
+
+# Bugs 
+
+
+## Game not compatable with Landscape Orentation.
+<figure>
+  <img src="assets/images/iphone8.png" width=300>
+</figure>
 
 ### Fixed Bug
-![Fix Bug](./assets/images/readme/quiz-land-bug-mobile-fixed.png)
-* I had to add media queries for portrait and landscape to avoid this issue happening.<br>
+* Add media queries for landscape to avoid this issue happening.<br>
+* Used CSS to blank off screen and alert the user with friendly message that the orentation is not supported.<br>
+
+<figure>
+  <img src="assets/images/rotatenotsup.png" width=300>
+</figure>
 
 ## Deployment of This Project
 
@@ -362,27 +365,6 @@ The website development was created in the "main" branch. This branch was deploy
 6. Select the "main" branch and select "Save".
 7. The link to the live website was ready on the top.
 
-## Forking This Project
-* Fork this project following the steps:
-
-1. Open [GitHub](https://github.com/).
-2. Click on the project to be forked.
-3. Find the 'Fork' button at the top right of the page.
-4. Once you click the button the fork will be in your repository..
-
-## Cloning This Project
-
-* Clone this project following the steps:
-
-1. Open [GitHub](https://github.com/).
-2. Click on the project to be cloned.
-3. You will be provided with three options to choose from, HTTPS, SSH or GitHub CLI, click the clipboard icon in order to copy the URL.
-4. Once you click the button the fork will be in your repository.
-5. Open a new terminal.
-6. Change the current working directory to the location that you want the cloned directory.
-7. Type 'git clone' and paste the URL copied in step 3.
-8. Press 'Enter' and the project is cloned.
-
 ## Credits
 
 ### Information Sources/Resources
@@ -391,15 +373,12 @@ The website development was created in the "main" branch. This branch was deploy
 
 * [Stack Overflow](https://stackoverflow.com/)
   
-* The JavaScript code for the Fancy Text Animation used in the Homepage was taken from the following tutorial:<br>[Dev ED](https://www.youtube.com/watch?v=GUEB9FogoP8)
 
 ## Content
 
-* All the questions provided in the game were taken from 2 online quizzes.
-* [Lovatts & Puzzles](https://lovattspuzzles.com/).
-* [Britannica Quiz](https://www.britannica.com/).
+
 
 ## Special Thanks
 
- * Special thanks to my mentor Sandeep Aggarwal, Slack Community, Dave Horrocks and Mairéad Gillic for their assistance throughout this project.
+ 
 
