@@ -183,15 +183,14 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
      <figcaption>First Row</figcaption>
   </figure>
                           
-  * This will begin to populate the first row of the game.
-  * The user can continue making choices or they can use the "Change Answer" button, which Incraments backwards deleting a colour at a time.
+
 
 <figure>
     <img src="assets/images/btombutt.png" width=400>
     <figcaption>Change Answer</figcaption>
   </figure>
 
-* The user must make four choices or: 
+  * The user must make four choices or: 
   * The computer will give an "Alert!" saying not enough colours chosen.
   * The computer will give an "Alert!" saying too many choices. 
 <figure>
@@ -206,6 +205,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
     * Computer displays a white peg for every colour chosen that is in the correct place and the correct colour.
     * Computer displays a black peg for every colour chosen that is in not in the correct place but the colour is present in the line.
     * Computer display a message that there are no correct colours in the row. 
+    * The score "Black" and "White" pegs are <strong>randomly</strong> placed in the score area and <strong>do not</strong> correspond to position of choice.
 <figure>
     <img src="assets/images/scrow2.png" width=250>
     <figcaption>Score results</figcaption>
@@ -256,7 +256,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 
 
   
-## Testing
+# Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
@@ -318,24 +318,46 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
  Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on both Desktop and Mobile devices. 
 
 * Results:
+
 <figure>
-    <img src="assets/images/lhousetest.png" width=400>
+    <img src="assets/images/lhousetest.png" width=400 height=200>
     <img src="assets/images/lhousetest2.png" width=400>
     <figcaption>Lighthouse Results</figcaption>
   </figure>
 
+### Wave
+  * Wave was used to test visuals and contrast and no issues were found.
 
-* Mobile Results:
+<figure>
+    <img src="assets/images/wavetest.png" width=200 height=400>
+    <img src="assets/images/wavetest2.png" width=200 height=400>
+    <figcaption>Wave Results</figcaption>
+  </figure>
 
-  ![Lighthouse Mobile Result](./assets/images/readme/lighthouse_mobile_result.jpg).
-
-  ## Functionality
+## Test Functionality
 * Hover over testing choices and buttons checked to ensure funictionality.
 * All pages load and refresh correctly on all device and all screen sizes.
 * The game has been vigeriously tested for logic and correct answers and is working correctly . 
 
+### Manual Testing
+
+
+
 
 # Bugs 
+
+| **** | **** | **** | **** | **** | **** | **** | **** | **** | **** |
+|------|------|------|------|------|------|------|------|------|------|
+| **** |      |      |      |      |      |      |      |      |      |
+| **** |      |      |      |      |      |      |      |      |      |
+| **** |      |      |      |      |      |      |      |      |      |
+| **** |      |      |      |      |      |      |      |      |      |
+| **** |      |      |      |      |      |      |      |      |      |
+| **** |      |      |      |      |      |      |      |      |      |
+| **** |      |      |      |      |      |      |      |      |      |
+| **** |      |      |      |      |      |      |      |      |      |
+| **** |      |      |      |      |      |      |      |      |      |
+
 
 
 ## Game not compatable with Landscape Orentation.
