@@ -286,6 +286,8 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
     * VSCode was used to create and edit the website.
 * [Mobile Simulator](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk)
     * Mobile Simulater was used to test the website on a mobile device.
+* [Balsamiq](https://balsamiq.com/wireframes/desktop/)
+    * wireframes were created using balsamiq from 
 
 
 
