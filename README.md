@@ -63,7 +63,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 ## Design
 <hr style="border:1px solid white">
 
-### Wireframe
+### Balsamiq https://balsamiq.com/Wireframe
 This is a mock-up of the intended build. Please note that some features may change during development as the project continues, but the image should be mostly accurate representation on the site.
 <br>
 
@@ -490,18 +490,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 
 ## Deployment of This Project
+    
+  * The site was deployed to GitHub pages. the steps to deploy are as follows: 
+  * In the GitHub repository, navigate to the settings tab
+  * Select the pages link from the setting menu on the left hand side 
+  * Under the GitHub Pages from the source section drop-down menu, select the master branch 
+  * One the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+    - The live link can be found here - [Mastermind](https://shaga-matula.github.io/Mastermind_PG/index.html)
 
-The website development was created in the "main" branch. This branch was deployed using GitHub Pages.
 
-* This site was deployed by completing the following steps:
-
-1. Open [GitHub](https://github.com/).
-2. Click on the project to be deployed.
-3. Navigate to the "Settings".
-4. Navigate down to the "GitHub Pages".
-5. Click on "Check it out here!".
-6. Select the "main" branch and select "Save".
-7. The link to the live website was ready on the top.
 
 ## Credits
 
