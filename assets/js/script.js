@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM fully loaded and parsed');
 
-    // The following picks 4 random colours and places in array comArray ;; 
+    // The following picks 4 random colors and places in array comArray ;; 
 
     const comArray = new Array();
     const computer_list = ["red", "green", "blue", "purple", "white", "yellow"];
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         open_help_file.style.display = "none";
         headarea.style.display = "none";
     });
-    // Hide or reveal nessasary 
+    // Hide or reveal necessary 
     close_help_file.addEventListener("click", function () {
         docHolder.style.display = "";
         controlarea.style.display = "";
@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Change Answer Button
     let change_answer = document.getElementById("change-answer");
     change_answer.addEventListener("click", function () {
-        // alert("You Clicked Change Answer");
+    
         back_one();
     });
     // Submit Button
     let submit_answer = document.getElementById("submit-answer");
     submit_answer.addEventListener("click", function () {
-        // alert("You Clicked Submit Answer");
+       
         submit_btn();
     });
     //  //////////// Color Choices ///////////////////
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
             alert("This line is full click Submit");
         }
     });
-    // yellow Choice
+    // Yellow Choice
     let c_yellow = document.getElementById("c-yellow");
     c_yellow.addEventListener("click", function () {
         const val = document.getElementById('c-yellow').getAttribute('data-value');
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
         while (++i < comArray.length) {
             tmpArray[i] = comArray[i];
         }
-        //    Checks array for right plane and colour
+        //    Checks array for right place and color
         if (myArray.length <= 3) {
             alert("You must pick 4 choices to play");
         } else {
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     windows.location.reload();
                 }
                 // Check if user array is empty and also if user line 8
-                // If so user looses and page reloads
+                // If so user loses and page reloads
                 if (lNumb >= '8') {
                     alert("So Sad You Lose!");
                     alert("The Correct Answer Was = " + (comArray));

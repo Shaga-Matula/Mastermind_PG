@@ -72,7 +72,7 @@ This is a mock-up of the intended build. Please note that some features may chan
 </figure>
 
 ### Website Structure
-The game is written on one page, that splits into two sections and only one section will be visible at a time. Game section and instructions (How to Play) section. Both are available on large screens and small devices.
+The game is written on one page, that splits into two sections and only one section will be visible at a time, Game section and instructions (How to Play) section. Both are available on large screens and small devices.
 
 On small screens the orientation is disabled as the game is not supported on small landscape devices. When a user rotates the screen they will be presented with a clear visual explaining that this is not available and the user is instructed to rotate there device.
 
@@ -82,7 +82,7 @@ On small screens the orientation is disabled as the game is not supported on sma
 
 #### The Game:
 * Homepage
-* The page is presented to the user with a colorfull and user freindly display of the game. 
+* The page is presented to the user with a colorfull and user friendly display of the game. 
 <figure>
   <img src="assets/images/homepage.png" width=400>
 </figure>
@@ -117,7 +117,7 @@ On small screens the orientation is disabled as the game is not supported on sma
  <figure>
   <img src="assets/images/colorpallet.png" width=400>
 </figure>
- The main color scheme that was chosen for this project to give a wooden feel (like the old game from the 80's) and is an mixture of brown tones and blue with a black background and white text for the instructions.
+ The main color scheme that was chosen for this project to give a wooden feel (like the old game from the 80's) and is a mixture of brown tones and blue with a black background and white text for the instructions.
 
  #### Typography
 * The two fonts were chosen for the site. Tilt Neon for the main title and Lucida Sans for white text on a black background. 
@@ -138,14 +138,14 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 <figure>  
 <img style="float: right; margin-right: 55%;" src="assets/images/rightpannel.png" width=80px  height=350px >
-      <figcaption style="float: right; margin-right: 51%;">Right Pannel Selector</figcaption>
+      <figcaption style="float: right; margin-right: 51%;">Right Panel Selector</figcaption>
      </figure>
   <figure>
      <img src="assets/images/howtplaybtn.png" width=400px >
      <figcaption>How To Play Btn:</figcaption>
   </figure>
  * New Game Button: Reloads the page and asked the user to chose a color, fill line and play.<br>
- * Change Answer Button: Incraments backwards deleting a color at a time.<br>
+ * Change Answer Button: Increments backwards deleting a color at a time.<br>
  * Submit Answer Button: Enters the users choice and calculates the result.<br>
    <figure>
     <img src="assets/images/btombutt.png" width=400>
@@ -178,9 +178,9 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   </figure>
 
 ### Navigation Menu
-  * The only navagation is to the "How to Play" file and back to the game page. 
+  * The only navigation is to the "How to Play" file and back to the game page. 
   * When the user clicks the "How to Play" button: 
-      * They are brought directally to the page and presented with the "How to Play" instructions.
+      * They are brought directly to the page and presented with the "How to Play" instructions.
       * They are then given the option to return to the game by clicking return to game.  
       
 <figure>
@@ -188,10 +188,10 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
      <figcaption></figcaption>
   </figure>
      
-* Search engine keywords and discription added to help the user find the page in search engines. 
+* Search engine keywords and description added to help the user find the page in search engines. 
 
   * content= "Games, Play Games, Mastermind game"
-  * content= "Mastermind, bord games, old school game"
+  * content= "Mastermind, board games, old school game"
 
 ### How to Play 
 <hr style="border:1px solid white">
@@ -204,7 +204,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
   * How to play Mastermind
        
   * First the user will click OK to close the "Computer is Ready to Play" alert.
-  * The user then uses the right hand pannel consisting of 6 colors by clicking any one of the colors. 
+  * The user then uses the right hand panel consisting of 6 colors by clicking any one of the colors. 
   * This will begin to populate the first row of the game.
   * The user can continue making choices or they can use the "Change Answer" button.
   
@@ -231,7 +231,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
     <figcaption>Too many choices</figcaption>
   </figure>
  
-  * The user then clicks the "Submit" button and the computer will compair the two lines. 
+  * The user then clicks the "Submit" button and the computer will compare the two lines. 
   * The results are indicated by:
     * Computer displays a white peg for every color chosen that is in the correct place and the correct color.
     * Computer displays a black peg for every color chosen that is in not in the correct place but the color is present in the line.
@@ -257,11 +257,11 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 
 <hr style="border:1px solid white">
 
-# Future Devolopment
-  * Timer : Devolopment a timer and display in game to give a sence of urgenccy in the game. 
-  * Higest Score : Devolop a higest score method to give the game a more competive edge using time and by line number to produce score.   
-  * Sound : Devolop a system where a beep can indicate choice, chime to win, meme to lose etc.  
-  * Sound for visualy impaired : Devolop a clear voice choice "You have chosen red for first position line 1" etc..
+# Future Development
+  * Timer : Development a timer and display in game to give a sense of urgency in the game. 
+  * Highest Score : Develop a highest score method to give the game a more completive edge using time and by line number to produce score.   
+  * Sound : Develop a system where a beep can indicate choice, chime to win, meme to lose etc.  
+  * Sound for visually impaired : Develop a clear voice choice "You have chosen red for first position line 1" etc..
 
 ### Languages Used 
 
@@ -390,9 +390,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   </figure>
 
 ## Test Functionality
-* Hover over testing choices and buttons checked to ensure funictionality.
+* Hover over testing choices and buttons checked to ensure functionality.
 * All pages load and refresh correctly on all device and all screen sizes.
-* The game has been vigeriously tested for logic and correct answers and is working correctly . 
+* The game has been vigorously tested for logic and correct answers and is working correctly . 
 
 ### Manual Testing
 
@@ -470,20 +470,20 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 | Test Item                      | Method                         | Desired Result                      | Result     | Pass |
 | ------------------------------ | ----------------------------   | ----------------------------------- | ---------- | ---- |
-| Open How to Play Button        | Navagate and Click How To Play | Help\Instruction File Displayed     | As Desired | Yes  |
-| Return to Game                 | Navagate and Click Back to Game| Returns to game and does not Reload | As Desired | Yes  |
+| Open How to Play Button        | Navigate and Click How To Play | Help\Instruction File Displayed     | As Desired | Yes  |
+| Return to Game                 | Navigate and Click Back to Game| Returns to game and does not Reload | As Desired | Yes  |
 
 
 # Bugs 
 
- * Game not compatable with Landscape Orentation.
+ * Game not compatible with Landscape Orientation.
 <figure>
   <img src="assets/images/iphone8.png" width=300>
 </figure>
 
 ### Fixed Bug
 * Add media queries for landscape to avoid this issue happening.<br>
-* Used CSS to blank off screen and alert the user with friendly message that the orentation is not supported.<br>
+* Used CSS to blank off screen and alert the user with friendly message that the orientation is not supported.<br>
 
 <figure>
 <img src="assets/images/rotatenotsup.png" width=300>
@@ -497,7 +497,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 </figure>
 
 ### Fixed Bug
-  * Added "window.scrollTo(0, 0);" to the "Return to Game" buttton in JavaScript. This will scroll the game page to top and the look will make the reveal more uniform. 
+  * Added "window.scrollTo(0, 0);" to the "Return to Game" button in JavaScript. This will scroll the game page to top and the look will make the reveal more uniform. 
 
 <hr style="border:1px solid white">
 
@@ -507,7 +507,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   * The git commands line codes below were used throughout development to push code to the remote repo:
   * git add <file> - Used to add the file(s) to the staging area before they are committed.
   * git commit -m “commit message” - This command was used to commit changes to the local repository queue ready for the final step.
-  * git push - This command was used to push all committed code to the remote repository on github and is then available to view remotly.
+  * git push - This command was used to push all committed code to the remote repository on github and is then available to view remotely.
 
 ## Deployment of This Project
     
@@ -534,7 +534,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 <a target="_blank" href="https://icons8.com/icon/358DyVLbreba/m">M</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 
-* Thanks to Fabio at codepen for rotating animation and code to lock landscape orentation.
+* Thanks to Fabio at codepen for rotating animation and code to lock landscape orientation.
 [CodePen](https://codepen.io/fabiowallner/pen/YOyJbJ)
 
 
