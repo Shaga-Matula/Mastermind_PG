@@ -21,7 +21,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 * [Design](#Design)
     * [Wireframe](#Wireframe)
     * [Website Structure](#website-structure)
-    * [Colour Scheme](#colour-scheme)
+    * [Color Scheme](#color-scheme)
     * [Imagery](#Imagery)
     * [Typography](#typography)
     * [Interactive Links](#interactive-links) 
@@ -52,13 +52,13 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
    
 * When a new player joins they should be able to:
 
-  1. Read and understand the instructions Easley.
+  1. Read and understand the instructions easily.
   2. Navigate with simplicity.
   3. Get feedback from the game to enhance gameplay.
    
 * Returning players:
 
-  1. To be eager to beat there highest score.
+  1. To be eager to beat their highest score.
 
 ## Design
 <hr style="border:1px solid white">
@@ -72,7 +72,7 @@ This is a mock-up of the intended build. Please note that some features may chan
 </figure>
 
 ### Website Structure
-The game is written on one page, that split into two sections and only one section will be visible at a time. Game section and instructions (How to Play) section. Both are available large screens and small devices.
+The game is written on one page, that splits into two sections and only one section will be visible at a time. Game section and instructions (How to Play) section. Both are available on large screens and small devices.
 
 On small screens the orientation is disabled as the game is not supported on small landscape devices. When a user rotates the screen they will be presented with a clear visual explaining that this is not available and the user is instructed to rotate there device.
 
@@ -82,23 +82,44 @@ On small screens the orientation is disabled as the game is not supported on sma
 
 #### The Game:
 * Homepage
+* The page is presented to the user with a colorfull and user freindly display of the game. 
 <figure>
   <img src="assets/images/homepage.png" width=400>
 </figure>
 
 
 * How to play page<br>
+* This page quickly guides the user through the criteria of playing the game.
+<figure>
+  <img src="assets/images/howtplay.png" width=300>
+</figure>
+
+* 404 Page 
+* A 404 page is implemented and will be displayed in case of a broken link.
+* The page will allow the user to navigate back to the main website, without the need of the back button.
+
+<figure>
+  <img src="assets/images/404.png" width=400>
+  <figcaption>404 Page</figcaption>
+</figure>
+<figure>
+  <img src="assets/images/404lighthouse.png" width=200>
+   <figcaption>404 Page Lighthouse</figcaption>
+</figure>
+<figure>
+  <img src="assets/images/404htmlck.png" width=200>
+   <figcaption>404 Page HTML Check</figcaption>
+</figure>
 
 
-
-#### Colour Scheme
+#### Color Scheme
  <figure>
   <img src="assets/images/colorpallet.png" width=400>
 </figure>
- The main colour scheme that was chosen for this project to give a wooden feel (like the old game from the 80's) and is an mixture of brown tones and blue with a black background and white text for the instructions.
+ The main color scheme that was chosen for this project to give a wooden feel (like the old game from the 80's) and is an mixture of brown tones and blue with a black background and white text for the instructions.
 
  #### Typography
-* The two fonts were chosen for the site. Tilt Neon for title the main title and Lucida Sans for white text on a black background. 
+* The two fonts were chosen for the site. Tilt Neon for the main title and Lucida Sans for white text on a black background. 
 
 font-family: "Tilt Neon", sans-serif;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -123,13 +144,13 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
      <figcaption>How To Play Btn:</figcaption>
   </figure>
  * New Game Button: Reloads the page and asked the user to chose a color, fill line and play.<br>
- * Change Answer Button: Incraments backwards deeleting a colour at a time.<br>
+ * Change Answer Button: Incraments backwards deleting a color at a time.<br>
  * Submit Answer Button: Enters the users choice and calculates the result.<br>
    <figure>
     <img src="assets/images/btombutt.png" width=400>
     <figcaption>New Game, Change Answer and Submit Btn:</figcaption>
   </figure>
-  * Colour Selection Area: A choice of six colours to make a guess from.<br>
+  * Color Selection Area: A choice of six colors to make a guess from.<br>
 
     
 <br><br><br><br>
@@ -179,7 +200,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
   * How to play Mastermind
        
   * First the user will click OK to close the "Computer is Ready to Play" alert.
-  * The user then uses the right hand pannel consisting of 6 colours by clicking any one of the colours. 
+  * The user then uses the right hand pannel consisting of 6 colors by clicking any one of the colors. 
   * This will begin to populate the first row of the game.
   * The user can continue making choices or they can use the "Change Answer" button.
   
@@ -197,7 +218,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
   </figure>
 
   * The user must make four choices or: 
-  * The computer will give an "Alert!" saying not enough colours chosen.
+  * The computer will give an "Alert!" saying not enough colors chosen.
   * The computer will give an "Alert!" saying too many choices. 
 <figure>
     <img src="assets/images/toomuch.png" width=100>
@@ -208,9 +229,9 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
  
   * The user then clicks the "Submit" button and the computer will compair the two lines. 
   * The results are indicated by:
-    * Computer displays a white peg for every colour chosen that is in the correct place and the correct colour.
-    * Computer displays a black peg for every colour chosen that is in not in the correct place but the colour is present in the line.
-    * Computer display a message that there are no correct colours in the row. 
+    * Computer displays a white peg for every color chosen that is in the correct place and the correct color.
+    * Computer displays a black peg for every color chosen that is in not in the correct place but the color is present in the line.
+    * Computer display a message that there are no correct colors in the row. 
     * The score "Black" and "White" pegs are <strong>randomly</strong> placed in the score area and <strong>do not</strong> correspond to position of choice.
 <figure>
     <img src="assets/images/scrow2.png" width=250>
@@ -223,7 +244,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
   </figure>
 
 ### Win
-  * You win the game when you manage to guess <strong> all the colours in the code sequence and when
+  * You win the game when you manage to guess <strong> all the colors in the code sequence and when
     they all in the right position.</strong>
 ### Lose 
   * You lose the game if you use all attempts without guessing the computer choice.
@@ -235,7 +256,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 # Future Devolopment
   * Timer : Devolopment a timer and display in game to give a sence of urgenccy in the game. 
   * Higest Score : Devolop a higest score method to give the game a more competive edge using time and by line number to produce score.   
-  * Sound : Devolop a system wher a beep can indicate choice, chime to win, meme to loose etc.  
+  * Sound : Devolop a system where a beep can indicate choice, chime to win, meme to lose etc.  
   * Sound for visualy impaired : Devolop a clear voice choice "You have chosen red for first position line 1" etc..
 
 ### Languages Used 
@@ -387,7 +408,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 | Test Item           | Method                       | Desired Result                                                                    | Result     | Pass |
 | ------------------- | ---------------------------- | --------------------------------------------------------------------------------- | ---------- | ---- |
 | New Game Button     | Navigate to Button and Click | Screen Clear and Computer Message Ready to Play                                   | As Desired | Yes  |
-| Change Answer       | Navigate to Button and Click | One Colour Choice Should Be Deleted from The Line                                 | As Desired | Yes  |
+| Change Answer       | Navigate to Button and Click | One color Choice Should Be Deleted from The Line                                 | As Desired | Yes  |
 | Submit Button       | Navigate to Button and Click | Calculate Score or Display Message if Necessary, Display Score, Move to Next Line | As Desired | Yes  |
 | How To Play Button  | Navigate to Button and Click | Display Game Rules File\\Hoe to Play                                              | As Desired | Yes  |
 | Back to Game Button | Navigate to Button and Click | Display Game and Not Reload Page                                                  | As Desired | Yes  |
@@ -397,11 +418,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 | Test Item           | Method                       | Desired Result                     | Result     | Pass |
 | ------------------- | ---------------------------- | -----------------------------------| ---------- | ---- |
-| One Colour          | Navigate to Button and Click | Populate Row                       | As Desired | Yes  |
-| Two Colours         | Navigate to Button and Click | Populate Row                       | As Desired | Yes  |
-| Three Colours       | Navigate to Button and Click | Populate Row                       | As Desired | Yes  |
-| Four Colours        | Navigate to Button and Click | Populate Row and Calculate Answer  | As Desired | Yes  |
-| Try Add Colour      | Navigate to Button and Click | Error Message                      | As Desired | Yes  |
+| One color          | Navigate to Button and Click | Populate Row                       | As Desired | Yes  |
+| Two colors         | Navigate to Button and Click | Populate Row                       | As Desired | Yes  |
+| Three colors       | Navigate to Button and Click | Populate Row                       | As Desired | Yes  |
+| Four colors        | Navigate to Button and Click | Populate Row and Calculate Answer  | As Desired | Yes  |
+| Try Add Color      | Navigate to Button and Click | Error Message                      | As Desired | Yes  |
 
 * Score Testing Knowing The Answer (yellow, red, blue, green)
 
