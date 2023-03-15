@@ -91,7 +91,8 @@ On small screens the orientation is disabled as the game is not supported on sma
 * How to play page<br>
 * This page quickly guides the user through the criteria of playing the game.
 <figure>
-  <img src="assets/images/howtplay.png" width=300>
+  <img src="assets/images/help.png" width=400>
+   <figcaption>How to Play</figcaption>
 </figure>
 
 * 404 Page 
