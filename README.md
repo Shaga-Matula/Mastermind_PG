@@ -277,7 +277,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 ### Frameworks - Libraries - Programs Used
 
 * [Google Fonts](https://fonts.google.com/)
-   * Google fonts were used to import the 'Roboto' font throughout the style.css.
+   * Google fonts were used to import the 'Tilt Neon' font throughout the style.css.
 * [Git](https://git-scm.com/)
     * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 * [GitHub](https://github.com/)
@@ -287,7 +287,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 * [Mobile Simulator](https://chrome.google.com/webstore/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk)
     * Mobile Simulater was used to test the website on a mobile device.
 * [Balsamiq](https://balsamiq.com/wireframes/desktop/)
-    * wireframes were created using balsamiq from 
+    * Wireframes were created using balsamiq from 
 
 
 
@@ -321,7 +321,16 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   </figure>
 
 # Hardware Testing
-  * Chrome desktop and Alienware laptop used for windows testing. Apple testing done on Ipad 6th, generation, iPhone 5, iPhone 6, iPhone X and iPhone 11 and iPhone 12.  
+  * Chrome desktop and Alienware laptop used for windows testing. 
+  * Mobile testing done on:
+
+    * Ipad 6th gen
+    * iPhone 5 
+    * iPhone 6 
+    * iPhone X 
+    * iPhone 11 
+    * iPhone 12  
+
 # Virtual Testing
   * Virtual testing was done using the Google Chrome Browser and Chrome Developer used to check responsiveness on different screen sizes. 
 
@@ -490,6 +499,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Fixed Bug
   * Added "window.scrollTo(0, 0);" to the "Return to Game" buttton in JavaScript. This will scroll the game page to top and the look will make the reveal more uniform. 
 
+<hr style="border:1px solid white">
+
+## Version Control
+    
+  * Visual Studio code editor was used to create the site and pushed to github to the remote repository ‘Mastermind’.
+  * The git commands line codes below were used throughout development to push code to the remote repo:
+  * git add <file> - Used to add the file(s) to the staging area before they are committed.
+  * git commit -m “commit message” - This command was used to commit changes to the local repository queue ready for the final step.
+  * git push - This command was used to push all committed code to the remote repository on github and is then available to view remotly.
 
 ## Deployment of This Project
     
@@ -499,7 +517,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
   * Under the GitHub Pages from the source section drop-down menu, select the master branch 
   * One the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
     - The live link can be found here - [Mastermind](https://shaga-matula.github.io/Mastermind_PG/index.html)
-
 
 
 ## Credits
@@ -522,6 +539,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 
 ## Special Thanks
-* Special thanks to Gareth McGirr for backup and mentoring.  
- 
+* Special thanks to Gareth McGirr for backup and mentoring and useless hair loss cures.  
+ (Joke remind me to take that out)
 
