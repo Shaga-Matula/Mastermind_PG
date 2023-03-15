@@ -540,6 +540,4 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 
 ## Special Thanks
-* Special thanks to Gareth McGirr for backup and mentoring and useless hair loss cures.  
- (Joke remind me to take that out)
-
+* Special thanks to Gareth McGirr for backup and mentoring. 
