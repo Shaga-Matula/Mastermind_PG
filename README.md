@@ -24,7 +24,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
     * [Colour Scheme](#colour-scheme)
     * [Imagery](#Imagery)
     * [Typography](#typography)
-    * [interactive Links](#interactive-links) 
+    * [Interactive Links](#interactive-links) 
   
 * [Features](#features)  
     * [Home Page](#home-page) 
@@ -86,6 +86,7 @@ On small screens the orientation is disabled as the game is not supported on sma
   <img src="assets/images/homepage.png" width=400>
 </figure>
 
+
 * How to play page<br>
 
 
@@ -141,6 +142,11 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
      <img src="assets/images/fullpage.png" width=500px >
      <figcaption>Home Page</figcaption>
   </figure>
+
+* Homepage Icon from Icon8
+<figure>
+  <img src="assets/images/icons8-m-67.png" width=20>
+</figure>
 
 * When the user opens the Homepage they are presented with the full game website and they are instantly greeted and they have access to the game immediately. They are greeted and told that the computer has made a choice and ready to play<br>
 
@@ -453,7 +459,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 * On small screen and returning to game after reading the instructions, scroll gap at bottom of page.  
 
 <figure>
-  <img src="assets/images/scrollerror.png" width=300>
+  <img src="assets/images/scrollerror.png" width=150>
 </figure>
 
 ### Fixed Bug
@@ -484,8 +490,12 @@ The website development was created in the "main" branch. This branch was deploy
   
 
 ## Content
-* Thanks to Fabio at codepen for rotating animation and code to lock landscape orentation.
 
+* Thanks to Icons8 for page logo
+<a target="_blank" href="https://icons8.com/icon/358DyVLbreba/m">M</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
+* Thanks to Fabio at codepen for rotating animation and code to lock landscape orentation.
 [CodePen](https://codepen.io/fabiowallner/pen/YOyJbJ)
 
 
