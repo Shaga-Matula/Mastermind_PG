@@ -94,10 +94,11 @@ On small screens the orientation is disabled as the game is not supported on sma
   <img src="assets/images/help.png" width=400>
    <figcaption>How to Play</figcaption>
 </figure>
+<br>
 
 * 404 Page 
-* A 404 page is implemented and will be displayed in case of a broken link.
-* The page will allow the user to navigate back to the main website, without the need of the back button.
+  * A 404 page is implemented and will be displayed in case of a broken link.
+  * The page will allow the user to navigate back to the main website, without the need of the back button.
 
 <figure>
   <img src="assets/images/404.png" width=400>
