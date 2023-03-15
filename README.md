@@ -188,7 +188,10 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
      <figcaption></figcaption>
   </figure>
      
+* Search engine keywords and discription added to help the user find the page in search engines. 
 
+  * content= "Games, Play Games, Mastermind game"
+  * content= "Mastermind, bord games, old school game"
 
 ### How to Play 
 <hr style="border:1px solid white">
@@ -248,7 +251,7 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
   * You win the game when you manage to guess <strong> all the colors in the code sequence and when
     they all in the right position.</strong>
 ### Lose 
-  * You lose the game if you use all attempts without guessing the computer choice.
+  * You lose the game if you use all attempts without guessing the computer choice. The computer will then reveal answer.  
 ### Reset
   * The computer will then reset the game and start again.
 
@@ -275,8 +278,6 @@ The Computer player secretly puts four colored pegs in the spaces behind a scree
 
 * [Google Fonts](https://fonts.google.com/)
    * Google fonts were used to import the 'Roboto' font throughout the style.css.
-* [Font Awesome](https://fontawesome.com/)
-    * Font Awesome are used as an icons for user UX purposes.
 * [Git](https://git-scm.com/)
     * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 * [GitHub](https://github.com/)
